@@ -1,15 +1,72 @@
+.buscador-producto a {
+  display: flex; /* Hace que el ícono también sea un contenedor flexible */
+  justify-content: center; /* Centra el ícono horizontalmente */
+  align-items: center; /* Centra el ícono verticalmente */
+  width: 30px; /* Puedes ajustar el tamaño del contenedor del ícono */
+  height: 30px; /* Ajusta la altura según tu preferencia */
+  margin-left: 20px;
+}
 
-  .buscador-producto a {
-    display: flex; /* Hace que el ícono también sea un contenedor flexible */
-    justify-content: center; /* Centra el ícono horizontalmente */
-    align-items: center; /* Centra el ícono verticalmente */
-    width: 30px; /* Puedes ajustar el tamaño del contenedor del ícono */
-    height: 30px; /* Ajusta la altura según tu preferencia */
-    margin-left: 20px;
+.buscador-producto i {
+  font-size: 3.5rem;
+  color: white;
+}
+
+.productos-tienda {
+  margin: 2rem;
+  padding: 1rem;
+  height: auto;
+}
+.contenedor-tienda {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+  margin: 2rem;
+}
+
+.imagen-producto {
+  max-width: 100%;
+  border-radius: 1.5rem;
+}
+.imagen-producto:hover {
+  transform: translate(-2px);
+}
+.detalle-producto {
+  background-color: var(--azul-marino);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.detalle-producto h3,
+p {
+  text-align: center;
+  text-transform: uppercase;
+}
+.ir-tienda {
+  text-decoration: none;
+  color: white;
+  background-color: var(--celeste-agua);
+  border-radius: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: backgraund-color 0.2s, color -2s;
+}
+.ir-tienda:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .contenedor-tienda {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
   }
-  
-  .buscador-producto i {
-    font-size: 3.5rem; 
-   color: white;
-  }
-  
+}
