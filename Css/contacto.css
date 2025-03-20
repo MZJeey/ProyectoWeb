@@ -144,3 +144,8 @@ h3 {
   font-weight: bold;
   border-radius: 8px;
 }
+
+.map {
+  height: 500px;
+  width: 1000%;
+}
