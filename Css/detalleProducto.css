@@ -1,0 +1,82 @@
+.product-detail {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem;
+}
+
+.detalle-imagen {
+  max-width: 90%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.detalle-imagen:hover {
+  transform: translate(-2px);
+}
+
+.detalle-producto h3,
+p {
+  text-align: center;
+  text-transform: uppercase;
+}
+.ir-tienda {
+  text-decoration: none;
+  color: white;
+  background-color: var(--celeste-agua);
+  border-radius: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: backgraund-color 0.2s, color -2s;
+}
+.ir-tienda:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .product-detail {
+    display: grid; /* Establece un contenedor de cuadrícula */
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Crea dos columnas de igual tamaño */
+    gap: 1rem; /* Espacio de 1rem entre los elementos de la cuadrícula */
+    padding: 1rem; /* Relleno de 1rem en el contenedor */
+  }
+}
+
+.categoria {
+  text-transform: uppercase;
+}
+.otros-detalles .justificar {
+  justify-content: flex-start;
+}
+.otros-detalles .justificar {
+  display: flex; /* Asegúrate de que sea un contenedor flex */
+  justify-content: flex-start;
+  font-size: 3rem;
+  gap: 1rem; /* Esto agregará 1rem de separación entre los elementos */
+}
+
+/* Clases de los elementos */
+.justificar {
+  margin-bottom: 3rem;
+}
+
+/* Estilo adicional para los botones */
+.agregar {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: first baseline;
+}
+
+.btn-agregar {
+  border: none;
+  background-color: dodgerblue;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+.btn-agregar:hover {
+  background-color: rgba(30, 144, 255, 0.7); /* 0.7 de opacidad */
+}

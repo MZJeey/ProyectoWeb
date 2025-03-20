@@ -1,0 +1,42 @@
+.promociones {
+    text-align: center;
+    padding: 2rem;
+    background-color: #f9f9f9;
+  }
+  
+  .promociones-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  .promocion {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .promocion img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .promocion h3 {
+    color: #ff5722;
+    margin: 0.5rem 0;
+  }
+  
+  .promocion p {
+    color: #555;
+  }
+
+  .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    padding: 20px;
+}

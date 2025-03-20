@@ -1,0 +1,9 @@
+/* estilos_principales.css */
+@import url("style.css");
+@import url("header.css");
+@import url("carrusel.css");
+@import url("informacion.css");
+@import url("promociones.css");
+@import url("footer.css");
+@import url("contacto.css");
+@import url("nosotros.css");

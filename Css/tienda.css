@@ -1,0 +1,15 @@
+
+  .buscador-producto a {
+    display: flex; /* Hace que el ícono también sea un contenedor flexible */
+    justify-content: center; /* Centra el ícono horizontalmente */
+    align-items: center; /* Centra el ícono verticalmente */
+    width: 30px; /* Puedes ajustar el tamaño del contenedor del ícono */
+    height: 30px; /* Ajusta la altura según tu preferencia */
+    margin-left: 20px;
+  }
+  
+  .buscador-producto i {
+    font-size: 3.5rem; 
+   color: white;
+  }
+  

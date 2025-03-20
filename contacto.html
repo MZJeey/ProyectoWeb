@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  
+    <link rel="stylesheet" href="Css/index.css">
+     <link rel="stylesheet" href="Css/sniper.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   <!-- jQuey -->
+</head>
+<body>
+
+
+<!-- Navegacion de redes sociales -->
+<nav class="navbar navSuperior navbar-expand-lg-light d-none d-lg-block  id="navSuperior">
+  <div class="container text-light">
+      <div class="w-100 d-flex justify-content-between">
+          <div class="contacto">
+            <i class="bi bi-envelope-fill"></i>
+              <a class="navbar-sm-brand text-light text-decoration-none" href="">goldFish@gmail.com</a>
+              <i class="bi bi-telephone-fill"></i>
+              <a class="navbar-sm-brand text-light text-decoration-none" href="tel:7179-5695">7179-5695</a>
+          </div>
+          <div class="enlaces" id="enlaces-navSuperior">
+              <a class="text-light" href="#" target="_blank" ><i class="face  bi bi-facebook"></i></a>
+              <a class="text-light" href="#" target="_blank"><i class="instagram bi bi-instagram"></i></a>
+              <a class="text-light" href="#" target="_blank"><i class="x-twitter  bi bi-twitter-x"></i></a>
+              <a class="text-light" href="#" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          </div>
+      </div>
+  </div>
+</nav>
+  <!-- Navegacion sitio -->
+  <header class="header"  id="header">
+   
+  </header>
+    
+<main>
+  <section class="informacion-contacto">
+    <div class="container-fluid">
+      <div class="row columna">
+        <!-- Columna del formulario -->
+        <div class="col-lg-6 col-12 info-box" id="columna-formulario">
+          <div class="card">
+            <div class="card-header">
+              <strong>Contáctanos</strong>
+            </div>
+            <div class="card-body">
+              <form action="https://formsubmit.co/jasonezezel@gmail.com"  id="formulario" method="post">
+                <!-- Campo Nombre -->
+                <div class="row form-group">
+                  <div class="col-md-3">
+                    <label for="inputNombre" class="form-control-label font-medium">Nombre</label>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <input type="text" id="Nombre" name="inputNombre" placeholder="Ingresa tu nombre" class="form-control" name="name" />
+                  
+                  </div>
+                </div>
+  
+                <!-- Campo Email -->
+                <div class="row form-group">
+                  <div class="col-md-3">
+                    <label for="inputEmail" class="form-control-label font-medium">Email</label>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <input type="email" id="Email" name="inputEmail" placeholder="Ingresa tu email" class="form-control" name="email" />
+                  
+                  </div>
+                </div>
+  
+                <!-- Campo Comentario -->
+                <div class="row form-group">
+                  <div class="col-md-3">
+                    <label for="inputComentario" class="form-control-label font-medium" >Comentario</label>
+                  </div>
+                  <div class="col-12 col-md-9">
+                    <textarea name="inputComentario" id="Comentario" rows="9" placeholder="Ingresa tu comentario o solicitud" class="form-control" name="mensaje"></textarea>
+                  </div>
+                </div>
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary btn-sm" id="submitButton">
+                   
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/contacto.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <i class="bi bi-send"></i> Enviar
+           
+                  </button>
+                  <button type="reset" class="btn btn-danger btn-sm" id="redButton">
+                    <i class="bi bi-exclamation-lg"></i> Eliminar
+                  </button>
+                </div>
+              </form>
+              <div id="alert-container"></div> <!-- Contenedor para las alertas -->
+
+              <div id="spinner" class="hidden justify-center mt-10">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+            </div>
+            
+  
+            <!-- Botones de Acción -->
+           
+            
+          </div>
+        </div>
+  
+        <!-- Columna de información -->
+        <div class="col-lg-6 col-12 info-principal">
+          <div class="container info-box">
+            <div class="row">
+              <div class="col-md-6 info">
+                <div class="card info-extra">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Estamos ubicados</h3>
+                  <p>Frente al Parque Juan SantaMaria,Alajuela, Costa Rica</p>
+                </div>
+              </div>
+              <div class="col-md-6 info">
+                <div class="card info-extra">
+                  <i class="bi bi-telephone-fill"></i>
+                  <h3 class="pb-4">Llámanos</h3>
+                  <p>+506 7179-5695</p>
+                </div>
+              </div>
+              <div class="col-md-6 info">
+                <div class="card info-extra">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email</h3>
+                  <p>goldFish@gmail.com</p>
+                </div>
+              </div>
+              <div class="col-md-6 info">
+                <div class="card info-extra">
+                  <i class="bi bi-clock-history"></i>
+                  <h3>Horarios</h3>
+                  <p>L/V de 8:00 - 17:00</p>
+                </div>
+              </div>
+              <div class="col-md-12 info">
+                <div class="card info-extra">
+                  <i class="bi bi-hand-thumbs-up"></i>
+                  <h3>Seguir</h3>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-3 seguir">
+                        <a href="#"> <i class="bi bi-facebook"></i> Facebook</a>
+                      </div>
+                      <div class="col-3 seguir">
+                        <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
+                      </div>
+                      <div class="col-3 seguir">
+                        <a href="#"> <i class="bi bi-twitter"></i> Twitter</a>
+                      </div>
+                      <div class="col-3 seguir">
+                        <a href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+        <!-- Sección del mapa con tamaño ajustado -->
+        <div class="card-body">
+          <h3 class="text-center">Nuestra ubicación</h3>
+          <div class="map-responsive" style="width: 100%; ">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d31432.33451248924!2d-84.2328895102695!3d10.013404930912428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0x8fa0f9b8106ae04b%3A0x95eeb17783362f9d!2sUniversidad%20T%C3%A9cnica%20Nacional%20(Sede%20Central)%2C%20124%2C%20Provincia%20de%20Alajuela%2C%20Alajuela!3m2!1d10.0070594!2d-84.21642609999999!4m5!1s0x8fa0f9dd4de882a5%3A0x91250a39ca6b1169!2sAv.%203%20Tom%C3%A1s%20Guardia%2C%20Provincia%20de%20Alajuela%2C%20Alajuela%2C%20Llano!3m2!1d10.019506999999999!2d-84.2075383!5e0!3m2!1ses-419!2scr!4v1730834201547!5m2!1ses-419!2scr"
+              width="100%" height="380" style="border: 0" allowfullscreen loading="lazy"></iframe>
+          </div>
+  
+        </div>
+
+
+        <a href="https://wa.me/50671795695" class="whatsapp-float" target="_blank">
+          <i class="bi bi-whatsapp"></i>
+        </a> 
+        
+      </main>
+
+    <!-- El pie de página se insertará dinámicamente con JavaScript -->
+    <footer class="footer" style="background-color:black;">
+      <div class="footer-top py-8">
+          <div class="container">
+              <div class="row gy-5">
+                  <div class="col-lg-8 pe-xxl-10">
+                      <div class="row gy-md-5 columna">
+                          
+                          <div class="col-6 col-lg-4 contacto-footer">
+                              <h5 class="text-white footer-titulo1">Contactos</h5>
+                              <ul class="list-unstyled footer-link-01 m-0">
+                                  <li><i class="face  bi bi-facebook"></i><a class="text-white text-opacity-75" href="#">Facebook</a></li>
+                                  <li><i class="instagram bi bi-instagram"></i><a class="text-white text-opacity-75" href="#">Instagram</a></li>
+                                  <li><i class="x-twitter  bi bi-twitter-x"></i><a class="text-white text-opacity-75" href="#">twitter</a></li>
+                                  <li> <i class="bi bi-whatsapp"></i><a class="text-white text-opacity-75" href="#">WhatsApp</a></li>
+                                
+                              </ul>
+                          </div>
+                          <div class="col-6 col-lg-4 d enlace">
+                              <h5 class="text-white footer-titulo1">Enlaces</h5>
+                              <ul class="list-unstyled footer-link-01 m-0">
+                                  <li><a class="text-white text-opacity-75" href="#">Home</a></li>
+                                  <li><a class="text-white text-opacity-75" href="#">Tienda</a></li>
+                                  <li><a class="text-white text-opacity-75" href="#">Nosotros</a></li>
+                              
+                              </ul>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-lg-4">
+                      <h5 class="text-white footer-titulo1 fs-5">Subscribet para obtener un descuento en tu proxima compra.</h5>
+                      <div>
+                          <form class="d-flex flex-row mb-2 p-1 bg-white input-group"><input type="email" class="form-control rounded border-0" placeholder="Tu correo electrónico"> <button class="btn btn-secondary flex-shrink-0" type="submit">Subscribete</button></form>
+                          <p class="fs-sm text-white text-opacity-75">I agree to receive Absolution newsletters</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="footer-bottom small py-3 border-top border-white border-opacity-10">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-6 text-center text-md-start py-1">
+                      <p class="m-0 text-white text-opacity-75">© 2025 copyright by </p>
+                  </div>
+                  <div class="col-md-6 text-center text-md-end py-1">
+                      <ul class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0">
+                          <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Privace &amp; Policy</a></li>
+                          <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Gold Fish</a></li>
+                          <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Developers.MC</a></li>
+                      </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </footer>
+   <script src="js/contact.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/header.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+[
+    {
+      "id": 1,
+      "precio": "$1200.99",
+      "imagen": "./Img/productosDestacados/caña01.jpg",
+       "categoria":{
+        "nombre": "Ugly Stik GX2 Spinning Rod",
+        "id":"cañas",
+        "descripcion":"Versátil y fácil de usar, ideal para pesca en agua dulce y salada."
+       }
+       
+    },
+    {
+      "id": 2,
+      "precio": "$699.99",
+      "imagen": "./Img/productosDestacados/señuelo06.jpg",
+         "categoria":{
+          "nombre": "Swimbaits",
+        "id":"señuelos",
+        "descripcion":"Excelente para pescar depredadores grandes como lubinas, lucios y dorados"
+         }
+    },
+    {
+      "id": 3,
+      "precio":"$99.99",
+      "imagen": "./Img/productosDestacados/carrete05.jpg",
+       "categoria":{
+        "nombre":"Fly Reel",
+        "id":"carrete",
+        "descripcion":"El Fly Reel es un carrete de pesca diseñado específicamente para la técnica de pesca con mosca."
+       }
+    },
+    {
+      "id": 4,
+      "precio": "$349.99",
+      "imagen": "./Img/productosDestacados/cuerda02.jpg",
+       "categoria":{
+        "nombre":"Monofilament Line",
+        "id":"cuerda",
+        "descripcion":"Ideal para pesca en agua dulce y salada. Es la cuerda más comúnmente utilizada para muchas especies, como truchas, bass, y lubinas"
+       }
+    },
+    {
+      "id": 5,
+      "precio": "$349.99",
+      "imagen": "./Img/productosDestacados/carrete07.jpg",
+       "categoria":{
+        "nombre":"EAGLE CLAW EC2.5 BAIT CASTING ",
+        "id":"carrete",
+        "descripcion":"El Carrete EC2.5 Eagle Claw diseñado para agua fresca, un diseño moderno, cuerpo de grafito, spool de aluminio, freno de carbon y sistema de freno magnético"
+       }
+    }
+    ,
+    {
+      "id": 6,
+      "precio": "$349.99",
+      "imagen": "./Img/productosDestacados/BANTAM_MGL.jpg",
+       "categoria":{
+        "nombre":" Carrete Spinning Profesional",
+        "id":"carrete",
+        "descripcion":"Ideal para lanzar señuelos ligeros y para pesca en agua dulce o salada"
+       }
+    },
+    {
+      "id": 7,
+      "precio": "$349.99",
+      "imagen": "./Img/productosDestacados/carrete02.jpg",
+       "categoria":{
+        "nombre":"Carrete Baitcasting Avanzado",
+        "id":"carrete",
+        "descripcion":"Tiene un sistema de freno magnético o centrífugo para controlar el lanzamiento"
+       }
+    },
+    {
+      "id": 8,
+      "precio": "$349.99",
+      "imagen": "./Img/productosDestacados/nc73mh-1-1.jpg",
+       "categoria":{
+        "nombre":"Solora 2-Piece Spinning Rod",
+        "id":"caña",
+        "descripcion":" Especial para lanzar desde la orilla del mar"
+       }
+    }
+  ]
+  

@@ -1,0 +1,100 @@
+:root {
+    --azul-marino: #004e89; /* Fondo principal, encabezados */
+    --celeste-agua: #00a8cc; /* Botones, enlaces, detalles */
+    --verde-oliva: #6a994e; /* Elementos naturales, contrastes */
+    --arena-beige: #ead7bb; /* Fondos secundarios, secciones suaves */
+    --gris-acero: #3b3b3b; /* Texto, bordes, íconos neutros */
+  }
+
+.informacion{
+    text-align: center;
+    padding: 2rem;
+}
+img {
+    max-width: 100%;
+}
+.mejores h2{
+   text-align: center;
+   color: white;
+}
+.contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+   
+}
+.entrada-blog a {
+    display: inline-block;
+    background-color:var(--azul-marino);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    justify-content: center;
+    border-radius: 50%;
+}
+.entrada-blog a:hover{
+ color: var(--verde-oliva);
+}
+
+.entrada-blog{
+    background-color: var(--gris-acero);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+ 
+    border: 1px solid var(--verde-oliva);
+   
+}
+.tres-columnas{
+    margin-top: 20px;
+}
+@media (min-width: 768px) {
+    .tres-columnas {
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    .entrada-blog {
+        flex: 0 0 calc(33.3% - 1rem);
+        gap: 1rem;
+        
+    }
+}
+@media (max-width: 767px) {
+    .tres-columnas {
+        display: block; /* Cambia a diseño en bloque para móviles */
+    }
+
+    .entrada-blog {
+        margin-bottom: 1rem; /* Agrega separación entre elementos */
+    }
+}
+@media (min-width: 768px) {
+.tres-columnas .entrada1 {
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición */
+}
+
+.tres-columnas .entrada1:hover {
+    transform: scale(1.05); /* Escala más sutil */
+}
+
+.tres-columnas .entrada2 {
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición */
+}
+
+.tres-columnas .entrada2:hover {
+    transform: scale(1.05); /* Escala más sutil */
+}
+.tres-columnas .entrada3{
+    transition: transform 0.3s ease-in-out; /* Suaviza la transición */
+
+}
+
+.tres-columnas .entrada3:hover {
+    transform: scale(1.05); /* Escala más sutil */
+    
+}
+}
