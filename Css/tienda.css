@@ -1,12 +1,3 @@
-.buscador-producto a {
-  display: flex; /* Hace que el ícono también sea un contenedor flexible */
-  justify-content: center; /* Centra el ícono horizontalmente */
-  align-items: center; /* Centra el ícono verticalmente */
-  width: 30px; /* Puedes ajustar el tamaño del contenedor del ícono */
-  height: 30px; /* Ajusta la altura según tu preferencia */
-  margin-left: 20px;
-}
-
 .buscador-producto i {
   font-size: 3.5rem;
   color: white;
@@ -104,7 +95,7 @@ p {
   .contenedor-tienda,
   .container-buton {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.3rem;
     margin: 2rem;
     width: 100%;
@@ -112,7 +103,7 @@ p {
 
   .item {
     display: flex;
-    justify-content: center; /* Centrar el contenido dentro de cada celda */
+    justify-content: center;
     align-items: center;
   }
 }
@@ -123,8 +114,8 @@ p {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
-    justify-items: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    justify-items: center;
+    align-items: center;
   }
 }
 
@@ -138,29 +129,22 @@ p {
 }
 .bi-cart {
   font-size: 3rem;
-  margin-left: 10px;
-}
-.btn-outline-success {
-  margin-left: 10px;
 }
 
-/* Estilo por defecto para el header */
 #header {
-  transition: height 0.3s ease; /* Añadimos una transición suave para el cambio de altura */
+  transition: height 0.3s ease;
 }
 
-/* Para pantallas grandes (más de 768px) */
 @media (min-width: 768px) {
   #header {
-    height: 200px; /* Altura del header para pantallas grandes */
+    height: 200px;
   }
 
   .header__texto {
-    display: none; /* Ocultar el texto en pantallas grandes */
+    display: none;
   }
 }
 
-/* Para pantallas pequeñas (menos de 768px) */
 @media (max-width: 767px) {
   #header {
     height: auto;
@@ -168,6 +152,8 @@ p {
   }
 
   .header__texto {
-    display: block; /* Asegúrate de que el texto se vea en pantallas pequeñas */
+    display: block;
   }
 }
+
+/* Prueba */
