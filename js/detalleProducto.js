@@ -27,16 +27,19 @@ if (producto) {
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", function () {
   // Verificar si estamos en la página de detalle del producto
-  if (window.location.href.indexOf("detalleProducto.html") > -1) {
+  if (window.location.href.indexOf("tienda.html") > -1) {
     console.log("Cambiando altura del header");
-    // Cambiar la altura del header a 300px
     const header = document.getElementById("header");
-    if (header) {
-      header.style.height = "200px";
-    }
-    const texto = document.getElementById("header__texto");
-    if (texto) {
-      texto.style.display = "none";
+    const texto = document.querySelector(".header__texto");
+
+    // Cambiar solo la altura si estamos en una pantalla grande
+    if (window.innerWidth >= 768) {
+      if (header) {
+        header.style.height = "200px"; // Cambia la altura del header para pantallas grandes
+      }
+      if (texto) {
+        texto.style.display = "none"; // Oculta el texto si lo deseas
+      }
     }
   }
 });

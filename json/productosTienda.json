@@ -2,7 +2,7 @@
     {
       "id": 1,
       "precio": "$1200.99",
-      "imagen": "./Img/productosDestacados/caña01.jpg",
+      "imagen": "./Img/cañas/caña01.jpg",
        "categoria":{
         "nombre": "Ugly Stik GX2 Spinning Rod",
         "id":"cañas",
@@ -13,40 +13,40 @@
     {
       "id": 2,
       "precio": "$699.99",
-      "imagen": "./Img/productosDestacados/señuelo06.jpg",
+      "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
          "categoria":{
           "nombre": "Swimbaits",
-        "id":"señuelos",
+        "id":"señuelos_anzuelos",
         "descripcion":"Excelente para pescar depredadores grandes como lubinas, lucios y dorados"
          }
     },
     {
       "id": 3,
       "precio":"$99.99",
-      "imagen": "./Img/productosDestacados/carrete05.jpg",
+      "imagen": "./Img/carretes/carrete05.jpg",
        "categoria":{
         "nombre":"Fly Reel",
-        "id":"carrete",
+        "id":"carretes",
         "descripcion":"El Fly Reel es un carrete de pesca diseñado específicamente para la técnica de pesca con mosca."
        }
     },
     {
       "id": 4,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/cuerda02.jpg",
+      "imagen": "./Img/cuerdas/cuerda02.jpg",
        "categoria":{
         "nombre":"Monofilament Line",
-        "id":"cuerda",
+        "id":"cuerdas",
         "descripcion":"Ideal para pesca en agua dulce y salada. Es la cuerda más comúnmente utilizada para muchas especies, como truchas, bass, y lubinas"
        }
     },
     {
       "id": 5,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/carrete07.jpg",
+      "imagen": "./Img/carretes/carrete07.jpg",
        "categoria":{
         "nombre":"EAGLE CLAW EC2.5 BAIT CASTING ",
-        "id":"carrete",
+        "id":"carretes",
         "descripcion":"El Carrete EC2.5 Eagle Claw diseñado para agua fresca, un diseño moderno, cuerpo de grafito, spool de aluminio, freno de carbon y sistema de freno magnético"
        }
     }
@@ -54,30 +54,30 @@
     {
       "id": 6,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/BANTAM_MGL.jpg",
+      "imagen": "./Img/carretes/BANTAM_MGL.jpg",
        "categoria":{
         "nombre":" Carrete Spinning Profesional",
-        "id":"carrete",
+        "id":"carretes",
         "descripcion":"Ideal para lanzar señuelos ligeros y para pesca en agua dulce o salada"
        }
     },
     {
       "id": 7,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/carrete02.jpg",
+      "imagen": "./Img/carretes/carrete02.jpg",
        "categoria":{
         "nombre":"Carrete Baitcasting Avanzado",
-        "id":"carrete",
+        "id":"carretes",
         "descripcion":"Tiene un sistema de freno magnético o centrífugo para controlar el lanzamiento"
        }
     },
     {
       "id": 8,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/nc73mh-1-1.jpg",
+      "imagen": "./Img/cañas/nc73mh-1-1.jpg",
        "categoria":{
         "nombre":"Solora 2-Piece Spinning Rod",
-        "id":"caña",
+        "id":"cañas",
         "descripcion":" Especial para lanzar desde la orilla del mar"
        }
     },
@@ -87,7 +87,7 @@
         "imagen": "./Img/cañas/caña02.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"caña",
+          "id":"cañas",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -97,7 +97,7 @@
         "imagen": "./Img/cañas/caña03.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"caña",
+          "id":"cañas",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -107,7 +107,7 @@
         "imagen": "./Img/carretes/carrete01.webp",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"carrete",
+          "id":"carretes",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -117,7 +117,7 @@
         "imagen": "./Img/cuerdas/cuerda01.webp",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cuerda",
+          "id":"cuerdas",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       }
@@ -128,7 +128,7 @@
         "imagen": "./Img/carretes/carrete04.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"caña",
+          "id":"carretes",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -138,7 +138,7 @@
         "imagen": "./Img/carretes/carrete06.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"caña",
+          "id":"carretes",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -148,7 +148,7 @@
         "imagen": "./Img/cuerdas/cuerda03.webp",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cuerda",
+          "id":"cuerdas",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -158,7 +158,7 @@
         "imagen": "./Img/cuerdas/cuerda04.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cuerda",
+          "id":"cuerdas",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -168,7 +168,7 @@
         "imagen": "./Img/cuerdas/cuerda05.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod    ",
-          "id":"cuerda",
+          "id":"cuerdas",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -178,7 +178,7 @@
         "imagen": "./Img/señuelos_anzuelos/anzuelo01.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -188,7 +188,7 @@
         "imagen": "./Img/señuelos_anzuelos/anzuelo02.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -198,7 +198,7 @@
         "imagen": "./Img/señuelos_anzuelos/anzuelo03.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -208,7 +208,7 @@
         "imagen": "./Img/señuelos_anzuelos/anzuelo04.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -218,7 +218,7 @@
         "imagen": "./Img/señuelos_anzuelos/anzuelo02.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
@@ -228,40 +228,183 @@
         "imagen": "./Img/señuelos_anzuelos/señuelo05.jpeg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
+    
       {
         "id": 24,
         "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
+        "imagen": "./Img/señuelos_anzuelos/señuelo07.jpeg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
       {
         "id": 25,
         "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/señuelo07.jpeg",
+        "imagen": "./Img/señuelos_anzuelos/señuelo10.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"señuelos_anzuelos",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       },
       {
         "id": 26,
         "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/señuelo10.jpg",
+        "imagen": "./Img/accesorios/accesorio01.jpg",
          "categoria":{
           "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"anzuelo",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+      },
+      {
+        "id": 27,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio02.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+      },
+      {
+        "id": 28,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio03.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+      },
+      {
+        "id": 29,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio05.webp",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
           "descripcion":" Especial para lanzar desde la orilla del mar"
          }
       }
-
+       ,
+       {
+        "id": 30,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio06.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       }
+       ,
+       {
+        "id": 31,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio08.jpeg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 32,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio09.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 33,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio10.webp",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 34,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio11.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 35,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio12.webp",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 36,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio13.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 37,
+        "precio": "$349.99",
+        "imagen": "./Img/accesorios/accesorio14.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"accesorios",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 38,
+        "precio": "$349.99",
+        "imagen": "./Img/cañas/caña04.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"cañas",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 39,
+        "precio": "$349.99",
+        "imagen": "./Img/cañas/caña05.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"cañas",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       },
+       {
+        "id": 40,
+        "precio": "$349.99",
+        "imagen": "./Img/cañas/caña06.jpg",
+         "categoria":{
+          "nombre":"Solora 2-Piece Spinning Rod",
+          "id":"cañas",
+          "descripcion":" Especial para lanzar desde la orilla del mar"
+         }
+       }
+      
   ]
   

@@ -155,6 +155,13 @@
 .header__texto .no-margin {
   font-size: 3rem;
 }
+
+@media (max-width: 576px) {
+  /* Pantallas pequeñas como celulares */
+  .header__texto .no-margin {
+    font-size: 1.5rem; /* Tamaño más pequeño */
+  }
+}
 /* whatsapp-float */
 .whatsapp-float {
   position: fixed;

@@ -80,3 +80,30 @@ p {
 .btn-agregar:hover {
   background-color: rgba(30, 144, 255, 0.7); /* 0.7 de opacidad */
 }
+
+/* Estilo por defecto para el header */
+#header {
+  transition: height 0.3s ease; /* Añadimos una transición suave para el cambio de altura */
+}
+
+/* Para pantallas grandes (más de 768px) */
+@media (min-width: 768px) {
+  #header {
+    height: 200px; /* Altura del header para pantallas grandes */
+  }
+
+  .header__texto {
+    display: none; /* Ocultar el texto en pantallas grandes */
+  }
+}
+
+/* Para pantallas pequeñas (menos de 768px) */
+@media (max-width: 767px) {
+  #header {
+    height: auto; /* Deja que el header se ajuste al contenido en pantallas pequeñas */
+  }
+
+  .header__texto {
+    display: block; /* Asegúrate de que el texto se vea en pantallas pequeñas */
+  }
+}

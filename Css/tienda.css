@@ -68,5 +68,106 @@ p {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
+    justify-items: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 35rem; /* Anchura fija */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+  }
+}
+
+.container-envio {
+  display: block;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-columns: 0fr;
+}
+.form-select {
+  font-size: 2rem;
+  width: 30%;
+}
+@media (max-width: 768px) {
+  .container-envio {
+    display: block;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+  .form-select {
+    font-size: 1.8rem;
+    width: 95%;
+    margin-right: 1px;
+  }
+}
+
+@media (min-width: 768px) {
+  .contenedor-tienda,
+  .container-buton {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 1.3rem;
+    margin: 2rem;
+    width: 100%;
+  }
+
+  .item {
+    display: flex;
+    justify-content: center; /* Centrar el contenido dentro de cada celda */
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-buton {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+    justify-items: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+  }
+}
+
+.btn-primary {
+  height: 40px;
+  width: 25rem;
+  font-size: large;
+}
+.item {
+  margin-bottom: 1rem;
+}
+.bi-cart {
+  font-size: 3rem;
+  margin-left: 10px;
+}
+.btn-outline-success {
+  margin-left: 10px;
+}
+
+/* Estilo por defecto para el header */
+#header {
+  transition: height 0.3s ease; /* Añadimos una transición suave para el cambio de altura */
+}
+
+/* Para pantallas grandes (más de 768px) */
+@media (min-width: 768px) {
+  #header {
+    height: 200px; /* Altura del header para pantallas grandes */
+  }
+
+  .header__texto {
+    display: none; /* Ocultar el texto en pantallas grandes */
+  }
+}
+
+/* Para pantallas pequeñas (menos de 768px) */
+@media (max-width: 767px) {
+  #header {
+    height: auto;
+    margin: auto;
+  }
+
+  .header__texto {
+    display: block; /* Asegúrate de que el texto se vea en pantallas pequeñas */
   }
 }

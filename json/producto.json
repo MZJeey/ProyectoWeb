@@ -2,7 +2,7 @@
     {
       "id": 1,
       "precio": "$1200.99",
-      "imagen": "./Img/productosDestacados/caña01.jpg",
+      "imagen": "./Img/cañas/caña01.jpg",
        "categoria":{
         "nombre": "Ugly Stik GX2 Spinning Rod",
         "id":"cañas",
@@ -13,7 +13,7 @@
     {
       "id": 2,
       "precio": "$699.99",
-      "imagen": "./Img/productosDestacados/señuelo06.jpg",
+      "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
          "categoria":{
           "nombre": "Swimbaits",
         "id":"señuelos",
@@ -23,7 +23,7 @@
     {
       "id": 3,
       "precio":"$99.99",
-      "imagen": "./Img/productosDestacados/carrete05.jpg",
+      "imagen": "./Img/carretes/carrete05.jpg",
        "categoria":{
         "nombre":"Fly Reel",
         "id":"carrete",
@@ -33,7 +33,7 @@
     {
       "id": 4,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/cuerda02.jpg",
+      "imagen": "./Img/cuerdas/cuerda02.jpg",
        "categoria":{
         "nombre":"Monofilament Line",
         "id":"cuerda",
@@ -43,7 +43,7 @@
     {
       "id": 5,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/carrete07.jpg",
+      "imagen": "./Img/carretes/carrete07.jpg",
        "categoria":{
         "nombre":"EAGLE CLAW EC2.5 BAIT CASTING ",
         "id":"carrete",
@@ -54,17 +54,17 @@
     {
       "id": 6,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/BANTAM_MGL.jpg",
+      "imagen": "./Img/carretes/BANTAM_MGL.jpg",
        "categoria":{
         "nombre":" Carrete Spinning Profesional",
-        "id":"carrete",
+        "id":"carretes",
         "descripcion":"Ideal para lanzar señuelos ligeros y para pesca en agua dulce o salada"
        }
     },
     {
       "id": 7,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/carrete02.jpg",
+      "imagen": "./Img/carretes/carrete02.jpg",
        "categoria":{
         "nombre":"Carrete Baitcasting Avanzado",
         "id":"carrete",
@@ -74,7 +74,7 @@
     {
       "id": 8,
       "precio": "$349.99",
-      "imagen": "./Img/productosDestacados/nc73mh-1-1.jpg",
+      "imagen": "./Img/cañas/nc73mh-1-1.jpg",
        "categoria":{
         "nombre":"Solora 2-Piece Spinning Rod",
         "id":"caña",
