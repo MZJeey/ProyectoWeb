@@ -70,7 +70,8 @@ p {
 }
 .form-select {
   font-size: 2rem;
-  width: 30%;
+  width: 30rem;
+  margin-bottom: 2rem;
 }
 @media (max-width: 768px) {
   .container-envio {
@@ -155,4 +156,31 @@ p {
   display: flex;
   flex-direction: space-between;
   justify-content: flex-end;
+}
+.container-tienda {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  grid-auto-columns: 0fr;
+}
+
+.buscador-producto {
+  width: 310px;
+  height: 35px;
+}
+
+.buscador-producto input {
+  font-size: 2.2rem;
+  background-color: white;
+  margin-left: 3rem;
+  width: 30rem;
+}
+
+.buscador-producto button {
+  font-size: 2rem;
+  padding: 0.5rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5px;
 }
