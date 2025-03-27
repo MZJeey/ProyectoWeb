@@ -36,12 +36,9 @@ p {
 @media (max-width: 768px) {
   .product-detail {
     display: grid; /* Establece un contenedor de cuadrícula */
-    grid-template-columns: repeat(
-      2,
-      1fr
-    ); /* Crea dos columnas de igual tamaño */
-    gap: 1rem; /* Espacio de 1rem entre los elementos de la cuadrícula */
-    padding: 1rem; /* Relleno de 1rem en el contenedor */
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
   }
 }
 
@@ -78,32 +75,32 @@ p {
   cursor: pointer;
 }
 .btn-agregar:hover {
-  background-color: rgba(30, 144, 255, 0.7); /* 0.7 de opacidad */
+  background-color: rgba(30, 144, 255, 0.7);
 }
 
 /* Estilo por defecto para el header */
 #header {
-  transition: height 0.3s ease; /* Añadimos una transición suave para el cambio de altura */
+  transition: height 0.3s ease;
 }
 
 /* Para pantallas grandes (más de 768px) */
 @media (min-width: 768px) {
   #header {
-    height: 200px; /* Altura del header para pantallas grandes */
+    height: 200px;
   }
 
   .header__texto {
-    display: none; /* Ocultar el texto en pantallas grandes */
+    display: none;
   }
 }
 
 /* Para pantallas pequeñas (menos de 768px) */
 @media (max-width: 767px) {
   #header {
-    height: auto; /* Deja que el header se ajuste al contenido en pantallas pequeñas */
+    height: auto;
   }
 
   .header__texto {
-    display: block; /* Asegúrate de que el texto se vea en pantallas pequeñas */
+    display: block;
   }
 }

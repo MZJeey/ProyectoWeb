@@ -80,7 +80,7 @@ function comprarAhora(productId, event) {
     });
 }
 
-// Función para ver detalles (sin cambios)
+// Función para ver detalles
 function verDetalle(index) {
   fetch("json/producto.json")
     .then((response) => {

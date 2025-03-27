@@ -50,7 +50,7 @@ body {
 
 .tarjeta .delantera {
   width: 100%;
-  /* background: url(../img/bg-tarjeta/bg-tarjeta-02.jpg); */
+
   background-image: url(../Img/tarjeta02.jpg);
   background-size: cover;
 }
@@ -269,6 +269,7 @@ body {
 
 .formulario-tarjeta select {
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .formulario-tarjeta .grupo-select i {
@@ -295,4 +296,8 @@ body {
 
 .formulario-tarjeta .btn-enviar:hover {
   background: #1850b1;
+}
+/* Diseño del carrito */
+.header {
+  height: 200px;
 }

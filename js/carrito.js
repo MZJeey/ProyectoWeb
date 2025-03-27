@@ -5,6 +5,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const shippingSelect = document.getElementById("shipping-type");
   const payButton = document.querySelector(".btn-enviar");
 
+  if (window.location.href.indexOf("carrito.html") > -1) {
+    console.log("Cambiando altura del header");
+    const header = document.getElementById("header");
+    const texto = document.querySelector(".header__texto");
+
+    // Cambiar solo la altura si estamos en una pantalla grande
+    if (window.innerWidth >= 768) {
+      if (header) {
+        header.style.height = "200px";
+      }
+      if (texto) {
+        texto.style.display = "none";
+      }
+    }
+  }
+
   // Cargar carrito desde localStorage
   let cart = JSON.parse(localStorage.getItem("carrito")) || [];
 

@@ -34,18 +34,46 @@ p {
   text-align: center;
   text-transform: uppercase;
 }
-.ir-tienda {
-  text-decoration: none;
+.btn-ver {
   color: white;
   background-color: var(--celeste-agua);
-  border-radius: 1.5rem;
+  border-radius: 2rem;
   text-align: center;
   text-transform: uppercase;
-  transition: backgraund-color 0.2s, color -2s;
+  transition: background-color 0.2s, color 0.2s;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--celeste-agua);
+  cursor: pointer;
+  margin-right: 0.5rem;
+  height: 4rem;
+  align-content: center;
+  font-size: 1.2rem;
 }
-.ir-tienda:hover {
+
+.btn-ver:hover {
   background-color: white;
-  color: black;
+  color: var(--celeste-agua);
+  border-color: var(--celeste-agua);
+}
+.btn-comprar {
+  color: white;
+  background-color: var(--celeste-agua);
+  border-radius: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--celeste-agua);
+  cursor: pointer;
+  margin-right: 0.5rem;
+  height: 4rem;
+  align-content: center;
+  font-size: 1.2rem;
+}
+.btn-comprar:hover {
+  background-color: white;
+  color: var(--celeste-agua);
+  border-color: var(--celeste-agua);
 }
 
 @media (max-width: 768px) {
