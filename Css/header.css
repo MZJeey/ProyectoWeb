@@ -13,7 +13,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 9999; /* Asegura que el header quede sobre el contenido */
+  z-index: 9999;
 }
 
 .navSuperior {
@@ -63,6 +63,7 @@
 }
 .header {
   background-image: url(../Img/fishing-boat-5541327_1280.jpg);
+  background-color: #3b3b3ba1;
 }
 .header {
   height: 60rem;
@@ -72,9 +73,11 @@
 }
 .header__texto {
   text-align: center;
-  color: black;
-  margin-top: 8rem;
+  color: rgb(29, 15, 15);
+  margin-top: 10rem;
   text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3rem;
 }
 .no-margin {
   text-align: center;
@@ -115,8 +118,8 @@
 .lista-enlaces .nav-item a:hover,
 .nav-item a.active {
   color: var(--verde-oliva);
-  box-shadow: 0 0 1px rgba(0, 78, 137, 0.5);
-  outline: 1px solid rgba(0, 78, 137, 0.2);
+  box-shadow: 0 0 2px rgba(0, 78, 137, 0.5);
+  outline: 2px solid rgba(0, 78, 137, 0.2);
 }
 
 .lista-enlaces .nav-item {
