@@ -63,7 +63,8 @@
 }
 .header {
   background-image: url(../Img/fishing-boat-5541327_1280.jpg);
-  background-color: #3b3b3ba1;
+  background-color: rgba(0, 0, 0, 0.6); /* Cambiado a rgba */
+  background-blend-mode: multiply;
 }
 .header {
   height: 60rem;
@@ -301,7 +302,7 @@ p {
 
   .contenedor-productos {
     grid-template-columns: 1fr;
-    max-width: 370px; /* Máximo ancho en móviles */
+    max-width: 400px; /* Máximo ancho en móviles */
   }
 }
 
@@ -321,7 +322,8 @@ p {
 
   .btn-ver,
   .btn-comprar {
-    width: 80%;
+    width: 100%;
+    height: 5px;
     padding: 0.5rem;
     font-size: 0.9rem;
   }
