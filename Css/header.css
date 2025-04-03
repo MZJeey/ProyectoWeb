@@ -178,7 +178,124 @@
 }
 
 /* Tipos de productos */
+/* 
+.productos {
+  margin: 2rem;
+  padding: 1rem;
+  height: auto;
+}
+.contenedor-productos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.3rem;
+  margin: 2rem;
+  width: 100%;
+}
 
+@media (max-width: 576px) {
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    gap: 1.5rem;
+  }
+  .contenedor-productos .producto {
+    width: 330px;
+    text-align: center;
+    justify-content: center;
+  }
+}
+.imagen-producto {
+  max-width: 100%;
+  border-radius: 1.5rem;
+}
+.imagen-producto:hover {
+  transform: translate(-2px);
+}
+
+
+
+/* Estilo para el botón "Ver Producto" */
+
+.detalle-producto {
+  background-color: var(--azul-marino);
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  margin-top: -2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.detalle-producto h3,
+p {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn-ver {
+  color: white;
+  background-color: var(--celeste-agua);
+  border-radius: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--celeste-agua);
+  cursor: pointer;
+  margin-right: 0.5rem;
+  height: 5rem;
+  align-content: center;
+  font-size: 1.3rem;
+}
+
+.btn-ver:hover {
+  background-color: white;
+  color: var(--celeste-agua);
+  border-color: var(--celeste-agua);
+}
+.btn-comprar {
+  color: white;
+  background-color: var(--celeste-agua);
+  border-radius: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: background-color 0.2s, color 0.2s;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--celeste-agua);
+  cursor: pointer;
+  margin-right: 0.5rem;
+  height: 5rem;
+  align-content: center;
+  font-size: 1.3rem;
+}
+.btn-comprar:hover {
+  background-color: white;
+  color: var(--celeste-agua);
+  border-color: var(--celeste-agua);
+}
+
+/* @media (max-width: 768px) {
+  .contenedor-productos {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem;
+  }
+}
+*/
+/* Modal */
+.modla {
+  width: 1rem;
+}
+.modal-body i {
+  color: var(--verde-oliva);
+  border-radius: 50%;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* pruebas */
 /* Estilos base */
 .productos {
   margin: 2rem auto;
@@ -229,17 +346,13 @@
 
   .contenedor-productos {
     grid-template-columns: 1fr;
-    max-width: 350px; /* Máximo ancho en móviles */
+    max-width: 330px; /* Máximo ancho en móviles */
   }
 }
 
-/* Modal */
-.modla {
-  width: 1rem;
-}
-.modal-body i {
-  color: var(--verde-oliva);
-  border-radius: 50%;
-  font-size: 2.5rem;
-  text-align: center;
+.botones {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.5rem;
+  width: 100%;
 }
