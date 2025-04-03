@@ -192,11 +192,14 @@
 @media (max-width: 576px) {
   .contenedor-productos {
     grid-template-columns: 1fr;
-    margin: 1rem;
-    gap: 1rem;
+    margin: 1rem auto;
+    gap: 1.5rem;
+    width: 90%; /* Ocupa el 90% del ancho de pantalla */
+    max-width: 400px; /* Máximo ancho del contenedor */
   }
+
   .contenedor-productos .producto {
-    width: 400px;
+    width: 100%; /* Los productos se ajustan al contenedor */
   }
 }
 .imagen-producto {
