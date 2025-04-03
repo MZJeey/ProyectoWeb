@@ -53,10 +53,10 @@
 
 /* Nav inferior */
 .navbar-toggler {
-  width: 3rem; /* Ancho más grande */
-  height: 3rem; /* Alto más grande */
+  width: 5rem; /* Ancho más grande */
+  height: 5rem; /* Alto más grande */
   padding: 0.75rem; /* Espacio interno */
-  background-color: white; /* Color de fondo verde (cambia el código) */
+  color: white;
   border-radius: 0.5rem; /* Bordes redondeados */
   border: 2px solid red; /* Borde blanco */
 }
