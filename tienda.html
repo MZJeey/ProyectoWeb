@@ -99,76 +99,59 @@
  
     <main>
       
-      <!-- <section class="productos-tienda">
-        <div class="container-tienda">
-        <div style="margin-bottom: 2rem">
-          <h2
-            class="text-uppercase text-center"
-            style="letter-spacing: 5px; margin-bottom: 3rem"
-          >
-            Articulos
-          </h2>
-        </div>
-        <div class="d-flex justify-content-end align-items-end">
-              <select class="form-select" aria-label="Default select example" onchange="filterProducts(this.value)">
-              <option value="cañas">Cañas </option>
-              <option value="carretes">Carretes</option>
-               <option value="Señuelos_anzuelos">Señuelos y annzuelos</option>
-                <option value="accesorios">Otros Articulos</option>
-              </select>
-
-         </div>
-        </div>
-
-        <div id="contenedor-tienda" class="contenedor-tienda">
-         
-        </div>
-      </section> -->
-
-
-
-
+    
       <section class="productos-tienda">
-        <div style="margin-bottom: 2rem">
-          <h2 class="text-uppercase text-center" style="letter-spacing: 5px; margin-bottom: 3rem">
+        <div class="container">
+          <h2 class="text-uppercase text-center mb-4" style="letter-spacing: 5px;">
             Artículos
           </h2>
-        </div>
-        <div class="container">
-          <div class="row justify-content-between text-align-center gap-5">
+          
+          <div class="row align-items-center mb-4">
             <!-- Buscador -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <form class="d-flex me-2 w-75 buscador-producto" role="search">
-                <input
-                  class="form-control buscador"
-                  type="search"
-                  placeholder="Buscar producto"
-                  aria-label="Search"
-                  name="correoFooter"
-                />
-                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            <div class="col-md-6 mb-3 mb-md-0">
+              <form class="d-flex" role="search">
+                <div class="input-group">
+                  <input
+                    class="form-control buscador"
+                    type="search"
+                    placeholder="Buscar producto"
+                    aria-label="Buscar productos"
+                    name="busqueda"
+                    id="busquedaProductos"
+                  />
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </div>
               </form>
             </div>
-      
+            
             <!-- Filtro de Productos -->
-            <div class="col-12 col-md-6 col-lg-4">
-              <div class="d-flex justify-content-end align-items-end">
-                <select class="form-select" aria-label="Default select example" onchange="filtrarProducto(this.value)">
-                  <option value="">Todos</option>
-                  <option value="cañas">Cañas</option>
-                  <option value="carretes">Carretes</option>
-                  <option value="señuelos_anzuelos">Señuelos y anzuelos</option>
-                  <option value="accesorios">Otros Artículos</option>
-                </select>
+            <div class="col-md-6">
+              <div class="d-flex justify-content-md-end">
+                <div class="w-100 w-md-auto">
+                  <label for="filtroProductos" class="visually-hidden">Filtrar por categoría</label>
+                  <select 
+                    class="form-select" 
+                    id="filtroProductos"
+                    aria-label="Filtrar productos por categoría"
+                    onchange="filtrarProducto(this.value)"
+                  >
+                    <option value="">Todos los productos</option>
+                    <option value="cañas">Cañas</option>
+                    <option value="carretes">Carretes</option>
+                    <option value="señuelos_anzuelos">Señuelos y anzuelos</option>
+                    <option value="accesorios">Otros Artículos</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>
-      
+          
           <!-- Contenedor de Productos -->
-          <div id="contenedor-tienda" class="contenedor-tienda"></div>
+          <div id="contenedor-tienda" class="row">
+            <!-- Aquí irían los productos dinámicamente -->
+          </div>
         </div>
       </section>
-      
 
      
         <div class="container-buton">
