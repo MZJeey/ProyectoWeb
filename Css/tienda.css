@@ -65,42 +65,43 @@
   margin-top: 0.5rem;
 }
 
-/* Responsive */
-@media (max-width: 1024px) {
-  .contenedor-tienda {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
+/* ... (conserva los estilos anteriores) ... */
 
+/* Responsive - Móviles (2 columnas + más margen inferior) */
 @media (max-width: 768px) {
   .contenedor-tienda {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem; /* Más espacio entre productos */
-    padding: 1.5rem;
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    gap: 1.5rem; /* Espacio entre productos */
+    padding: 1rem;
+  }
+
+  /* Añade margen inferior a cada producto */
+  .contenedor-tienda > * {
+    margin-bottom: 2rem; /* Más espacio debajo de cada producto */
   }
 
   .detalle-producto {
-    padding: 1.25rem;
+    padding: 1rem;
     margin-top: -1.25rem;
   }
 
   .btn-producto {
-    padding: 0.5rem;
+    padding: 0.6rem;
     font-size: 0.9rem;
   }
 }
 
+/* Ajustes para pantallas muy pequeñas (ej: < 480px) */
 @media (max-width: 480px) {
   .contenedor-tienda {
-    gap: 1.5rem;
-    padding: 1rem;
-  }
-
-  .productos-tienda {
+    gap: 1rem;
     padding: 0.5rem;
   }
-}
 
+  .contenedor-tienda > * {
+    margin-bottom: 1.5rem; /* Margen un poco menor en móviles muy pequeños */
+  }
+}
 /* Buscador y filtros responsive */
 .buscador-producto {
   width: 100%;
