@@ -56,9 +56,8 @@
   width: 5rem; /* Ancho más grande */
   height: 5rem; /* Alto más grande */
   padding: 0.75rem; /* Espacio interno */
-  color: white;
   border-radius: 0.5rem; /* Bordes redondeados */
-  border: 2px solid red; /* Borde blanco */
+  border: 2px solid white; /* Borde blanco */
 }
 
 .header,
