@@ -301,7 +301,7 @@ p {
 
   .contenedor-productos {
     grid-template-columns: 1fr;
-    max-width: 330px; /* Máximo ancho en móviles */
+    max-width: 370px; /* Máximo ancho en móviles */
   }
 }
 
@@ -321,7 +321,7 @@ p {
 
   .btn-ver,
   .btn-comprar {
-    width: 100%;
+    width: 80%;
     padding: 0.5rem;
     font-size: 0.9rem;
   }
