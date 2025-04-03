@@ -189,7 +189,13 @@
   gap: 1.3rem;
   margin: 2rem;
 }
-
+@media (max-width: 576px) {
+  .contenedor-productos {
+    grid-template-columns: 1fr;
+    margin: 1rem;
+    gap: 1rem;
+  }
+}
 .imagen-producto {
   max-width: 100%;
   border-radius: 1.5rem;
