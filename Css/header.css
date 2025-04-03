@@ -195,6 +195,11 @@
     margin: 1rem;
     gap: 1rem;
   }
+  .contenedor-productos .producto {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 300px; /* Máximo ancho para que no se vea muy estirado */
+    margin: 0 auto; /* Centrado si es necesario */
+  }
 }
 .imagen-producto {
   max-width: 100%;
