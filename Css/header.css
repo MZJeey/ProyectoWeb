@@ -312,3 +312,17 @@ p {
   width: 100%;
   margin-bottom: 5px;
 }
+
+@media (max-width: 576px) {
+  .botones {
+    grid-template-columns: 1fr !important; /* Fuerza 1 columna */
+    gap: 0.5rem;
+  }
+
+  .btn-ver,
+  .btn-comprar {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
