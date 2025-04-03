@@ -63,10 +63,10 @@
 }
 .header {
   background-image: url(../Img/fishing-boat-5541327_1280.jpg);
-  background-color: rgba(0, 0, 0, 0); /* Cambiado a rgba */
+  background-color: rgba(5, 5, 5, 0.726); /* Cambiado a rgba */
   background-blend-mode: multiply;
 }
-.header {
+s .header {
   height: 60rem;
   background-size: cover;
   background-repeat: no-repeat;
