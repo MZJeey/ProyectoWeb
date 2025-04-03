@@ -229,7 +229,7 @@
 
   .contenedor-productos {
     grid-template-columns: 1fr;
-    max-width: 330px; /* Máximo ancho en móviles */
+    max-width: 350px; /* Máximo ancho en móviles */
   }
 }
 
