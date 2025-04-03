@@ -178,109 +178,134 @@
 }
 
 /* Tipos de productos */
-.productos {
+/* .productos {
   margin: 2rem;
   padding: 1rem;
   height: auto;
+} */
+/* Contenedor principal */
+.productos {
+  margin: 2rem auto; /* Centrado horizontal */
+  padding: 1rem;
+  max-width: 1400px; /* Máximo ancho para evitar que se estire demasiado */
 }
+
+/* Grid de productos */
 .contenedor-productos {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.3rem;
-  margin: 2rem;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(250px, 1fr)
+  ); /* Responsive automático */
+  gap: 1.5rem;
+  margin: 0 auto; /* Centrado */
+  padding: 1rem;
+  width: 100%;
+  max-width: 1400px; /* Límite máximo */
 }
-@media (max-width: 576px) {
-  .contenedor-productos {
-    grid-template-columns: 1fr;
-    margin: 1rem;
-    gap: 1.5rem;
-  }
-  .contenedor-productos .producto {
-    width: 330px;
-    text-align: center;
-    justify-content: center;
-  }
-}
-.imagen-producto {
-  max-width: 100%;
+
+/* Estilos para cada producto */
+.contenedor-productos .producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
   border-radius: 1.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 100%; /* Ajuste automático */
+  max-width: 330px; /* Máximo ancho en móviles */
+  margin: 0 auto; /* Centrado en móviles */
 }
-.imagen-producto:hover {
-  transform: translate(-2px);
+
+.contenedor-productos .producto:hover {
+  transform: translateY(-5px); /* Efecto hover */
 }
+
+/* Imagen del producto */
+.imagen-producto {
+  width: 100%;
+  height: auto;
+  border-radius: 1.5rem 1.5rem 0 0;
+  object-fit: cover;
+}
+
+/* Detalles del producto */
 .detalle-producto {
   background-color: var(--azul-marino);
   color: white;
-  padding: 0.5rem;
-  border-radius: 1rem;
-  margin-top: -2rem;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
 .detalle-producto h3,
-p {
-  text-align: center;
+.detalle-producto p {
+  margin: 0.5rem 0;
   text-transform: uppercase;
-}
-/* Estilo para el botón "Ver Producto" */
-.btn-ver {
-  color: white;
-  background-color: var(--celeste-agua);
-  border-radius: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background-color 0.2s, color 0.2s;
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--celeste-agua);
-  cursor: pointer;
-  margin-right: 0.5rem;
-  height: 5rem;
-  align-content: center;
-  font-size: 1.3rem;
 }
 
-.btn-ver:hover {
-  background-color: white;
-  color: var(--celeste-agua);
-  border-color: var(--celeste-agua);
-}
-.btn-comprar {
-  color: white;
-  background-color: var(--celeste-agua);
-  border-radius: 2rem;
-  text-align: center;
-  text-transform: uppercase;
-  transition: background-color 0.2s, color 0.2s;
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--celeste-agua);
-  cursor: pointer;
-  margin-right: 0.5rem;
-  height: 5rem;
-  align-content: center;
-  font-size: 1.3rem;
-}
-.btn-comprar:hover {
-  background-color: white;
-  color: var(--celeste-agua);
-  border-color: var(--celeste-agua);
-}
-
-@media (max-width: 768px) {
-  .contenedor-productos {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
-  }
-}
+/* Botones */
 .botones {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
+  padding: 0.5rem;
   width: 100%;
+}
+
+.btn-ver,
+.btn-comprar {
+  color: white;
+  background-color: var(--celeste-agua);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  padding: 0.75rem;
+  border: 2px solid var(--celeste-agua);
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.btn-ver:hover,
+.btn-comprar:hover {
+  background-color: white;
+  color: var(--celeste-agua);
+}
+
+/* Media Queries para ajustes específicos */
+@media (max-width: 768px) {
+  .contenedor-productos {
+    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .productos {
+    margin: 1rem auto;
+    padding: 0.5rem;
+  }
+
+  .contenedor-productos {
+    grid-template-columns: 1fr; /* 1 columna en móviles */
+    gap: 1rem;
+  }
+
+  .contenedor-productos .producto {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .botones {
+    grid-template-columns: 1fr; /* Botones en columna en móviles */
+  }
+
+  .btn-ver,
+  .btn-comprar {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
 }
 /* Modal */
 .modla {
