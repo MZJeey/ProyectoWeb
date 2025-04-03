@@ -63,7 +63,7 @@
 }
 .header {
   background-image: url(../Img/fishing-boat-5541327_1280.jpg);
-  background-color: rgba(0, 0, 0, 0.6); /* Cambiado a rgba */
+  background-color: rgba(0, 0, 0, 0); /* Cambiado a rgba */
   background-blend-mode: multiply;
 }
 .header {
@@ -74,7 +74,7 @@
 }
 .header__texto {
   text-align: center;
-  color: rgb(29, 15, 15);
+  color: white;
   margin-top: 10rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -302,7 +302,7 @@ p {
 
   .contenedor-productos {
     grid-template-columns: 1fr;
-    max-width: 400px; /* Máximo ancho en móviles */
+    max-width: 500px; /* Máximo ancho en móviles */
   }
 }
 
