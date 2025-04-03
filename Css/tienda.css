@@ -94,6 +94,8 @@
 /* Ajustes para pantallas muy pequeñas (ej: < 480px) */
 @media (max-width: 480px) {
   .contenedor-tienda {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     padding: 0.5rem;
   }
