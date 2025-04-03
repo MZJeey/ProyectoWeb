@@ -177,43 +177,6 @@
   padding: 1rem;
 }
 
-/* Tipos de productos */
-/* 
-.productos {
-  margin: 2rem;
-  padding: 1rem;
-  height: auto;
-}
-.contenedor-productos {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1.3rem;
-  margin: 2rem;
-  width: 100%;
-}
-
-@media (max-width: 576px) {
-  .contenedor-productos {
-    grid-template-columns: 1fr;
-    margin: 1rem;
-    gap: 1.5rem;
-  }
-  .contenedor-productos .producto {
-    width: 330px;
-    text-align: center;
-    justify-content: center;
-  }
-}
-.imagen-producto {
-  max-width: 100%;
-  border-radius: 1.5rem;
-}
-.imagen-producto:hover {
-  transform: translate(-2px);
-}
-
-
-
 /* Estilo para el botón "Ver Producto" */
 
 .detalle-producto {
@@ -347,4 +310,5 @@ p {
   grid-template-columns: repeat(2, 1fr);
   gap: 0.5rem;
   width: 100%;
+  margin-bottom: 5px;
 }
