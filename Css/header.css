@@ -296,7 +296,7 @@ p {
 
 @media (max-width: 576px) {
   .productos {
-    padding: 0 1rem;
+    padding: 1rem;
   }
 
   .contenedor-productos {
