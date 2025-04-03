@@ -70,7 +70,7 @@
 /* Responsive - Móviles (2 columnas + más margen inferior) */
 @media (max-width: 768px) {
   .contenedor-tienda {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en móviles */
+    grid-template-columns: repeat(4, 1fr); /* 2 columnas en móviles */
     gap: 1.5rem; /* Espacio entre productos */
     padding: 1rem;
   }
