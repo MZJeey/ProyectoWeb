@@ -51,7 +51,7 @@
   background-color: var(--celeste-agua);
 }
 
-/* Controles de búsqueda y filtro */
+/* Controles de búsqueda y filtro - Versión responsive */
 .filtros-busqueda {
   display: flex;
   justify-content: space-between;
@@ -71,14 +71,8 @@
   padding: 0.8rem 1.2rem;
   border: 2px solid var(--gris-medio);
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 1rem; /* Tamaño base */
   transition: all 0.3s ease;
-}
-
-.buscador:focus {
-  outline: none;
-  border-color: var(--celeste-agua);
-  box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.3);
 }
 
 .btn-buscar {
@@ -88,18 +82,10 @@
   padding: 0.8rem 1.5rem;
   border-radius: 30px;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1rem; /* Tamaño base */
   font-weight: 600;
   transition: all 0.3s ease;
   margin-left: -50px;
-}
-
-.btn-buscar:hover {
-  background-color: #4299e1;
-}
-
-.filtro-container {
-  min-width: 250px;
 }
 
 .filtro-productos {
@@ -107,9 +93,47 @@
   padding: 0.8rem 1rem;
   border: 2px solid var(--gris-medio);
   border-radius: 30px;
-  font-size: 1rem;
+  font-size: 1rem; /* Tamaño base */
   background-color: white;
   cursor: pointer;
+}
+
+/* Aumento de tamaño en pantallas pequeñas */
+@media (max-width: 768px) {
+  .buscador,
+  .btn-buscar,
+  .filtro-productos {
+    font-size: 1.2rem; /* 20% más grande en móviles */
+    padding: 1rem 1.5rem; /* Padding más grande para mejor tacto */
+  }
+
+  .buscador-container,
+  .filtro-container {
+    min-width: 100%; /* Ocupan todo el ancho */
+  }
+
+  .btn-buscar {
+    padding: 1rem 2rem; /* Botón más grande */
+    margin-left: -60px; /* Ajuste por el aumento de tamaño */
+  }
+}
+
+/* Ajustes extra para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .buscador,
+  .filtro-productos {
+    font-size: 1.3rem; /* Tamaño extra para mejor legibilidad */
+  }
+
+  .btn-buscar {
+    font-size: 1.25rem;
+    padding: 1.1rem 2.2rem;
+  }
+
+  .filtros-busqueda {
+    gap: 1rem; /* Menor espacio entre elementos */
+    margin-bottom: 2rem;
+  }
 }
 
 /* Grid de productos */
