@@ -9,130 +9,27 @@
     0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
-/* Reset básico */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Estilos base */
-.productos-tienda {
-  padding: 3rem 1rem;
-  background-color: var(--gris-claro);
-}
-
-.container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-/* Header de sección */
-.productos-tienda h2 {
-  text-transform: uppercase;
-  text-align: center;
-  margin-bottom: 3rem;
-  letter-spacing: 5px;
-  color: var(--azul-marino);
-  font-size: 2.2rem;
-  position: relative;
-  padding-bottom: 1rem;
-}
-
-.productos-tienda h2::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 100px;
-  height: 3px;
-  background-color: var(--celeste-agua);
-}
-
-/* Controles de búsqueda y filtro - Versión responsive */
-.filtros-busqueda {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 3rem;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.buscador-container {
-  flex: 1;
-  min-width: 300px;
-}
-
+#filtroProductos,
 .buscador {
-  width: 100%;
-  padding: 0.8rem 1.2rem;
-  border: 2px solid var(--gris-medio);
-  border-radius: 30px;
-  font-size: 1rem; /* Tamaño base */
-  transition: all 0.3s ease;
+  height: 50px;
+  font-size: 2rem;
 }
 
-.btn-buscar {
-  background-color: var(--celeste-agua);
-  color: white;
-  border: none;
-  padding: 0.8rem 1.5rem;
-  border-radius: 30px;
-  cursor: pointer;
-  font-size: 1rem; /* Tamaño base */
-  font-weight: 600;
-  transition: all 0.3s ease;
-  margin-left: -50px;
-}
-
-.filtro-productos {
-  width: 100%;
-  padding: 0.8rem 1rem;
-  border: 2px solid var(--gris-medio);
-  border-radius: 30px;
-  font-size: 1rem; /* Tamaño base */
-  background-color: white;
-  cursor: pointer;
-}
-
-/* Aumento de tamaño en pantallas pequeñas */
+/* Ajustar en pantallas más pequeñas */
 @media (max-width: 768px) {
-  .buscador,
-  .btn-buscar,
-  .filtro-productos {
-    font-size: 1.2rem; /* 20% más grande en móviles */
-    padding: 1rem 1.5rem; /* Padding más grande para mejor tacto */
-  }
-
-  .buscador-container,
-  .filtro-container {
-    min-width: 100%; /* Ocupan todo el ancho */
-  }
-
-  .btn-buscar {
-    padding: 1rem 2rem; /* Botón más grande */
-    margin-left: -60px; /* Ajuste por el aumento de tamaño */
+  #filtroProductos,
+  .buscador {
+    height: 40px;
+    font-size: 1.5rem;
   }
 }
 
-/* Ajustes extra para pantallas muy pequeñas */
-@media (max-width: 480px) {
-  .buscador,
-  .filtro-productos {
-    font-size: 1.3rem; /* Tamaño extra para mejor legibilidad */
-  }
-
-  .btn-buscar {
-    font-size: 1.25rem;
-    padding: 1.1rem 2.2rem;
-  }
-
-  .filtros-busqueda {
-    gap: 1rem; /* Menor espacio entre elementos */
-    margin-bottom: 2rem;
+@media (max-width: 576px) {
+  /* Móviles más pequeños */
+  #filtroProductos,
+  .buscador {
+    height: 35px;
+    font-size: 1.2rem;
   }
 }
 
