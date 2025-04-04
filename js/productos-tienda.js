@@ -84,7 +84,7 @@ function mostrarProductos(productos) {
           <div class="container-buton">
             <button class="btn-producto" onclick="verDetalle(${
               producto.id
-            }, event)">Ver</button>
+            }, event)">Ver Producto</button>
             <button class="btn-compra" onclick="comprarAhora(${
               producto.id
             }, event)">Comprar</button>

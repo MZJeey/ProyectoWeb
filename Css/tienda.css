@@ -195,7 +195,7 @@
   background-color: var(--celeste-agua);
   color: var(--blanco);
   border: none;
-  border-radius: 8px;
+  border-radius: 2rem;
   padding: 0.9rem;
   font-size: 1.5rem;
   font-weight: 600;
@@ -211,7 +211,7 @@
   background-color: var(--celeste-agua);
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 2rem;
   padding: 1rem;
   font-size: 1.5rem;
   font-weight: 700;
