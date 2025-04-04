@@ -197,7 +197,7 @@
   background-color: var(--azul-marino);
   color: white;
   padding: 0.5rem;
-  border-radius: 1rem;
+  border-radius: 0 0 1rem 1rem;
   margin-top: -2rem;
   position: relative;
   display: flex;

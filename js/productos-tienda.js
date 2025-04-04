@@ -78,14 +78,14 @@ function mostrarProductos(productos) {
         <img class="imagen-producto" src="${producto.imagen}" alt="${
         producto.categoria.nombre
       }" loading="lazy">
-        <div class="detalle-producto">
+        <div class="detalle-producto-tienda">
           <h3>${producto.categoria.nombre}</h3>
-          <p>$${producto.precio.toLocaleString()}</p>
+          <p>${producto.precio.toLocaleString()}</p>
           <div class="container-buton">
             <button class="btn-producto" onclick="verDetalle(${
               producto.id
             }, event)">Ver</button>
-            <button class="btn-producto" onclick="comprarAhora(${
+            <button class="btn-compra" onclick="comprarAhora(${
               producto.id
             }, event)">Comprar</button>
           </div>
