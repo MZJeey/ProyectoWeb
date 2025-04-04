@@ -1,41 +1,39 @@
-/* Contenedor principal del producto */
 .product-detail {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 20px;
-  position: relative; /* Para poder usar z-index más tarde */
+  position: relative;
+  margin: 0;
 }
 
-/* Imagen del producto */
 .detalle-imagen {
   margin-top: 5rem;
   max-width: 80%;
-  border-radius: 12px; /* Borde redondeado */
+  border-radius: 12px;
   object-fit: cover;
-  border: 2px solid rgba(0, 0, 0, 0.1); /* Borde sutil y transparente */
-  box-shadow: none; /* Sin sombra */
-  transition: transform 0.3s ease-in-out; /* Animación al pasar el mouse */
-  display: block; /* Asegura que la imagen es un bloque */
-  margin-left: auto; /* Centra la imagen en su contenedor */
-  margin-right: auto; /* Centra la imagen en su contenedor */
-  position: relative; /* Necesario para colocar la categoría encima */
-  z-index: 1; /* Esto hace que la imagen quede detrás de la categoría */
+  border: 2px solid rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  transition: transform 0.3s ease-in-out;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  z-index: 1;
 }
 
 .detalle-imagen:hover {
-  transform: scale(1.02); /* Leve aumento al hacer hover */
+  transform: scale(1.02);
 }
 
-/* Contenedor de detalles */
 .otros-detalles {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Cambia de center a flex-start */
+  justify-content: flex-start;
   padding: 20px;
   font-size: 3rem;
-  margin-top: 6rem; /* Usa unidades rem para mejor escalabilidad */
-  gap: 2rem; /* Espacio consistente entre elementos hijos */
+  margin-top: 6rem;
+  gap: 2rem;
 }
 
 .justificar {
@@ -45,53 +43,52 @@
   line-height: 1.6;
 }
 
-/* Categoría */
-.detalle-articulos .categoria {
-  margin-top: 1rem;
-  font-size: 2rem;
-  color: white;
-  font-style: italic;
+.btn-agregar,
+.btn-regresar {
+  padding: 12px 20px;
+  font-size: 1.2rem;
   font-weight: bold;
-  text-transform: uppercase;
   text-align: center;
-  padding: 15px 30px;
-  background: linear-gradient(
-    135deg,
-    #3a7ca5,
-    #76c7c0
-  ); /* Degradado de azul y verde agua */
-  border-radius: 12px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  position: absolute; /* Posiciona la categoría encima de la imagen */
-  top: 0; /* Pone la categoría arriba */
-  z-index: 2; /* Hace que la categoría esté encima de la imagen */
+  color: #fff;
+  background: #007bff;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+  margin: 0 10px;
+  margin-top: 6rem;
 }
 
-/* Responsividad */
+.btn-agregar:hover,
+.btn-regresar:hover {
+  background: #0056b3;
+  transform: scale(1.08);
+  box-shadow: 0px 5px 15px rgba(0, 91, 187, 0.4);
+}
+
+.btn-agregar:active,
+.btn-regresar:active {
+  transform: scale(1);
+  box-shadow: 0px 2px 8px rgba(0, 91, 187, 0.3);
+}
+
 @media (max-width: 768px) {
   .product-detail {
     display: grid;
-    grid-template-columns: 1fr; /* Cambia a una sola columna */
-    gap: 10px; /* Espacio entre elementos */
+    grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .detalle-articulos .categoria {
-    order: -1; /* Mueve la categoría arriba del contenido */
+    order: -1;
     margin-top: 2px;
     text-align: center;
-    margin-bottom: 5px;
   }
-}
-
 
   .detalle-imagen {
-    max-width: 100%; /* Asegura que la imagen ocupe todo el espacio disponible */
+    margin-top: 1rem;
+    max-width: 100%;
   }
 
   .nombre {
