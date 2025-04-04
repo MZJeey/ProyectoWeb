@@ -11,13 +11,14 @@ document.addEventListener("DOMContentLoaded", function () {
         <img class="detalle-imagen" src="${producto.imagen}" alt="${producto.categoria.nombre}" />
       </div>
       <div class="detalle-articulos">
+        <h1 class="justificar categoria">${producto.categoria.id}</h1>
         <div class="otros-detalles">
-          <h1 class="justificar categoria">${producto.categoria.id}</h1>
           <h1 class="justificar">Nombre: ${producto.categoria.nombre}</h1>
           <h2 class="justificar">Precio: ${producto.precio}</h2>
           <h2 class="justificar">Descripción: ${producto.categoria.descripcion}</h2>
-          <div class="agregar">
+          <div class="contenedor-botones">
             <button class="btn-agregar" id="btn-agregar">Agregar al carrito</button>
+             <button class="btn-regresar" id="btn-agregar">Regresar</button>
           </div>
         </div>
       </div>
