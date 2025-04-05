@@ -16,6 +16,69 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
    <!-- jQuey -->
+    <!-- Api correo -->
+     
+Lista de supresiones
+Kit de desarrollo de software (SDK)
+
+Instalación
+Opciones
+emailjs.init
+emailjs.send
+emailjs.sendForm
+API REST
+
+/enviar
+/enviar formulario
+/historia
+Preguntas frecuentes
+
+¿Puedo usar EmailJS gratis?
+¿No puedo utilizar servicios como Sendgrid o Mandrill directamente?
+¿EmailJS expone mi cuenta al spam?
+¿Es posible enviar archivos adjuntos incrustados?
+¿Puedo enviar correos electrónicos HTML?
+¿Qué pasa con los correos electrónicos de texto simple?
+¿Puedo enviar HTML desde mi código?
+¿Puedo agregar mi dominio a la lista de permitidos?
+¿Está bien exponer mi clave pública?
+¿Soportáis plataformas móviles?
+Ejemplos
+
+Reaccionar
+Esbelto
+Vue.js
+Angular
+Aleteo
+React Native
+Flujo web
+FlutterFlow
+Código Wix
+#Instalación
+Esta guía repasa los distintos métodos utilizados para instalar EmailJS SDK.
+
+#Gestor de paquetes
+Si está usando marcos modernos u otra forma de empaquetar su aplicación, puede usar uno de los administradores de paquetes para instalar EmailJS SDK.
+
+Instalar el SDK de EmailJS usandonpm(abre nueva ventana):
+
+$ npm install --save @emailjs/browser
+Alternativamente, también puede instalar el SDK a través de Hilo(abre nueva ventana):
+
+$ yarn add @emailjs/browser
+#Script del navegador
+Para comenzar a utilizar EmailJS en su sitio web, simplemente pegue el siguiente fragmento de código antes de la etiqueta de cierre, con la clave pública correcta:
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+     emailjs.init({
+       publicKey: "G5aiXIx2Aw1fqfmBi",
+     });
+  })();
+</script>
 </head>
 <body>
 
