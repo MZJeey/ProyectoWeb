@@ -18,67 +18,27 @@
    <!-- jQuey -->
     <!-- Api correo -->
      
-Lista de supresiones
-Kit de desarrollo de software (SDK)
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('G5aiXIx2Aw1fqfmBi')
+  </script>
 
-Instalación
-Opciones
-emailjs.init
-emailjs.send
-emailjs.sendForm
-API REST
 
-/enviar
-/enviar formulario
-/historia
-Preguntas frecuentes
 
-¿Puedo usar EmailJS gratis?
-¿No puedo utilizar servicios como Sendgrid o Mandrill directamente?
-¿EmailJS expone mi cuenta al spam?
-¿Es posible enviar archivos adjuntos incrustados?
-¿Puedo enviar correos electrónicos HTML?
-¿Qué pasa con los correos electrónicos de texto simple?
-¿Puedo enviar HTML desde mi código?
-¿Puedo agregar mi dominio a la lista de permitidos?
-¿Está bien exponer mi clave pública?
-¿Soportáis plataformas móviles?
-Ejemplos
 
-Reaccionar
-Esbelto
-Vue.js
-Angular
-Aleteo
-React Native
-Flujo web
-FlutterFlow
-Código Wix
-#Instalación
-Esta guía repasa los distintos métodos utilizados para instalar EmailJS SDK.
 
-#Gestor de paquetes
-Si está usando marcos modernos u otra forma de empaquetar su aplicación, puede usar uno de los administradores de paquetes para instalar EmailJS SDK.
 
-Instalar el SDK de EmailJS usandonpm(abre nueva ventana):
 
-$ npm install --save @emailjs/browser
-Alternativamente, también puede instalar el SDK a través de Hilo(abre nueva ventana):
+<!-- 
+Api para el mapa -->
+<link
+  rel="stylesheet"
+  type="text/css"
+  href="https://api.tomtom.com/maps-sdk-for-web/cdn/6.x/6.25.0/maps/maps.css"
+/>
 
-$ yarn add @emailjs/browser
-#Script del navegador
-Para comenzar a utilizar EmailJS en su sitio web, simplemente pegue el siguiente fragmento de código antes de la etiqueta de cierre, con la clave pública correcta:
-
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-</script>
-<script type="text/javascript">
-  (function(){
-     emailjs.init({
-       publicKey: "G5aiXIx2Aw1fqfmBi",
-     });
-  })();
-</script>
 </head>
 <body>
 
@@ -108,143 +68,182 @@ Para comenzar a utilizar EmailJS en su sitio web, simplemente pegue el siguiente
   </header>
     
 <main>
-  <section class="informacion-contacto">
-    <div class="container-fluid">
-      <div class="row columna">
-        <!-- Columna del formulario -->
-        <div class="col-lg-6 col-12 info-box" id="columna-formulario">
-          <div class="card">
-            <div class="card-header">
-              <strong>Contáctanos</strong>
-            </div>
-            <div class="card-body">
-              <form action="https://formsubmit.co/jasonezezel@gmail.com"  id="formulario" method="post">
-                <!-- Campo Nombre -->
-                <div class="row form-group">
-                  <div class="col-md-3">
-                    <label for="inputNombre" class="form-control-label font-medium">Nombre</label>
-                  </div>
-                  <div class="col-12 col-md-9">
-                    <input type="text" id="Nombre" name="inputNombre" placeholder="Ingresa tu nombre" class="form-control" name="name" />
-                  
-                  </div>
-                </div>
-  
-                <!-- Campo Email -->
-                <div class="row form-group">
-                  <div class="col-md-3">
-                    <label for="inputEmail" class="form-control-label font-medium">Email</label>
-                  </div>
-                  <div class="col-12 col-md-9">
-                    <input type="email" id="Email" name="inputEmail" placeholder="Ingresa tu email" class="form-control" name="email" />
-                  
-                  </div>
-                </div>
-  
-                <!-- Campo Comentario -->
-                <div class="row form-group">
-                  <div class="col-md-3">
-                    <label for="inputComentario" class="form-control-label font-medium" >Comentario</label>
-                  </div>
-                  <div class="col-12 col-md-9">
-                    <textarea name="inputComentario" id="Comentario" rows="9" placeholder="Ingresa tu comentario o solicitud" class="form-control" name="mensaje"></textarea>
-                  </div>
-                </div>
-                <div class="card-footer">
-                  <button type="submit" class="btn btn-primary btn-sm" id="submitButton">
-                   
-                    <input type="hidden" name="_next" value="http://127.0.0.1:5501/contacto.html">
-                    <input type="hidden" name="_captcha" value="false">
-                    <i class="bi bi-send"></i> Enviar
-           
-                  </button>
-                  <button type="reset" class="btn btn-danger btn-sm" id="redButton">
-                    <i class="bi bi-exclamation-lg"></i> Eliminar
-                  </button>
-                </div>
-              </form>
-              <div id="alert-container"></div> <!-- Contenedor para las alertas -->
-
-              <div id="spinner" class="hidden justify-center mt-10">
-                <div class="sk-chase">
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                    <div class="sk-chase-dot"></div>
-                </div>
-            </div>
-            </div>
-            
-  
-            <!-- Botones de Acción -->
-           
-            
+  <div class="formbold-main-wrapper">
+    <!-- Author: FormBold Team -->
+    <!-- Learn More: https://formbold.com -->
+    <div class="formbold-form-wrapper">
+      <form id="miFormulario" method="POST"> <!-- Sin action -->
+          <div class="formbold-steps">
+              <ul>
+                  <li class="formbold-step-menu1 active">
+                      <span>1</span>
+                      Registro
+                  </li>
+                  <li class="formbold-step-menu2">
+                      <span>2</span>
+                      Mensaje
+                  </li>
+                  <li class="formbold-step-menu3">
+                      <span>3</span>
+                      Confirmación
+                  </li>
+              </ul>
           </div>
-        </div>
   
-        <!-- Columna de información -->
-        <div class="col-lg-6 col-12 info-principal">
-          <div class="container info-box">
-            <div class="row">
-              <div class="col-md-6 info">
-                <div class="card info-extra">
-                  <i class="bi bi-geo-alt"></i>
-                  <h3>Estamos ubicados</h3>
-                  <p>Frente al Parque Juan SantaMaria,Alajuela, Costa Rica</p>
-                </div>
+          <div class="formbold-form-step-1 active">
+            <div class="formbold-input-flex">
+              <div>
+                  <label for="firstname" class="formbold-form-label"> Nombre </label>
+                  <input
+                  type="text"
+                  name="firstname"
+                  placeholder="Juan"
+                  id="firstname"
+                  class="formbold-form-input"
+                  />
               </div>
-              <div class="col-md-6 info">
-                <div class="card info-extra">
-                  <i class="bi bi-telephone-fill"></i>
-                  <h3 class="pb-4">Llámanos</h3>
-                  <p>+506 7179-5695</p>
-                </div>
+              <div>
+                  <label for="lastname" class="formbold-form-label"> Apellido </label>
+                  <input
+                  type="text"
+                  name="lastname"
+                  placeholder="Pérez"
+                  id="lastname"
+                  class="formbold-form-input"
+                  />
               </div>
-              <div class="col-md-6 info">
-                <div class="card info-extra">
-                  <i class="bi bi-envelope"></i>
-                  <h3>Email</h3>
-                  <p>goldFish@gmail.com</p>
+            </div>
+    
+            <div class="formbold-input-flex">
+                <div>
+                    <label for="dob" class="formbold-form-label"> Fecha de nacimiento </label>
+                    <input 
+                             type="date" 
+                             name="dob" 
+                                id="dob" 
+                              class="formbold-form-input"
+                                            />
+                         <input type="hidden" name="edad" id="edad">
                 </div>
-              </div>
-              <div class="col-md-6 info">
-                <div class="card info-extra">
-                  <i class="bi bi-clock-history"></i>
-                  <h3>Horarios</h3>
-                  <p>L/V de 8:00 - 17:00</p>
+                <div>
+                    <label for="email" class="formbold-form-label"> Correo electrónico </label>
+                    <input
+                    type="email"
+                    name="email"
+                    placeholder="ejemplo@correo.com"
+                    id="email"
+                    class="formbold-form-input"
+                    />
                 </div>
-              </div>
-              <div class="col-md-12 info">
-                <div class="card info-extra">
-                  <i class="bi bi-hand-thumbs-up"></i>
-                  <h3>Seguir</h3>
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-3 seguir">
-                        <a href="#"> <i class="bi bi-facebook"></i> Facebook</a>
-                      </div>
-                      <div class="col-3 seguir">
-                        <a href="#"><i class="bi bi-instagram"></i> Instagram</a>
-                      </div>
-                      <div class="col-3 seguir">
-                        <a href="#"> <i class="bi bi-twitter"></i> Twitter</a>
-                      </div>
-                      <div class="col-3 seguir">
-                        <a href="#"><i class="bi bi-whatsapp"></i> WhatsApp</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            </div>
+    
+            <div>
+                <label for="address" class="formbold-form-label"> Dirección </label>
+                <input
+                type="text"
+                name="address"
+                id="address"
+                placeholder="Calle Falsa 123, Ciudad, Código Postal"
+                class="formbold-form-input"
+                />
             </div>
           </div>
-        </div>
-      </div>
+  
+          <div class="formbold-form-step-2">
+            <div>
+              <label for="message" class="formbold-form-label"> Mensaje </label>
+              <textarea
+                rows="6"
+                name="message"
+                id="message"
+                placeholder="Escribe tu mensaje aquí"
+                class="formbold-form-input"
+              ></textarea>
+            </div>
+          </div>
+  
+          <div class="formbold-form-step-3">
+            <div class="formbold-form-confirm">
+              <p>
+                Por favor confirma que la información proporcionada es correcta y que deseas continuar con el proceso.
+              </p>
+  
+              <div>
+                <button class="formbold-confirm-btn active">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" fill="white" stroke="#DDE3EC"/>
+                  <g clip-path="url(#clip0_1667_1314)">
+                  <path d="M9.83343 12.8509L15.1954 7.48828L16.0208 8.31311L9.83343 14.5005L6.12109 10.7882L6.94593 9.96336L9.83343 12.8509Z" fill="#536387"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1667_1314">
+                  <rect width="14" height="14" fill="white" transform="translate(4 4)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  Sí, acepto
+                </button>
+  
+                <button class="formbold-confirm-btn">
+                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="11" cy="11" r="10.5" fill="white" stroke="#DDE3EC"/>
+                  <g clip-path="url(#clip0_1667_1314)">
+                  <path d="M9.83343 12.8509L15.1954 7.48828L16.0208 8.31311L9.83343 14.5005L6.12109 10.7882L6.94593 9.96336L9.83343 12.8509Z" fill="#536387"/>
+                  </g>
+                  <defs>
+                  <clipPath id="clip0_1667_1314">
+                  <rect width="14" height="14" fill="white" transform="translate(4 4)"/>
+                  </clipPath>
+                  </defs>
+                  </svg>
+                  No, rechazo
+                </button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="formbold-form-btn-wrapper">
+            <button class="formbold-back-btn">
+              Atrás
+            </button>
+  
+            <button class="formbold-btn">
+                Siguiente
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1675_1807)">
+                <path d="M10.7814 7.33312L7.20541 3.75712L8.14808 2.81445L13.3334 7.99979L8.14808 13.1851L7.20541 12.2425L10.7814 8.66645H2.66675V7.33312H10.7814Z" fill="white"/>
+                </g>
+                <defs>
+                <clipPath id="clip0_1675_1807">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+                </svg>
+            </button>
+          </div>
+      </form>
     </div>
-  </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
         <!-- Sección del mapa con tamaño ajustado -->
         <!-- <div class="card-body">
           <h3 class="text-center">Nuestra ubicación</h3>
@@ -256,11 +255,26 @@ Para comenzar a utilizar EmailJS en su sitio web, simplemente pegue el siguiente
   
         <!-- </div> -->
 
-        <div id="map" class="map">
+        <!-- <div id="map" class="map">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d125727.79520382611!2d-84.35793635664061!3d10.017386099999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8fa0f9129cd2219f%3A0x9ab39066bdc8eb57!2sMi%20Pesca%20Alajuela!5e0!3m2!1ses-419!2scr!4v1742435437096!5m2!1ses-419!2scr" width="1300" height="500" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
-      </div>
+      </div> -->
+<!-- 
+      <div id="map" style="width: 100%; height: 100%;"></div>
+      <script type="text/javascript" >
+        let center = [4, 44.4]; // [longitude, latitude]
+        var map = tt.map({
+          key: "5FGLIS5mHJeouZ5mow8Q3nAMSAuAbhYh",
+          container: "map",
+          center: center,
+          zoom: 15,
+        });
+        
+        map.on('load', () => {
+          new tt.Marker().setLngLat(center).addTo(map); // Pass the full center array
+        });
+      </script> -->
 
-
+  
 
 
 
@@ -331,5 +345,11 @@ Para comenzar a utilizar EmailJS en su sitio web, simplemente pegue el siguiente
    <script src="js/contact.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="js/header.js"></script>
+   
+  
+
+    
+<script src="js/email.js"></script>
+
 </body>
 </html>
