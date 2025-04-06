@@ -201,3 +201,18 @@ h3 {
 .formbold-form-step-3.active {
   display: block;
 }
+
+#mi_mapa {
+  width: 100%; /* Que ocupe todo el ancho disponible */
+  height: 400px; /* Altura fija (puedes cambiarlo con media queries si quieres) */
+  max-width: 100vw; /* Evita que sobrepase el ancho de la pantalla */
+  position: relative;
+  z-index: 1;
+  margin-top: 3rem;
+  box-sizing: border-box;
+}
+.map-container {
+  width: 100%;
+  max-width: 100vw;
+  overflow: hidden;
+}

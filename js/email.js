@@ -138,3 +138,12 @@ function resetearFormulario() {
   stepOne.classList.add("active");
   formSubmitBtn.textContent = "Siguiente";
 }
+
+// Mapa
+let map = L.map("mi_mapa").setView([10.014391, -84.214132], 20);
+L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+  attribution:
+    'Gold Fish tienda de Pesca | <a href="https://openstreetmap.org">OSM</a>',
+}).addTo(map);
+let marker = L.marker([10.014391, -84.214132]).addTo(map);
+marker.bindPopup("<b>Gold Fihs!</b><br />").openPopup();
