@@ -87,6 +87,12 @@
   .lista-enlaces .nav-item a {
     margin-top: 0.4rem !important;
   }
+  .marca {
+    margin-top: 5px;
+  }
+  .navbar-toggler {
+    margin-top: 5px;
+  }
 }
 
 .header__texto {
