@@ -54,7 +54,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
-// Función mejorada para agregar al carrito
 // Función mejorada para agregar al carrito con confirmación
 function agregarAlCarrito(productId) {
   console.log("Agregando producto al carrito:", productId);

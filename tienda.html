@@ -72,20 +72,26 @@
               <li class="nav-item">
                 <a class="nav-link enlaces-pag" href="nosotros.html">Nosotros</a>
               </li>
+              <!-- Menú desplegable corregido -->
+              <li class="nav-item dropdown" >
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Productos
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown" >
+                  <li><a class="dropdown-item" href="#" onclick="filtrarProducto('')">Todos los productos</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="filtrarProducto('cañas')">Cañas</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="filtrarProducto('carretes')">Carretes</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="filtrarProducto('señuelos_anzuelos')">Señuelos y anzuelos</a></li>
+                  <li><a class="dropdown-item" href="#" onclick="filtrarProducto('accesorios')">Otros Artículos</a></li>
+                </ul>
+              </li>
+              
               <li class="nav-item">
                 <a class="nav-link enlaces-pag" href="carrito.html">
-                  <i class="bi bi-cart" ></i>
+                  <i class="bi bi-cart"></i>
                 </a>
               </li>
             </ul>
-            <!-- Contenedor para el buscador y el carrito -->
-         
-             
-            
-              
-              
-            </div>
-            
           </div>
         </div>
       </nav>
@@ -94,6 +100,7 @@
         <p class="no-margin">Las mejores marcas y equipo para la pesca</p>
       </div>
     </header>
+    
     
     <div id="root"></div>
  
@@ -120,27 +127,7 @@
                 </div>
               </form>
             </div>
-            
-            <!-- Filtro de Productos -->
-            <div class="col-md-6">
-              <div class="d-flex justify-content-md-end">
-                <div class="w-100 w-md-auto">
-                  <label for="filtroProductos " class="visually-hidden  fs-5 fw-bold me-2 mb-0">Filtrar por categoría</label>
-                  <select 
-                    class="form-select" 
-                    id="filtroProductos"
-                    aria-label="Filtrar productos por categoría"
-                    onchange="filtrarProducto(this.value)"
-                  >
-                    <option value="">Todos los productos</option>
-                    <option value="cañas">Cañas</option>
-                    <option value="carretes">Carretes</option>
-                    <option value="señuelos_anzuelos">Señuelos y anzuelos</option>
-                    <option value="accesorios">Otros Artículos</option>
-                  </select>
-                </div>
-              </div>
-            </div>
+        
           </div>
           
           <!-- Contenedor de Productos -->
