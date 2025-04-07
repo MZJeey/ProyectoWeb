@@ -45,7 +45,7 @@
       "precio": "$349.99",
       "imagen": "./Img/carretes/carrete07.jpg",
        "categoria":{
-        "nombre":"EAGLE CLAW EC2.5 BAIT CASTING ",
+        "nombre":"EAGLE CLAW BAIT CASTING",
         "id":"carrete",
         "descripcion":"El Carrete EC2.5 Eagle Claw diseñado para agua fresca, un diseño moderno, cuerpo de grafito, spool de aluminio, freno de carbon y sistema de freno magnético"
        }
@@ -56,7 +56,7 @@
       "precio": "$349.99",
       "imagen": "./Img/carretes/BANTAM_MGL.jpg",
        "categoria":{
-        "nombre":" Carrete Spinning Profesional",
+        "nombre":"Spinning Profesional",
         "id":"carretes",
         "descripcion":"Ideal para lanzar señuelos ligeros y para pesca en agua dulce o salada"
        }
@@ -66,7 +66,7 @@
       "precio": "$349.99",
       "imagen": "./Img/carretes/carrete02.jpg",
        "categoria":{
-        "nombre":"Carrete Baitcasting Avanzado",
+        "nombre":"Baitcasting Avanzado ",
         "id":"carrete",
         "descripcion":"Tiene un sistema de freno magnético o centrífugo para controlar el lanzamiento"
        }
