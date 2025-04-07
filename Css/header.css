@@ -78,7 +78,7 @@
     0.7
   ); /* Aumenta el valor alfa para hacerla más oscura */
   background-blend-mode: multiply;
-  height: 50rem;
+  height: 45rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
