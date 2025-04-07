@@ -435,7 +435,7 @@ p {
     flex: 0 0 74%; /* Tamaño más pequeño */
     scroll-snap-align: center; /* Centrado al deslizar */
     margin-right: 1rem;
-    height: 400px;
+    height: 300px;
   }
 
   .botones {
