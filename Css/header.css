@@ -88,6 +88,16 @@
     height: 25rem; /* Altura reducida para móviles */
   }
 }
+@media (min-width: 769px) {
+  .navbar-toggler {
+    display: none; /* Oculta el botón en desktop */
+  }
+  .navbar-collapse {
+    display: flex; /* Muestra el menú en desktop */
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
 
 .header__texto {
   text-align: center;
