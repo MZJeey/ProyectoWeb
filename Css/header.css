@@ -427,15 +427,10 @@ p {
     width: 100%; /* Asegura que el contenedor de productos ocupe todo el ancho */
   }
 
-  /* Oculta el scrollbar en móviles */
-  .contenedor-productos::-webkit-scrollbar {
-    display: none;
-  }
-
   .card {
     flex: 0 0 100%; /* Hace que cada tarjeta ocupe el 100% del ancho disponible */
     scroll-snap-align: center; /* Centrado al deslizar */
-    margin-right: 1rem;
+    margin-right: 0;
     height: 300px;
   }
 
@@ -452,4 +447,8 @@ p {
     font-size: 0.9rem;
     margin: 0;
   }
+}
+.root {
+  margin: 0;
+  padding: 0;
 }
