@@ -15,7 +15,7 @@
       "precio": "$699.99",
       "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
          "categoria":{
-          "nombre": "Swimbaits",
+          "nombre": "Natural Fish Swimbaits",
         "id":"señuelos",
         "descripcion":"Excelente para pescar depredadores grandes como lubinas, lucios y dorados"
          }
@@ -25,7 +25,7 @@
       "precio":"$99.99",
       "imagen": "./Img/carretes/carrete05.jpg",
        "categoria":{
-        "nombre":"Fly Reel",
+        "nombre":"Professional Fly Reel",
         "id":"carrete",
         "descripcion":"El Fly Reel es un carrete de pesca diseñado específicamente para la técnica de pesca con mosca."
        }
@@ -35,7 +35,7 @@
       "precio": "$349.99",
       "imagen": "./Img/cuerdas/cuerda02.jpg",
        "categoria":{
-        "nombre":"Monofilament Line",
+        "nombre":"Advanced Monofilament ",
         "id":"cuerda",
         "descripcion":"Ideal para pesca en agua dulce y salada. Es la cuerda más comúnmente utilizada para muchas especies, como truchas, bass, y lubinas"
        }
