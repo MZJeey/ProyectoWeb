@@ -1,39 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-      crossorigin=""
-    />
+    <title>Card con React CDN</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <style>
-      #mi_mapa {
-        height: 400px;
-        width: 600px;
+      .card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        padding: 16px;
+        width: 300px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .card img {
+        width: 100%;
+        border-radius: 4px;
+      }
+      .card h3 {
+        margin: 10px 0;
       }
     </style>
   </head>
   <body>
-    <div id="mi_mapa"></div>
+    <div id="root"></div>
 
-    <script
-      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-      crossorigin=""
-    ></script>
+    <script type="text/babel">
+      function Card() {
+        return (
+          <div className="card">
+            <img src="Img/caña.jpg" alt="Imagen de ejemplo" />
+            <h3>Título de la Card</h3>
+            <p>Esta es una tarjeta hecha con React usando CDN.</p>
+            <button>Click aquí</button>
+          </div>
+        );
+      }
 
-    <script>
-      let map = L.map("mi_mapa").setView([10.014391, -84.214132], 12);
-      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution:
-          'Gold Fish tienda de Pesca | <a href="https://openstreetmap.org">OSM</a>',
-      }).addTo(map);
-      let marker = L.marker([10.014391, -84.214132]).addTo(map);
-      marker.bindPopup("<b>Gold Fihs!</b><br />").openPopup();
+      function App() {
+        return (
+          <div>
+            <h1>Mis Cards</h1>
+            <Card />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
     </script>
   </body>
 </html>

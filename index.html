@@ -25,7 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <!-- jQuey -->
+    <!-- react -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
   </head>
   <body style="background-color: transparent">
     <!-- Navegacion de redes sociales -->
@@ -226,13 +229,14 @@
         <div id="contenedor-productos" class="contenedor-productos"></div>
       </section> -->
 
-      <section class="productos">
+      <!-- <section class="productos">
         <div class="titulo-productos">
           <h2>Productos destacados</h2>
         </div>
         <div id="contenedor-productos" class="contenedor-productos"></div>
-      </section>
+      </section> -->
 
+      <div id="root"></div>
       <!-- Nosotros -->
       <section class="nosotros" id="nosotros"></section>
     </main>
@@ -419,7 +423,9 @@
     <script src="js/jquery-3.7.1.js"></script>
     <script src="js/nosotros.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/card.js"></script>
+
+    <script type="text/babel" src="js/card.js"></script>
+
     <script src="js/contact.js"></script>
 
     <script
