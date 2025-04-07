@@ -424,6 +424,7 @@ p {
     -webkit-overflow-scrolling: touch;
     gap: 1rem;
     padding-bottom: 1rem;
+    width: 100%; /* Asegura que el contenedor de productos ocupe todo el ancho */
   }
 
   /* Oculta el scrollbar en móviles */
@@ -432,20 +433,21 @@ p {
   }
 
   .card {
-    flex: 0 0 74%; /* Tamaño más pequeño */
+    flex: 0 0 100%; /* Hace que cada tarjeta ocupe el 100% del ancho disponible */
     scroll-snap-align: center; /* Centrado al deslizar */
     margin-right: 1rem;
     height: 300px;
   }
 
   .botones {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr; /* Asegura que los botones estén en una sola columna */
     gap: 0.5rem;
+    width: 100%; /* Asegura que los botones ocupen todo el ancho */
   }
 
   .botones .btn-ver,
   .btn-comprar {
-    width: 100%;
+    width: 100%; /* Los botones ocupan todo el ancho disponible */
     padding: 1px;
     font-size: 0.9rem;
     margin: 0;
