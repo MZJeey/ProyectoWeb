@@ -78,10 +78,15 @@
     0.7
   ); /* Aumenta el valor alfa para hacerla más oscura */
   background-blend-mode: multiply;
-  height: 38rem;
+  height: 35rem;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+}
+@media (max-width: 768px) {
+  .lista-enlaces .nav-item a {
+    margin-top: 0.4rem !important;
+  }
 }
 
 .header__texto {
