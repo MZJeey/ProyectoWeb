@@ -553,19 +553,22 @@ p {
   margin: 0 auto; /* Centra la imagen */
 }
 /* Estilo base para el carousel */
+/* Estilo base para el carousel */
 .carousel-inner {
-  height: 500px; /* Altura predeterminada para pantallas grandes */
+  height: 400px; /* Altura predeterminada para pantallas grandes */
 }
 
-/* Para pantallas pequeñas */
-@media (max-width: 768px) {
+/* Para pantallas pequeñas (tabletas y móviles) */
+@media (max-width: 576px) {
+  /* Dispositivos móviles con pantallas más pequeñas */
   .carousel-inner {
-    height: 300px; /* Ajustar la altura para pantallas más pequeñas */
+    height: 200px; /* Ajustar la altura para pantallas más pequeñas */
   }
 }
 
+/* Asegura que las imágenes ocupen todo el espacio disponible */
 .carousel-item img {
-  object-fit: cover; /* Asegura que la imagen cubra todo el área del carousel */
+  object-fit: cover; /* Hace que la imagen cubra todo el área del carousel */
   height: 100%; /* Hace que la imagen ocupe toda la altura disponible */
   width: 100%; /* Asegura que la imagen ocupe todo el ancho del carousel */
 }
