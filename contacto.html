@@ -1,54 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contacto</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-  
-    <link rel="stylesheet" href="Css/index.css">
-     <link rel="stylesheet" href="Css/sniper.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-   <!-- react-->
-   <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
-   <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
-   <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <link rel="stylesheet" href="Css/index.css" />
+    <link rel="stylesheet" href="Css/sniper.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- react-->
+    <script
+      src="https://unpkg.com/react@18/umd/react.development.js"
+      crossorigin
+    ></script>
+    <script
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+      crossorigin
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <!-- Api correo -->
-     
-    <script type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  
-  <script type="text/javascript">
-    emailjs.init('G5aiXIx2Aw1fqfmBi')
-  </script>
 
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
 
+    <script type="text/javascript">
+      emailjs.init("G5aiXIx2Aw1fqfmBi");
+    </script>
 
-
-
-
-
-<!-- 
+    <!-- 
 Api para el mapa -->
-<link
-rel="stylesheet"
-href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-crossorigin=""
-/>
-
-</head>
-<body>
-
-
-<!-- Navegacion de redes sociales -->
-<nav class="navbar navSuperior navbar-expand-lg-light d-none d-lg-block  id="navSuperior">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+  </head>
+  <body>
+    <!-- Navegacion de redes sociales -->
+    <!-- <nav class="navbar navSuperior navbar-expand-lg-light d-none d-lg-block  id="navSuperior">
   <div class="container text-light">
       <div class="w-100 d-flex justify-content-between">
           <div class="contacto">
@@ -65,208 +75,328 @@ crossorigin=""
           </div>
       </div>
   </div>
-</nav>
-  <!-- Navegacion sitio -->
-  <header class="header"  id="header">
-   
-  </header>
-    
-<main>
-  <div class="container formbold-main-wrapper">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 col-md-10 col-12">
-        <form id="miFormulario" method="POST" class="formbold-form-wrapper">
-          
-          <!-- Pasos -->
-          <div class="formbold-steps mb-4">
-            <ul class="nav nav-pills justify-content-center">
-              <li class="nav-item formbold-step-menu1 active">
-                <span class="nav-link active">1</span>
-                Registro
-              </li>
-              <li class="nav-item formbold-step-menu2">
-                <span class="nav-link">2</span>
-                Mensaje
-              </li>
-              <li class="nav-item formbold-step-menu3">
-                <span class="nav-link">3</span>
-                Confirmación
-              </li>
-            </ul>
-          </div>
-  
-          <!-- Paso 1 -->
-          <div class="formbold-form-step-1 active">
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="firstname" class="form-label formbold-form-label">Nombre</label>
-                <input type="text" name="firstname" placeholder="Juan" id="firstname" class="form-control formbold-form-input">
+</nav> -->
+    <!-- Navegacion sitio -->
+    <header class="header" id="header"></header>
+
+    <main>
+      <div class="container formbold-main-wrapper">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 col-md-10 col-12">
+            <form id="miFormulario" method="POST" class="formbold-form-wrapper">
+              <!-- Pasos -->
+              <div class="formbold-steps mb-4">
+                <ul class="nav nav-pills justify-content-center">
+                  <li class="nav-item formbold-step-menu1 active">
+                    <span class="nav-link active">1</span>
+                    Registro
+                  </li>
+                  <li class="nav-item formbold-step-menu2">
+                    <span class="nav-link">2</span>
+                    Mensaje
+                  </li>
+                  <li class="nav-item formbold-step-menu3">
+                    <span class="nav-link">3</span>
+                    Confirmación
+                  </li>
+                </ul>
               </div>
-              <div class="col-md-6 mb-3">
-                <label for="lastname" class="form-label formbold-form-label">Apellido</label>
-                <input type="text" name="lastname" placeholder="Pérez" id="lastname" class="form-control formbold-form-input">
+
+              <!-- Paso 1 -->
+              <div class="formbold-form-step-1 active">
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label
+                      for="firstname"
+                      class="form-label formbold-form-label"
+                      >Nombre</label
+                    >
+                    <input
+                      type="text"
+                      name="firstname"
+                      placeholder="Juan"
+                      id="firstname"
+                      class="form-control formbold-form-input"
+                    />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="lastname" class="form-label formbold-form-label"
+                      >Apellido</label
+                    >
+                    <input
+                      type="text"
+                      name="lastname"
+                      placeholder="Pérez"
+                      id="lastname"
+                      class="form-control formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-6 mb-3">
+                    <label for="dob" class="form-label formbold-form-label"
+                      >Fecha de nacimiento</label
+                    >
+                    <input
+                      type="date"
+                      name="dob"
+                      id="dob"
+                      class="form-control formbold-form-input"
+                    />
+                    <input type="hidden" name="edad" id="edad" />
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="email" class="form-label formbold-form-label"
+                      >Correo electrónico</label
+                    >
+                    <input
+                      type="email"
+                      name="email"
+                      placeholder="ejemplo@correo.com"
+                      id="email"
+                      class="form-control formbold-form-input"
+                    />
+                  </div>
+                </div>
+
+                <div class="mb-3">
+                  <label for="address" class="form-label formbold-form-label"
+                    >Dirección</label
+                  >
+                  <input
+                    type="text"
+                    name="address"
+                    id="address"
+                    placeholder="Calle Falsa 123, Ciudad, Código Postal"
+                    class="form-control formbold-form-input"
+                  />
+                </div>
               </div>
-            </div>
-  
-            <div class="row">
-              <div class="col-md-6 mb-3">
-                <label for="dob" class="form-label formbold-form-label">Fecha de nacimiento</label>
-                <input type="date" name="dob" id="dob" class="form-control formbold-form-input">
-                <input type="hidden" name="edad" id="edad">
+
+              <!-- Paso 2 -->
+              <div class="formbold-form-step-2">
+                <div class="mb-3">
+                  <label for="message" class="form-label formbold-form-label"
+                    >Mensaje</label
+                  >
+                  <textarea
+                    rows="6"
+                    name="message"
+                    id="message"
+                    placeholder="Escribe tu mensaje aquí"
+                    class="form-control formbold-form-input"
+                  ></textarea>
+                </div>
               </div>
-              <div class="col-md-6 mb-3">
-                <label for="email" class="form-label formbold-form-label">Correo electrónico</label>
-                <input type="email" name="email" placeholder="ejemplo@correo.com" id="email" class="form-control formbold-form-input">
+
+              <!-- Paso 3 -->
+              <div class="formbold-form-step-3">
+                <div class="formbold-form-confirm text-center">
+                  <p class="mb-4">
+                    Por favor confirma que la información proporcionada es
+                    correcta y que deseas continuar con el proceso.
+                  </p>
+
+                  <div class="d-flex justify-content-center gap-3">
+                    <button
+                      type="button"
+                      class="btn btn-success formbold-confirm-btn active"
+                    >
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- Tu SVG aquí -->
+                      </svg>
+                      Sí, acepto
+                    </button>
+
+                    <button
+                      type="button"
+                      class="btn btn-danger formbold-confirm-btn"
+                    >
+                      <svg
+                        width="22"
+                        height="22"
+                        viewBox="0 0 22 22"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <!-- Tu SVG aquí -->
+                      </svg>
+                      No, rechazo
+                    </button>
+                  </div>
+                </div>
               </div>
-            </div>
-  
-            <div class="mb-3">
-              <label for="address" class="form-label formbold-form-label">Dirección</label>
-              <input type="text" name="address" id="address" placeholder="Calle Falsa 123, Ciudad, Código Postal" class="form-control formbold-form-input">
-            </div>
-          </div>
-  
-          <!-- Paso 2 -->
-          <div class="formbold-form-step-2">
-            <div class="mb-3">
-              <label for="message" class="form-label formbold-form-label">Mensaje</label>
-              <textarea rows="6" name="message" id="message" placeholder="Escribe tu mensaje aquí" class="form-control formbold-form-input"></textarea>
-            </div>
-          </div>
-  
-          <!-- Paso 3 -->
-          <div class="formbold-form-step-3">
-            <div class="formbold-form-confirm text-center">
-              <p class="mb-4">
-                Por favor confirma que la información proporcionada es correcta y que deseas continuar con el proceso.
-              </p>
-  
-              <div class="d-flex justify-content-center gap-3">
-                <button type="button" class="btn btn-success formbold-confirm-btn active">
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+              <!-- Botones de navegación -->
+              <div
+                class="formbold-form-btn-wrapper d-flex justify-content-between mt-4"
+              >
+                <button
+                  type="button"
+                  class="btn btn-secondary formbold-back-btn"
+                >
+                  Atrás
+                </button>
+
+                <button type="button" class="btn btn-primary formbold-btn">
+                  Siguiente
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 16 16"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
                     <!-- Tu SVG aquí -->
                   </svg>
-                  Sí, acepto
-                </button>
-  
-                <button type="button" class="btn btn-danger formbold-confirm-btn">
-                  <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <!-- Tu SVG aquí -->
-                  </svg>
-                  No, rechazo
                 </button>
               </div>
-            </div>
+            </form>
           </div>
-  
-          <!-- Botones de navegación -->
-          <div class="formbold-form-btn-wrapper d-flex justify-content-between mt-4">
-            <button type="button" class="btn btn-secondary formbold-back-btn">
-              Atrás
-            </button>
-  
-            <button type="button" class="btn btn-primary formbold-btn">
-              Siguiente
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <!-- Tu SVG aquí -->
-              </svg>
-            </button>
-          </div>
-        </form>
+        </div>
       </div>
-    </div>
-  </div>
 
+      <div class="map-container">
+        <div id="mi_mapa"></div>
+      </div>
 
-
-
-
-
-  <div class="map-container">
-    <div id="mi_mapa"></div>
-
-  </div>
-  
-
-
-
-
-
-
-        <a href="https://wa.me/50671795695" class="whatsapp-float" target="_blank">
-          <i class="bi bi-whatsapp"></i>
-        </a> 
-        
-      </main>
+      <a
+        href="https://wa.me/50671795695"
+        class="whatsapp-float"
+        target="_blank"
+      >
+        <i class="bi bi-whatsapp"></i>
+      </a>
+    </main>
 
     <!-- El pie de página se insertará dinámicamente con JavaScript -->
-    <footer class="footer" style="background-color:black;">
+    <footer class="footer" style="background-color: black">
       <div class="footer-top py-8">
-          <div class="container">
-              <div class="row gy-5">
-                  <div class="col-lg-8 pe-xxl-10">
-                      <div class="row gy-md-5 columna">
-                          
-                          <div class="col-6 col-lg-4 contacto-footer">
-                              <h5 class="text-white footer-titulo1">Contactos</h5>
-                              <ul class="list-unstyled footer-link-01 m-0">
-                                  <li><i class="face  bi bi-facebook"></i><a class="text-white text-opacity-75" href="#">Facebook</a></li>
-                                  <li><i class="instagram bi bi-instagram"></i><a class="text-white text-opacity-75" href="#">Instagram</a></li>
-                                  <li><i class="x-twitter  bi bi-twitter-x"></i><a class="text-white text-opacity-75" href="#">twitter</a></li>
-                                  <li> <i class="bi bi-whatsapp"></i><a class="text-white text-opacity-75" href="#">WhatsApp</a></li>
-                                
-                              </ul>
-                          </div>
-                          <div class="col-6 col-lg-4 d enlace">
-                              <h5 class="text-white footer-titulo1">Enlaces</h5>
-                              <ul class="list-unstyled footer-link-01 m-0">
-                                  <li><a class="text-white text-opacity-75" href="#">Home</a></li>
-                                  <li><a class="text-white text-opacity-75" href="#">Tienda</a></li>
-                                  <li><a class="text-white text-opacity-75" href="#">Nosotros</a></li>
-                              
-                              </ul>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4">
-                      <h5 class="text-white footer-titulo1 fs-5">Subscribet para obtener un descuento en tu proxima compra.</h5>
-                      <div>
-                          <form class="d-flex flex-row mb-2 p-1 bg-white input-group"><input type="email" class="form-control rounded border-0" placeholder="Tu correo electrónico"> <button class="btn btn-secondary flex-shrink-0" type="submit">Subscribete</button></form>
-                          <p class="fs-sm text-white text-opacity-75">I agree to receive Absolution newsletters</p>
-                      </div>
-                  </div>
+        <div class="container">
+          <div class="row gy-5">
+            <div class="col-lg-8 pe-xxl-10">
+              <div class="row gy-md-5 columna">
+                <div class="col-6 col-lg-4 contacto-footer">
+                  <h5 class="text-white footer-titulo1">Contactos</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <i class="face bi bi-facebook"></i
+                      ><a class="text-white text-opacity-75" href="#"
+                        >Facebook</a
+                      >
+                    </li>
+                    <li>
+                      <i class="instagram bi bi-instagram"></i
+                      ><a class="text-white text-opacity-75" href="#"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li>
+                      <i class="x-twitter bi bi-twitter-x"></i
+                      ><a class="text-white text-opacity-75" href="#"
+                        >twitter</a
+                      >
+                    </li>
+                    <li>
+                      <i class="bi bi-whatsapp"></i
+                      ><a class="text-white text-opacity-75" href="#"
+                        >WhatsApp</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 col-lg-4 d enlace">
+                  <h5 class="text-white footer-titulo1">Enlaces</h5>
+                  <ul class="list-unstyled footer-link-01 m-0">
+                    <li>
+                      <a class="text-white text-opacity-75" href="#">Home</a>
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#">Tienda</a>
+                    </li>
+                    <li>
+                      <a class="text-white text-opacity-75" href="#"
+                        >Nosotros</a
+                      >
+                    </li>
+                  </ul>
+                </div>
               </div>
+            </div>
+            <div class="col-lg-4">
+              <h5 class="text-white footer-titulo1 fs-5">
+                Subscribet para obtener un descuento en tu proxima compra.
+              </h5>
+              <div>
+                <form class="d-flex flex-row mb-2 p-1 bg-white input-group">
+                  <input
+                    type="email"
+                    class="form-control rounded border-0"
+                    placeholder="Tu correo electrónico"
+                  />
+                  <button class="btn btn-secondary flex-shrink-0" type="submit">
+                    Subscribete
+                  </button>
+                </form>
+                <p class="fs-sm text-white text-opacity-75">
+                  I agree to receive Absolution newsletters
+                </p>
+              </div>
+            </div>
           </div>
+        </div>
       </div>
-      <div class="footer-bottom small py-3 border-top border-white border-opacity-10">
-          <div class="container">
-              <div class="row">
-                  <div class="col-md-6 text-center text-md-start py-1">
-                      <p class="m-0 text-white text-opacity-75">© 2025 copyright by </p>
-                  </div>
-                  <div class="col-md-6 text-center text-md-end py-1">
-                      <ul class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0">
-                          <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Privace &amp; Policy</a></li>
-                          <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Gold Fish</a></li>
-                          <li class="p-0 mx-3 ms-md-0 me-md-3"><a href="#" class="text-white text-opacity-75">Developers.MC</a></li>
-                      </ul>
-                  </div>
-              </div>
+      <div
+        class="footer-bottom small py-3 border-top border-white border-opacity-10"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 text-center text-md-start py-1">
+              <p class="m-0 text-white text-opacity-75">© 2025 copyright by</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end py-1">
+              <ul
+                class="nav justify-content-center justify-content-md-end list-unstyled footer-link-01 m-0"
+              >
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75"
+                    >Privace &amp; Policy</a
+                  >
+                </li>
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75">Gold Fish</a>
+                </li>
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="#" class="text-white text-opacity-75"
+                    >Developers.MC</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
+        </div>
       </div>
     </footer>
-   <script src="js/contact.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="js/contact.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
     <script src="js/header.js"></script>
-   
-  
 
     <script
-    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""
-  ></script> 
-<script src="js/email.js"></script>
-
-</body>
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="js/email.js"></script>
+  </body>
 </html>

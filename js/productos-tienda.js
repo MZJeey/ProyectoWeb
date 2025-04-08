@@ -6,7 +6,6 @@ const DOM = {
   buscador: document.querySelector(".buscador"),
   botonBusqueda: document.querySelector(".btn-outline-success"),
   header: document.getElementById("header"),
-  textoHeader: document.querySelector(".header__texto"),
 };
 
 // Inicialización
@@ -42,7 +41,7 @@ function configurarEventos() {
 
 function ajustarHeader() {
   if (window.innerWidth >= 768) {
-    if (DOM.header) DOM.header.style.height = "200px";
+    if (DOM.header) DOM.header.style.height = "400px";
     if (DOM.textoHeader) DOM.textoHeader.style.display = "none";
   }
 }

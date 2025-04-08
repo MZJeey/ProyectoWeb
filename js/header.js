@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="header__texto">
       <h2 class="no-margin">Full Pesca con goldFish</h2>
       <p class="no-margin"> las mejores marcar y equipo para la pesca</p>
+       <a href="tienda.html">Ver Todos los Productos</a>
   </div>
   `;
   contenedor.appendChild(header);
