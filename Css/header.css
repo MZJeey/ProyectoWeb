@@ -552,6 +552,23 @@ p {
   max-width: 50%; /* Ajusta este valor según necesites */
   margin: 0 auto; /* Centra la imagen */
 }
+/* Estilo base para el carousel */
+.carousel-inner {
+  height: 500px; /* Altura predeterminada para pantallas grandes */
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-inner {
+    height: 300px; /* Ajustar la altura para pantallas más pequeñas */
+  }
+}
+
+.carousel-item img {
+  object-fit: cover; /* Asegura que la imagen cubra todo el área del carousel */
+  height: 100%; /* Hace que la imagen ocupe toda la altura disponible */
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del carousel */
+}
 
 .contenedor {
   width: 100%; /* o un ancho fijo como 600px si lo preferís */
