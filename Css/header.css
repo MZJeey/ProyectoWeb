@@ -544,3 +544,72 @@ p {
   font-size: 1.5rem !important;
   color: rgba(255, 255, 255, 0.75) !important;
 }
+
+/* Seccion-Mejores */
+
+/* Pruebas */
+.carousel-inner img {
+  max-width: 50%; /* Ajusta este valor según necesites */
+  margin: 0 auto; /* Centra la imagen */
+}
+
+.contenedor {
+  width: 100%; /* o un ancho fijo como 600px si lo preferís */
+  max-width: 100%; /* se adapta al contenedor padre */
+}
+
+.lista-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  margin: 0;
+  list-style: none;
+}
+
+.lista-flex li {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.lista-flex img {
+  width: 100%; /* que ocupe todo el ancho del <li> */
+  height: auto;
+  display: block;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-contenido {
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 80%;
+  border-radius: 10px;
+}
+.cerrar {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: #ff6666;
+}
