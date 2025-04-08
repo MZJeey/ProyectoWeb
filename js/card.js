@@ -39,11 +39,49 @@ function App() {
         }
 
         localStorage.setItem("carrito", JSON.stringify(carrito));
-        window.location.href = "carrito.html";
+
+        // Mostrar SweetAlert con opciones
+        Swal.fire({
+          title: "¡Producto agregado!",
+          html: `
+            <div style="margin: 1rem 0 ; text-align: center;">
+          <img src="${producto.imagen}" 
+               style="max-height: 120px; border-radius: 8px; border: 1px solid #eee;"
+               alt="${producto.categoria.nombre}"/>
+          <h4 style="margin: 0.5rem 0 0; color: #333;">${producto.nombre}</h4>
+          <p style="color: #28a745; font-weight: bold;">${producto.precio}</p>
+        </div>
+        <p>¿Qué deseas hacer ahora?</p>
+          `,
+          icon: "success",
+          showCancelButton: true,
+          confirmButtonText: '<i class="fas fa-shopping-cart"></i> Ver carrito',
+          cancelButtonText: "Seguir comprando",
+          confirmButtonColor: "#28a745",
+          cancelButtonColor: "#6c757d",
+
+          width: "450px",
+          backdrop: `
+          rgba(0,0,0,0.4)
+          url("https://i.pinimg.com/originals/45/3a/42/453a42b5b0f6b80b508511f711407e8f.gif")
+          left top
+          no-repeat
+        `,
+        }).then((result) => {
+          if (result.isConfirmed) {
+            window.location.href = "carrito.html";
+          }
+        });
       })
       .catch((error) => {
         console.error("Error en comprarAhora:", error);
-        alert("Error al agregar al carrito: " + error.message);
+        Swal.fire({
+          title: "Error",
+          text: "No se pudo agregar el producto: " + error.message,
+          icon: "error",
+          confirmButtonText: "Entendido",
+          confirmButtonColor: "#dc3545",
+        });
       });
   };
 

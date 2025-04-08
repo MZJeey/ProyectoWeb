@@ -29,6 +29,14 @@
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <!-- Noticaciones -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    />
   </head>
   <body style="background-color: transparent">
     <!-- Navegacion de redes sociales -->
@@ -241,7 +249,41 @@
       </section>
 
       <!-- Nosotros -->
-      <section class="nosotros" id="nosotros"></section>
+      <div class="container my-5">
+        <h2 class="text-center mb-5 font-weight-bold text-dark">
+          ¡La mejor tecnología para tu pesca!
+        </h2>
+
+        <div class="row justify-content-between">
+          <!-- Columna 1: Imagen -->
+          <div class="col-lg-5 col-md-6 mb-4 d-flex justify-content-start">
+            <div class="imagen-container">
+              <img
+                src="tu-imagen1.jpg"
+                alt="Imagen de producto"
+                class="img-fluid rounded shadow-sm"
+                id="imagen"
+              />
+            </div>
+          </div>
+
+          <!-- Columna 2: Video -->
+          <div class="col-lg-5 col-md-6 mb-4 d-flex justify-content-end">
+            <div class="video-container">
+              <video
+                controls
+                autoplay
+                loop
+                muted
+                class="w-100 rounded shadow-sm"
+                style="height: 500px; object-fit: cover"
+              >
+                <source src="Video/VideoPes.mp4" type="video/mp4" />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
 
     <a href="https://wa.me/50671795695" class="whatsapp-float" target="_blank">

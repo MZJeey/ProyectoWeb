@@ -5,8 +5,11 @@ html {
   overflow-x: hidden; /* Previene scroll horizontal */
 }
 
-main {
-  margin: 4rem;
+body,
+main,
+header {
+  margin: 0;
+  padding: 0;
 }
 .informacion-contacto {
   text-align: center;
@@ -19,7 +22,7 @@ main {
 }
 
 /* Aumentar tamaño de letra en los placeholders */
-/* Cambiar tamaño de la letra del placeholder */
+
 input::placeholder,
 textarea::placeholder {
   font-size: 18px; /* Cambia este valor según lo que necesites */

@@ -1,3 +1,24 @@
+body,
+main,
+header {
+  margin: 0;
+  padding: 0;
+}
+
+.carousel {
+  margin-top: 0;
+}
+
+#carouselExampleCaptions {
+  width: 100vw; /* ancho completo del viewport */
+}
+
+.carousel-inner img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
 .nosotros {
   margin-bottom: 2rem;
 }
@@ -67,4 +88,16 @@
 }
 .carousel-inner img {
   max-width: 100%;
+}
+
+.carousel {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.carousel-inner {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
