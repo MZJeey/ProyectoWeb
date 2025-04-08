@@ -547,22 +547,15 @@ p {
 
 /* Seccion-Mejores */
 
-/* Pruebas */
-.carousel-inner img {
-  max-width: 50%; /* Ajusta este valor según necesites */
-  margin: 0 auto; /* Centra la imagen */
-}
-/* Estilo base para el carousel */
-/* Estilo base para el carousel */
-.carousel-inner {
-  height: 400px; /* Altura predeterminada para pantallas grandes */
-}
-
-/* Para pantallas pequeñas (tabletas y móviles) */
-@media (max-width: 576px) {
-  /* Dispositivos móviles con pantallas más pequeñas */
-  .carousel-inner {
-    height: 200px; /* Ajustar la altura para pantallas más pequeñas */
+/* Ajustar imagen en pantallas grandes */
+@media (min-width: 768px) {
+  .carousel-item img {
+    width: 75%; /* Ajusta el ancho de la imagen en pantallas grandes */
+    margin: 0 auto; /* Centra la imagen */
+  }
+  .carousel-inner img {
+    max-width: 50%; /* Ajusta este valor según necesites */
+    margin: 0 auto; /* Centra la imagen */
   }
 }
 
