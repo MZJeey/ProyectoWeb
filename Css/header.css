@@ -190,7 +190,7 @@ main {
   color: white;
   text-decoration: none;
   font-size: 2.5rem;
-  display: inline-block; /* Ahora solo ocupa el espacio del contenido */
+  display: inline-block;
   padding: 0;
   margin-top: 2rem;
 }
@@ -545,30 +545,55 @@ p {
   color: rgba(255, 255, 255, 0.75) !important;
 }
 
-/* Seccion-Mejores */
-
-/* Ajustar imagen en pantallas grandes */
 @media (min-width: 768px) {
   .carousel-item img {
-    width: 75%; /* Ajusta el ancho de la imagen en pantallas grandes */
-    margin: 0 auto; /* Centra la imagen */
+    width: 75%;
+    margin: 0 auto;
   }
   .carousel-inner img {
-    max-width: 50%; /* Ajusta este valor según necesites */
-    margin: 0 auto; /* Centra la imagen */
+    max-width: 50%;
+    margin: 0 auto;
   }
 }
 
-/* Asegura que las imágenes ocupen todo el espacio disponible */
 .carousel-item img {
-  object-fit: cover; /* Hace que la imagen cubra todo el área del carousel */
-  height: 100%; /* Hace que la imagen ocupe toda la altura disponible */
-  width: 100%; /* Asegura que la imagen ocupe todo el ancho del carousel */
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+/* Asegura que la leyenda tenga un fondo oscuro para que el texto sea legible */
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+  color: white; /* Texto blanco */
+  padding: 10px;
+}
+
+/* Ajuste de tamaño de texto para pantallas pequeñas */
+@media (max-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1.2rem; /* Ajusta el tamaño de los títulos */
+  }
+
+  .carousel-caption p {
+    font-size: 1rem; /* Ajusta el tamaño de los párrafos */
+  }
+}
+
+/* Ajustes para pantallas grandes */
+@media (min-width: 768px) {
+  .carousel-caption h3 {
+    font-size: 1.5rem; /* Aumenta el tamaño de los títulos en pantallas grandes */
+  }
+
+  .carousel-caption p {
+    font-size: 1.2rem; /* Aumenta el tamaño de los párrafos en pantallas grandes */
+  }
 }
 
 .contenedor {
-  width: 100%; /* o un ancho fijo como 600px si lo preferís */
-  max-width: 100%; /* se adapta al contenedor padre */
+  width: 100%;
+  max-width: 100%;
 }
 
 .lista-flex {
@@ -587,7 +612,7 @@ p {
 }
 
 .lista-flex img {
-  width: 100%; /* que ocupe todo el ancho del <li> */
+  width: 100%;
   height: auto;
   display: block;
 }
