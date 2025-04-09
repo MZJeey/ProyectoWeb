@@ -22,142 +22,18 @@ header {
 }
 
 /* Aumentar tamaño de letra en los placeholders */
-
-input::placeholder,
-textarea::placeholder {
-  font-size: 18px; /* Cambia este valor según lo que necesites */
-  color: #6c757d; /* Puedes cambiar el color del placeholder */
+#miFormulario input,
+textarea,
+label {
+  font-size: 2rem;
+  color: black !important;
+}
+#miFormulario button {
+  font-size: 2rem;
 }
 
 .form-control {
   font-size: 1.3rem;
-}
-
-.info-principal {
-  margin-top: 13px;
-}
-
-/* Sección de contacto */
-.informacion-contacto {
-  font-size: 15px; /* Usar unidades relativas */
-}
-
-.info-box {
-  margin-bottom: 20px;
-  padding: 8px;
-  border-radius: 8px;
-  background-color: gainsboro;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-align: center;
-}
-
-h3 {
-  text-align: center;
-  font-weight: bold;
-}
-
-/* Estilos para pantallas pequeñas */
-@media (max-width: 576px) {
-  main {
-    margin: 20px;
-    padding: 15px;
-  }
-
-  .informacion-contacto {
-    font-size: 0.875rem; /* Ajuste de tamaño */
-  }
-
-  .info-box {
-    padding: 15px;
-  }
-}
-
-/* Estilos para pantallas medianas */
-@media (min-width: 576px) and (max-width: 768px) {
-  .info-box {
-    padding: 15px;
-  }
-
-  .info-box i {
-    width: 45px;
-    height: 45px;
-  }
-}
-.seguir .bi-facebook {
-  color: blue;
-}
-.seguir .bi-instagram {
-  color: #e4405f;
-}
-.seguir .bi-whatsapp {
-  color: green;
-}
-
-.info-extra .bi-geo-alt {
-  color: #ff5733;
-}
-.info-extra .bi-telephone-fill {
-  color: #1e88e5;
-}
-.info-extra .bi-envelope {
-  color: chocolate;
-}
-.info-extra .bi-clock-history {
-  color: red;
-}
-.info-extra .bi-hand-thumbs-up {
-  color: cadetblue;
-}
-
-/* pruebas */
-/* Asegura que los iconos en las tarjetas sean grandes y visibles en pantallas pequeñas */
-.card i {
-  font-size: 2rem;
-}
-
-.card {
-  /* Color de fondo */
-  background-color: snow;
-
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
-
-  border-radius: 8px;
-
-  /* Opcional: transición para animación suave */
-  transition: box-shadow 0.2s ease, transform 0.1s ease;
-}
-
-.card:hover {
-  /* Efecto cuando se pasa el mouse sobre la tarjeta */
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2), 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra más pronunciada al pasar el mouse */
-  transform: translateY(-2px); /* Eleva la tarjeta ligeramente */
-}
-
-/* Agrega algo de margen y padding en pantallas pequeñas */
-@media (max-width: 767px) {
-  .info-box {
-    padding: 10px;
-  }
-}
-.info-extra {
-  height: 119px;
-  margin-bottom: 5px;
-}
-.card-body label {
-  font-weight: bold;
-  margin-bottom: 25px;
-}
-
-.card-footer button {
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-  border-radius: 8px;
-}
-
-.map {
-  height: 500px;
-  width: 1000%;
 }
 
 /* Correo */

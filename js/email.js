@@ -46,7 +46,7 @@ formSubmitBtn.addEventListener("click", function (event) {
     stepMenuThree.classList.add("active");
     stepTwo.classList.remove("active");
     stepThree.classList.add("active");
-    formSubmitBtn.textContent = "Enviar";
+
     formBackBtn.classList.remove("active");
   }
 });
