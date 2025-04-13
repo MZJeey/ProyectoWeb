@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
           <h2 class="justificar">Descripción: ${producto.categoria.descripcion}</h2>
           <div class="contenedor-botones">
             <button class="btn-agregar" id="btn-agregar">Agregar al carrito</button>
-             <button class="btn-regresar" id="btn-regresar">Regresar</button>
+             <button class="btn-regresar" id="btn-regresar" >Regresar</button>
           </div>
         </div>
       </div>
@@ -31,6 +31,11 @@ document.addEventListener("DOMContentLoaded", function () {
       .getElementById("btn-agregar")
       .addEventListener("click", function () {
         agregarAlCarrito(producto.id);
+      });
+    document
+      .getElementById("btn-regresar")
+      .addEventListener("click", function () {
+        regresar();
       });
   } else {
     document.getElementById("product-detail").innerHTML = `
@@ -91,7 +96,16 @@ function agregarAlCarrito(productId) {
       // Notificación con opciones
       Swal.fire({
         title: "¡Producto agregado!",
-        html: `<b>${producto.categoria.nombre}</b> se añadió al carrito`,
+        html: `
+
+          <div style="margin: 1rem 0; text-align: center;">
+          <img src="${producto.imagen}" 
+               style="max-height: 120px; border-radius: 8px; border: 1px solid #eee;"
+               alt="${producto.categoria.nombre}"/>
+          <h4 style="margin: 0.5rem 0 0; color: #333;">${producto.categoria.nombre}</h4>
+          <p style="color: #28a745; font-weight: bold;">${producto.precio}</p>
+        </div>
+        <p>¿Qué deseas hacer ahora?</p>`,
         icon: "success",
         showCancelButton: true,
         confirmButtonText: "Ir al carrito",
@@ -120,6 +134,9 @@ function agregarAlCarrito(productId) {
         icon: "error",
       });
     });
+}
+function regresar() {
+  window.location.href = "tienda.html";
 }
 
 // Función para mostrar vista previa del carrito

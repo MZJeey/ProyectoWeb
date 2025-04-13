@@ -146,7 +146,7 @@ async function comprarAhora(productId, event) {
           <img src="${producto.imagen}" 
                style="max-height: 120px; border-radius: 8px; border: 1px solid #eee;"
                alt="${producto.categoria.nombre}"/>
-          <h4 style="margin: 0.5rem 0 0; color: #333;">${producto.nombre}</h4>
+          <h4 style="margin: 0.5rem 0 0; color: #333;">${producto.categoria.nombre}</h4>
           <p style="color: #28a745; font-weight: bold;">${producto.precio}</p>
         </div>
         <p>¿Qué deseas hacer ahora?</p>
