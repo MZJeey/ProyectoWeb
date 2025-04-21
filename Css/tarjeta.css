@@ -123,26 +123,35 @@
   transform: rotateY(-180deg);
 }
 
-/* Ajustes para pantallas pequeñas */
+.contenedor {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
 @media screen and (max-width: 480px) {
-  .formulario-tarjeta .flexbox {
-    flex-direction: column;
-    gap: 10px;
+  .contenedor {
+    padding: 20px;
   }
 
-  .formulario-tarjeta .grupo-select select {
-    font-size: 16px;
-    padding: 10px;
+  .formulario-tarjeta {
     width: 100%;
+    padding: 20px;
+  }
+
+  .formulario-tarjeta .flexbox {
+    flex-direction: column;
+    gap: 15px;
   }
 
   .formulario-tarjeta .grupo-select {
     width: 100%;
   }
 
-  .formulario-tarjeta .grupo.ccv input {
-    width: 100%;
+  .formulario-tarjeta select,
+  .formulario-tarjeta input {
     font-size: 16px;
-    padding: 10px;
+    padding: 12px;
+    width: 100%;
   }
 }
