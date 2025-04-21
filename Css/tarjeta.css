@@ -123,58 +123,27 @@
   transform: rotateY(-180deg);
 }
 
-.contenedor {
-  width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
-}
-
-.grid-expiracion {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.grid-seleccion {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 10px;
-}
-
 @media screen and (max-width: 480px) {
-  .grid-expiracion {
+  .flexbox {
+    display: grid !important;
     grid-template-columns: 1fr;
-  }
-
-  .grid-seleccion {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .contenedor {
-    padding: 20px;
-  }
-
-  .formulario-tarjeta {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .formulario-tarjeta .flexbox {
-    flex-direction: column;
     gap: 15px;
   }
 
-  .formulario-tarjeta .grupo-select {
+  .grupo.expira .flexbox {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+
+  .grupo-select {
     width: 100%;
   }
 
-  .formulario-tarjeta select,
-  .formulario-tarjeta input {
-    font-size: 16px;
-    padding: 12px;
+  select,
+  input {
     width: 100%;
+    padding: 12px;
+    font-size: 16px;
   }
 }
