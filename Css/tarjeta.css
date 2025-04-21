@@ -122,3 +122,27 @@
 .card:hover .card-inner {
   transform: rotateY(-180deg);
 }
+
+/* Ajustes para pantallas pequeñas */
+@media screen and (max-width: 480px) {
+  .formulario-tarjeta .flexbox {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .formulario-tarjeta .grupo-select select {
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .formulario-tarjeta .grupo-select {
+    width: 100%;
+  }
+
+  .formulario-tarjeta .grupo.ccv input {
+    width: 100%;
+    font-size: 16px;
+    padding: 10px;
+  }
+}
