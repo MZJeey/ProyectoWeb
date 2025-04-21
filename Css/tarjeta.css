@@ -129,6 +129,29 @@
   margin: 0 auto;
 }
 
+.grid-expiracion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.grid-seleccion {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+@media screen and (max-width: 480px) {
+  .grid-expiracion {
+    grid-template-columns: 1fr;
+  }
+
+  .grid-seleccion {
+    grid-template-columns: 1fr;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .contenedor {
     padding: 20px;
