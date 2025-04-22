@@ -123,27 +123,116 @@
   transform: rotateY(-180deg);
 }
 
-@media screen and (max-width: 480px) {
-  .flexbox {
-    display: grid !important;
-    grid-template-columns: 1fr;
-    gap: 15px;
+/* Estilos para el formulario */
+.formulario-tarjeta {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.formulario-tarjeta .grupo {
+  margin-bottom: 20px;
+}
+
+.formulario-tarjeta .grupo label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario-tarjeta .grupo input,
+.formulario-tarjeta .grupo select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.formulario-tarjeta .grupo input:focus,
+.formulario-tarjeta .grupo select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.formulario-tarjeta .flexbox {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.formulario-tarjeta .grupo-select {
+  flex: 1;
+  position: relative;
+}
+
+.formulario-tarjeta .grupo-select select {
+  width: 100%;
+}
+
+.formulario-tarjeta .btn-enviar {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.formulario-tarjeta .btn-enviar:hover {
+  background-color: #0056b3;
+}
+
+.formulario-tarjeta .flexbox .grupo {
+  flex: 1;
+}
+
+/* Estilos para dispositivos móviles (pantallas pequeñas) */
+@media (max-width: 480px) {
+  .formulario-tarjeta .flexbox {
+    flex-direction: column; /* Apilar los elementos en columna */
   }
 
-  .grupo.expira .flexbox {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-  }
-
-  .grupo-select {
+  /* Asegurarse de que los select también se ajusten bien */
+  .formulario-tarjeta .grupo-select select {
     width: 100%;
   }
 
-  select,
-  input {
+  .formulario-tarjeta .grupo {
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
   }
+}
+
+/* Estilo para el botón de abrir formulario */
+.contenedor-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.btn-abrir-formulario {
+  background-color: #28a745;
+  color: #fff;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.btn-abrir-formulario i {
+  margin-right: 10px;
+}
+
+.btn-abrir-formulario:hover {
+  background-color: #218838;
 }
