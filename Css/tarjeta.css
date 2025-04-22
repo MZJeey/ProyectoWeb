@@ -196,19 +196,38 @@
 
 /* Estilos para dispositivos móviles (pantallas pequeñas) */
 @media (max-width: 480px) {
+  /* Cambiar el contenedor de formulario a grid y apilar los elementos */
   .formulario-tarjeta .flexbox {
     display: grid; /* Usar grid en lugar de flexbox */
     grid-template-columns: 1fr; /* Apilar los elementos en una sola columna */
     gap: 15px; /* Espaciado entre los elementos */
   }
 
-  /* Asegurarse de que los select también se ajusten bien */
+  /* Asegurarse de que los inputs y selects ocupen el 100% del ancho */
+  .formulario-tarjeta .grupo,
+  .formulario-tarjeta .grupo-select,
+  .formulario-tarjeta input,
+  .formulario-tarjeta select {
+    width: 100%; /* Asegurar que ocupen todo el ancho */
+    box-sizing: border-box; /* Asegurar que el padding no rompa el diseño */
+  }
+
+  /* Asegurarse de que los selects se ajusten bien */
   .formulario-tarjeta .grupo-select select {
+    padding: 10px;
+  }
+
+  /* Hacer que los inputs se comporten como bloques */
+  .formulario-tarjeta .grupo input,
+  .formulario-tarjeta .grupo-select {
+    display: block;
     width: 100%;
   }
 
-  .formulario-tarjeta .grupo {
-    width: 100%;
+  /* Asegurar que el botón también ocupe todo el ancho */
+  .formulario-tarjeta button {
+    width: 100%; /* El botón ocupará todo el ancho */
+    padding: 15px;
   }
 }
 
