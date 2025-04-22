@@ -197,7 +197,9 @@
 /* Estilos para dispositivos móviles (pantallas pequeñas) */
 @media (max-width: 480px) {
   .formulario-tarjeta .flexbox {
-    flex-direction: column; /* Apilar los elementos en columna */
+    display: grid; /* Usar grid en lugar de flexbox */
+    grid-template-columns: 1fr; /* Apilar los elementos en una sola columna */
+    gap: 15px; /* Espaciado entre los elementos */
   }
 
   /* Asegurarse de que los select también se ajusten bien */
