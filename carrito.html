@@ -145,10 +145,13 @@
           </div>
           <img src="img/chip-tarjeta.png" class="chip" alt="" />
           <div class="datos">
-            <div class="grupo" id="numero">
-              <p class="label">Número Tarjeta</p>
-              <p class="numero">#### #### #### ####</p>
+            <div class="d-flex">
+              <div class="grupo" id="numero">
+                <p class="label">Número Tarjeta</p>
+                <p class="numero">#### #### #### ####</p>
+              </div>
             </div>
+
             <div class="d-flex">
               <div class="grupo" id="nombre">
                 <p class="label">Nombre Tarjeta</p>
@@ -218,11 +221,12 @@
             class="form-control"
           />
         </div>
-        <div class="d-flex">
-          <div class="grupo expira">
+        <div class="d-flex flex-column flex-md-row">
+          <!-- Sección de fecha de expiración -->
+          <div class="grupo expira mb-3 mb-md-0 me-md-3">
             <label for="selectMes">Expiracion</label>
             <div class="d-flex">
-              <div class="grupo-select">
+              <div class="grupo-select me-2">
                 <select name="mes" id="selectMes" class="form-select">
                   <option disabled selected>Mes</option>
                 </select>
@@ -237,6 +241,7 @@
             </div>
           </div>
 
+          <!-- Sección de CCV -->
           <div class="grupo ccv">
             <label for="inputCCV">CCV</label>
             <input

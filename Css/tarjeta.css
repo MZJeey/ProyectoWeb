@@ -191,25 +191,3 @@
 .btn-abrir-formulario:hover {
   background-color: #218838;
 }
-
-.pagar {
-  justify-content: center;
-}
-
-#btn-pagar {
-  padding: 15px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: #28a745;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  width: 100%; /* El botón ocupará el 100% del ancho del contenedor */
-  max-width: 200px; /* Tamaño máximo del botón */
-  text-align: center; /* Centra el texto dentro del botón */
-}
-
-/* Efecto hover para el botón */
-#btn-pagar:hover {
-  background-color: #218838;
-}
