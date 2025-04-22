@@ -149,7 +149,7 @@
               <p class="label">Número Tarjeta</p>
               <p class="numero">#### #### #### ####</p>
             </div>
-            <div class="flexbox">
+            <div class="d-flex">
               <div class="grupo" id="nombre">
                 <p class="label">Nombre Tarjeta</p>
                 <p class="nombre">goldFish</p>
@@ -187,8 +187,12 @@
 
       <!-- Contenedor Boton Abrir Formulario -->
       <div class="contenedor-btn">
-        <button class="btn-abrir-formulario" id="btn-abrir-formulario">
-          <i class="fas fa-plus"><i class="bi bi-arrow-down-circle"></i></i>
+        <button
+          class="btn-abrir-formulario btn btn-primary"
+          id="btn-abrir-formulario"
+        >
+          <i class="fas fa-plus"></i>
+          <i class="bi bi-arrow-down-circle"></i>
         </button>
       </div>
 
@@ -201,6 +205,7 @@
             id="inputNumero"
             maxlength="19"
             autocomplete="off"
+            class="form-control"
           />
         </div>
         <div class="grupo">
@@ -210,20 +215,21 @@
             id="inputNombre"
             maxlength="19"
             autocomplete="off"
+            class="form-control"
           />
         </div>
-        <div class="flexbox">
+        <div class="d-flex">
           <div class="grupo expira">
             <label for="selectMes">Expiracion</label>
-            <div class="flexbox">
+            <div class="d-flex">
               <div class="grupo-select">
-                <select name="mes" id="selectMes">
+                <select name="mes" id="selectMes" class="form-select">
                   <option disabled selected>Mes</option>
                 </select>
                 <i class="fas fa-angle-down"></i>
               </div>
               <div class="grupo-select">
-                <select name="year" id="selectYear">
+                <select name="year" id="selectYear" class="form-select">
                   <option disabled selected>Año</option>
                 </select>
                 <i class="fas fa-angle-down"></i>
@@ -233,10 +239,23 @@
 
           <div class="grupo ccv">
             <label for="inputCCV">CCV</label>
-            <input type="text" id="inputCCV" maxlength="3" />
+            <input
+              type="text"
+              id="inputCCV"
+              maxlength="3"
+              class="form-control"
+            />
           </div>
         </div>
-        <button type="submit" class="btn-enviar" id="btn-pagar">Pagar</button>
+        <div class="pagar text-center mt-4">
+          <button
+            type="submit"
+            class="btn btn-success btn-lg py-3 px-5 fw-bold"
+            id="btn-pagar"
+          >
+            PAGAR
+          </button>
+        </div>
       </form>
     </div>
 

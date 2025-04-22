@@ -17,7 +17,8 @@
 }
 
 .card {
-  width: 500px;
+  width: 100%;
+  max-width: 500px;
   height: 300px;
   color: #fff;
   cursor: pointer;
@@ -45,21 +46,6 @@
   overflow: hidden;
   z-index: 1;
   backface-visibility: hidden;
-}
-
-.row {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.map-img {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.3;
-  z-index: -1;
 }
 
 .card-no {
@@ -134,18 +120,18 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.formulario-tarjeta .grupo {
+.formulario-tarjeta .form-group {
   margin-bottom: 20px;
 }
 
-.formulario-tarjeta .grupo label {
+.formulario-tarjeta .form-group label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-.formulario-tarjeta .grupo input,
-.formulario-tarjeta .grupo select {
+.formulario-tarjeta .form-group input,
+.formulario-tarjeta .form-group select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -153,25 +139,10 @@
   font-size: 14px;
 }
 
-.formulario-tarjeta .grupo input:focus,
-.formulario-tarjeta .grupo select:focus {
+.formulario-tarjeta .form-group input:focus,
+.formulario-tarjeta .form-group select:focus {
   border-color: #007bff;
   outline: none;
-}
-
-.formulario-tarjeta .flexbox {
-  display: flex;
-  justify-content: space-between;
-  gap: 15px;
-}
-
-.formulario-tarjeta .grupo-select {
-  flex: 1;
-  position: relative;
-}
-
-.formulario-tarjeta .grupo-select select {
-  width: 100%;
 }
 
 .formulario-tarjeta .btn-enviar {
@@ -190,45 +161,8 @@
   background-color: #0056b3;
 }
 
-.formulario-tarjeta .flexbox .grupo {
+.formulario-tarjeta .d-flex .form-group {
   flex: 1;
-}
-
-/* Estilos para dispositivos móviles (pantallas pequeñas) */
-@media (max-width: 480px) {
-  /* Cambiar el contenedor de formulario a grid y apilar los elementos */
-  .formulario-tarjeta .flexbox {
-    display: grid; /* Usar grid en lugar de flexbox */
-    grid-template-columns: 1fr; /* Apilar los elementos en una sola columna */
-    gap: 15px; /* Espaciado entre los elementos */
-  }
-
-  /* Asegurarse de que los inputs y selects ocupen el 100% del ancho */
-  .formulario-tarjeta .grupo,
-  .formulario-tarjeta .grupo-select,
-  .formulario-tarjeta input,
-  .formulario-tarjeta select {
-    width: 100%; /* Asegurar que ocupen todo el ancho */
-    box-sizing: border-box; /* Asegurar que el padding no rompa el diseño */
-  }
-
-  /* Asegurarse de que los selects se ajusten bien */
-  .formulario-tarjeta .grupo-select select {
-    padding: 10px;
-  }
-
-  /* Hacer que los inputs se comporten como bloques */
-  .formulario-tarjeta .grupo input,
-  .formulario-tarjeta .grupo-select {
-    display: block;
-    width: 100%;
-  }
-
-  /* Asegurar que el botón también ocupe todo el ancho */
-  .formulario-tarjeta button {
-    width: 100%; /* El botón ocupará todo el ancho */
-    padding: 15px;
-  }
 }
 
 /* Estilo para el botón de abrir formulario */
@@ -255,5 +189,27 @@
 }
 
 .btn-abrir-formulario:hover {
+  background-color: #218838;
+}
+
+.pagar {
+  justify-content: center;
+}
+
+#btn-pagar {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%; /* El botón ocupará el 100% del ancho del contenedor */
+  max-width: 200px; /* Tamaño máximo del botón */
+  text-align: center; /* Centra el texto dentro del botón */
+}
+
+/* Efecto hover para el botón */
+#btn-pagar:hover {
   background-color: #218838;
 }
