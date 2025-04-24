@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const cartItems = document.getElementById("cart-items");
   const totalPriceElement = document.getElementById("total-price");
   const shippingSelect = document.getElementById("shipping-type");
-  const payButton = document.querySelector(".btn-enviar");
+  const payButton = document.querySelector("#btn-pagar");
 
   if (window.location.href.indexOf("carrito.html") > -1) {
     console.log("Cambiando altura del header");
@@ -139,6 +139,11 @@ document.addEventListener("DOMContentLoaded", function () {
       localStorage.removeItem("carrito");
       cart = [];
       updateCart();
+      document.getElementById("inputNumero").value = "";
+      document.getElementById("inputNombre").value = "";
+      document.getElementById("selectMes").selectedIndex = 0;
+      document.getElementById("selectYear").selectedIndex = 0;
+      document.getElementById("inputCCV").value = "";
 
       // Opcional: Redirigir a página de confirmación
       // window.location.href = "confirmacion.html";
