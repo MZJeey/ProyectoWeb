@@ -66,7 +66,7 @@
 
 /* Detalles del producto */
 .detalle-producto-tienda {
-  background-color: var(--azul-marino);
+  background: linear-gradient(135deg, #070997, #143055);
   color: var(--blanco);
   padding: 1.8rem;
   display: flex;
@@ -107,7 +107,7 @@
 }
 
 .btn-producto {
-  background-color: var(--celeste-agua);
+  background: linear-gradient(135deg, #576a7c, #142655);
   color: var(--blanco);
   border: none;
   border-radius: 0.5rem;
@@ -123,7 +123,7 @@
   letter-spacing: 0.5px;
 }
 .btn-compra {
-  background-color: var(--celeste-agua);
+  background: linear-gradient(135deg, #286ea7, #218860);
   color: white;
   border: none;
   border-radius: 0.5rem;
@@ -145,6 +145,7 @@
   background-color: var(--blanco);
   color: var(--celeste-agua);
   transform: translateY(2px);
+  transform: scale(1.05);
 }
 
 .btn-compra:active {
@@ -156,6 +157,7 @@
   background-color: var(--blanco);
   color: var(--celeste-agua);
   transform: translateY(2px);
+  transform: scale(1.05);
 }
 
 /* Estados de carga */

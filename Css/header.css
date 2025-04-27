@@ -259,7 +259,7 @@ main {
 /* Estilo para el botón "Ver Producto" */
 
 .detalle-producto {
-  background-color: var(--azul-marino);
+  background: linear-gradient(135deg, #070997, #143055);
   color: white;
   padding: 0.5rem;
   border-radius: 0 0 1rem 1rem;
@@ -288,7 +288,7 @@ p {
 
 .btn-ver {
   color: white;
-  background-color: var(--celeste-agua);
+  background: linear-gradient(135deg, #576a7c, #142655);
   border-radius: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -299,18 +299,19 @@ p {
   margin-right: 0.5rem;
   height: 3.5rem;
   align-content: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
   margin-bottom: 0.5rem;
 }
 
 .btn-ver:hover {
   background-color: white;
-  color: var(--celeste-agua);
+  color: var(--arena-beige);
   border-color: var(--celeste-agua);
+  transform: scale(1.05);
 }
 .btn-comprar {
   color: white;
-  background-color: var(--celeste-agua);
+  background: linear-gradient(135deg, #286ea7, #218860);
   border-radius: 2rem;
   text-align: center;
   text-transform: uppercase;
@@ -321,12 +322,13 @@ p {
   margin-right: 0.5rem;
   height: 3.5rem;
   align-content: center;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 .btn-comprar:hover {
   background-color: white;
   color: var(--celeste-agua);
   border-color: var(--celeste-agua);
+  transform: scale(1.05);
 }
 
 /* Modal */
@@ -507,32 +509,7 @@ p {
   margin: 0;
 }
 
-.video-container video {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
 /* Responsividad */
-@media (max-width: 768px) {
-  .row {
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  h2 {
-    font-size: 2.2rem;
-  }
-
-  .imagen-container {
-    height: 250px;
-  }
-
-  .video-container video {
-    height: 350px;
-  }
-}
 
 .footer-bottom p {
   font-size: 1.5rem !important;

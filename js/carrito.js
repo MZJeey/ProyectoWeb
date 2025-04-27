@@ -1,32 +1,23 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Obtener elementos del DOM
   const cartItems = document.getElementById("cart-items");
   const totalPriceElement = document.getElementById("total-price");
   const shippingSelect = document.getElementById("shipping-type");
-  const payButton = document.querySelector("#btn-pagar");
+  const payButton = document.getElementById("btn-pagar");
 
-  if (window.location.href.indexOf("carrito.html") > -1) {
-    console.log("Cambiando altura del header");
+  // Ajustar altura del header si estamos en carrito.html
+  if (window.location.href.includes("carrito.html")) {
     const header = document.getElementById("header");
-
-    // Cambiar solo la altura si estamos en una pantalla grande
-    if (window.innerWidth >= 768) {
-      if (header) {
-        header.style.height = "400px";
-      }
+    if (window.innerWidth >= 768 && header) {
+      header.style.height = "400px";
     }
   }
 
-  // Cargar carrito desde localStorage
   let cart = JSON.parse(localStorage.getItem("carrito")) || [];
 
-  // Actualizar el carrito en la vista
-  // Función updateCart corregida
   function updateCart() {
     cartItems.innerHTML = "";
     let subtotal = 0;
 
-    // Verificar si hay productos antes de calcular
     if (cart.length === 0) {
       totalPriceElement.textContent = "$0.00";
       return;
@@ -67,13 +58,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const total = subtotal + shippingCost;
     totalPriceElement.textContent = `$${total.toFixed(2)}`;
   }
-  // Eliminar producto del carrito
+
   function removeItem(index) {
     cart.splice(index, 1);
     localStorage.setItem("carrito", JSON.stringify(cart));
     updateCart();
 
-    // Mostrar notificación
     Swal.fire({
       title: "Producto eliminado",
       icon: "success",
@@ -82,9 +72,10 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Event listeners
+  // Cambiar tipo de envío
   shippingSelect.addEventListener("change", updateCart);
 
+  // Cambiar cantidad de productos
   cartItems.addEventListener("change", function (e) {
     if (e.target.classList.contains("quantity-input")) {
       const index = e.target.dataset.index;
@@ -98,6 +89,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
+  // Eliminar producto del carrito
   cartItems.addEventListener("click", function (e) {
     if (e.target.closest(".btn-danger")) {
       const index = e.target.closest(".btn-danger").dataset.index;
@@ -105,21 +97,50 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Procesar pago
+  // Pagar
   payButton.addEventListener("click", function (e) {
     e.preventDefault();
 
+    const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
+
+    // Validar que el carrito no esté vacío
     if (cart.length === 0) {
       Swal.fire({
         title: "Carrito vacío",
-        text: "No hay productos en tu carrito",
+        text: "No hay productos en tu carrito para pagar",
         icon: "warning",
       });
       return;
     }
 
-    // Validar formulario de tarjeta aquí (puedes agregar más validaciones)
-    const cardNumber = document.getElementById("inputNumero").value;
+    if (!usuarioLogueado || !usuarioLogueado.email) {
+      Swal.fire({
+        title: "Inicio de sesión requerido",
+        html: `
+          <p>Para completar tu compra necesitas iniciar sesión.</p>
+          <p>¿Deseas iniciar sesión o registrarte ahora?</p>
+        `,
+        icon: "info",
+        showCancelButton: true,
+        confirmButtonText: "Iniciar sesión",
+        cancelButtonText: "Registrarse",
+        confirmButtonColor: "#3085d6",
+        cancelButtonColor: "#28a745",
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Guardar la URL actual para redirigir después del login
+          localStorage.setItem("redirectAfterLogin", window.location.href);
+          window.location.href = "registro.html"; // Página de login
+        } else if (result.dismiss === Swal.DismissReason.cancel) {
+          localStorage.setItem("redirectAfterLogin", window.location.href);
+          window.location.href = "registroCuenta.html"; // Página de registro
+        }
+      });
+      return;
+    }
+
+    // Validar número de tarjeta
+    const cardNumber = document.getElementById("inputNumero").value.trim();
     if (!cardNumber || cardNumber.replace(/\s/g, "").length < 16) {
       Swal.fire({
         title: "Error",
@@ -129,27 +150,25 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Simular pago exitoso
+    // Pago exitoso
     Swal.fire({
       title: "¡Pago exitoso!",
       text: "Tu pedido ha sido procesado",
       icon: "success",
     }).then(() => {
-      // Vaciar carrito después de pagar
+      // Limpiar carrito y formulario
       localStorage.removeItem("carrito");
       cart = [];
       updateCart();
+
       document.getElementById("inputNumero").value = "";
       document.getElementById("inputNombre").value = "";
       document.getElementById("selectMes").selectedIndex = 0;
       document.getElementById("selectYear").selectedIndex = 0;
       document.getElementById("inputCCV").value = "";
-
-      // Opcional: Redirigir a página de confirmación
-      // window.location.href = "confirmacion.html";
     });
   });
 
-  // Inicializar carrito
+  // Inicializar carrito al cargar la página
   updateCart();
 });

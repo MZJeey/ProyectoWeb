@@ -92,39 +92,45 @@
     </header>
 
     <main>
-      <div class="login-container">
-        <div class="login-header">
-          <h2>Iniciar Sesión</h2>
+      <div id="Registro">
+        <div class="registrar-cuenta">
+          <div class="login-header">
+            <h2>Crear Cuenta</h2>
+          </div>
+          <form id="formRegistro">
+            <div class="form-group-modal">
+              <label for="nombreNuevo">Nombre Completo</label>
+              <input
+                type="text"
+                class="form-control"
+                id="nombreNuevo"
+                placeholder="Tu nombre"
+                required
+              />
+            </div>
+            <div class="form-group-modal">
+              <label for="correoNuevo">Correo electrónico</label>
+              <input
+                type="email"
+                class="form-control"
+                id="correoNuevo"
+                placeholder="correo@ejemplo.com"
+                required
+              />
+            </div>
+            <div class="form-group-modal">
+              <label for="passwordNuevo">Contraseña</label>
+              <input
+                type="password"
+                class="form-control"
+                id="passwordNuevo"
+                placeholder="••••••••"
+                required
+              />
+            </div>
+            <button type="submit" class="btn-login">Registrarse</button>
+          </form>
         </div>
-        <form class="login-form">
-          <div class="form-group">
-            <label for="email">Correo electrónico</label>
-            <input
-              type="email"
-              class="form-control"
-              id="email"
-              placeholder="ejemplo@correo.com"
-              required
-            />
-          </div>
-          <div class="form-group">
-            <label for="password">Contraseña</label>
-            <input
-              type="password"
-              class="form-control"
-              id="password"
-              placeholder="••••••••"
-              required
-            />
-          </div>
-          <button type="submit" class="btn-login">Ingresar</button>
-          <div class="login-footer">
-            <p>
-              ¿No tienes una cuenta?
-              <a href="registroCuenta.html" class="btn-register">Regístrate</a>
-            </p>
-          </div>
-        </form>
       </div>
     </main>
     <a href="https://wa.me/50671795695" class="whatsapp-float" target="_blank">
@@ -306,6 +312,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/registro.js"></script>
+    <script src="js/crearCuenta.js"></script>
   </body>
 </html>

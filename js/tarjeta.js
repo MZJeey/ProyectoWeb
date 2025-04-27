@@ -67,14 +67,28 @@ formulario.inputNumero.addEventListener("keyup", (e) => {
   }
 
   if (valorInput[0] == 4) {
+    // Visa
     logoMarca.innerHTML = "";
     const imagen = document.createElement("img");
-    imagen.src = "img/logos/visa.png";
+    imagen.src = "Img/logos/visa.png";
     logoMarca.appendChild(imagen);
   } else if (valorInput[0] == 5) {
+    // Mastercard
     logoMarca.innerHTML = "";
     const imagen = document.createElement("img");
-    imagen.src = "img/logos/mastercard.png";
+    imagen.src = "Img/logos/mastercard.png";
+    logoMarca.appendChild(imagen);
+  } else if (valorInput.startsWith("34") || valorInput.startsWith("37")) {
+    // American Express
+    logoMarca.innerHTML = "";
+    const imagen = document.createElement("img");
+    imagen.src = "Img/logos/American_Express.png"; // Asegúrate de tener esta imagen
+    logoMarca.appendChild(imagen);
+  } else if (valorInput[0] == 6) {
+    // Discover
+    logoMarca.innerHTML = "";
+    const imagen = document.createElement("img");
+    imagen.src = "Img/logos/discover.png"; // Asegúrate de tener esta imagen
     logoMarca.appendChild(imagen);
   }
 

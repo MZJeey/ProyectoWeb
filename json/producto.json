@@ -1,85 +1,84 @@
 [
-    {
-      "id": 1,
-      "precio": "$1200.99",
-      "imagen": "./Img/cañas/caña01.jpg",
+  {
+    "id": 1,
+    "precio": "$139.95",
+    "imagen": "./Img/cañas/caña01.jpg",
+     "categoria":{
+      "nombre": "Ugly Stik GX2 Spinning Rod",
+      "id":"cañas",
+       "descripcion": "Esta caña es conocida por su durabilidad y versatilidad. Fabricada con materiales de alta calidad, es ideal para la pesca tanto en agua dulce como salada. Su diseño ergonómico la hace fácil de manejar y perfecta para pescadores de todos los niveles. Ya sea que estés buscando truchas en un lago o intentando atrapar un pez de mar, la Ugly Stik GX2 es una elección confiable."
+     }
+     
+  },
+  {
+    "id": 2,
+    "precio": "$23.99",
+    "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
        "categoria":{
-        "nombre": "Ugly Stik GX2 Spinning Rod",
-        "id":"cañas",
-        "descripcion":"Versátil y fácil de usar, ideal para pesca en agua dulce y salada."
+        "nombre": "Natural Fish Swimbaits",
+      "id":"señuelos",
+       "descripcion": "Estos señuelos son excelentes para atraer depredadores grandes como lubinas, lucios y dorados. Su diseño realista simula el movimiento de un pez herido, lo que provoca el instinto de caza de los peces. Perfectos para pescadores serios que buscan maximizar sus capturas."
        }
-       
-    },
-    {
-      "id": 2,
-      "precio": "$699.99",
-      "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
-         "categoria":{
-          "nombre": "Natural Fish Swimbaits",
-        "id":"señuelos",
-        "descripcion":"Excelente para pescar depredadores grandes como lubinas, lucios y dorados"
-         }
-    },
-    {
-      "id": 3,
-      "precio":"$99.99",
-      "imagen": "./Img/carretes/carrete05.jpg",
-       "categoria":{
-        "nombre":"Professional Fly Reel",
-        "id":"carrete",
-        "descripcion":"El Fly Reel es un carrete de pesca diseñado específicamente para la técnica de pesca con mosca."
-       }
-    },
-    {
-      "id": 4,
-      "precio": "$349.99",
-      "imagen": "./Img/cuerdas/cuerda02.jpg",
-       "categoria":{
-        "nombre":"Advanced Monofilament ",
-        "id":"cuerda",
-        "descripcion":"Ideal para pesca en agua dulce y salada. Es la cuerda más comúnmente utilizada para muchas especies, como truchas, bass, y lubinas"
-       }
-    },
-    {
-      "id": 5,
-      "precio": "$349.99",
-      "imagen": "./Img/carretes/carrete07.jpg",
-       "categoria":{
-        "nombre":"EAGLE CLAW BAIT CASTING",
-        "id":"carrete",
-        "descripcion":"El Carrete EC2.5 Eagle Claw diseñado para agua fresca, un diseño moderno, cuerpo de grafito, spool de aluminio, freno de carbon y sistema de freno magnético"
-       }
-    }
-    ,
-    {
-      "id": 6,
-      "precio": "$349.99",
-      "imagen": "./Img/carretes/BANTAM_MGL.jpg",
-       "categoria":{
-        "nombre":"Spinning Profesional",
-        "id":"carretes",
-        "descripcion":"Ideal para lanzar señuelos ligeros y para pesca en agua dulce o salada"
-       }
-    },
-    {
-      "id": 7,
-      "precio": "$349.99",
-      "imagen": "./Img/carretes/carrete02.jpg",
-       "categoria":{
-        "nombre":"Baitcasting Avanzado ",
-        "id":"carrete",
-        "descripcion":"Tiene un sistema de freno magnético o centrífugo para controlar el lanzamiento"
-       }
-    },
-    {
-      "id": 8,
-      "precio": "$349.99",
-      "imagen": "./Img/cañas/nc73mh-1-1.jpg",
-       "categoria":{
-        "nombre":"Solora Spinning Rod",
-        "id":"caña",
-        "descripcion":" Especial para lanzar desde la orilla del mar"
-       }
-    }
-  ]
-  
+  },
+  {
+    "id": 3,
+    "precio":"$129.99",
+    "imagen": "./Img/carretes/carrete05.jpg",
+     "categoria":{
+      "nombre":"Professional Fly Reel",
+      "id":"carrete",
+        "descripcion": " Diseñado específicamente para la técnica de pesca con mosca, este carrete ofrece un rendimiento excepcional y una acción suave. Su construcción ligera y robusta lo convierte en una herramienta indispensable para los entusiastas de la pesca con mosca."
+     }
+  },
+  {
+    "id": 4,
+    "precio": "$36.23",
+    "imagen": "./Img/cuerdas/cuerda02.jpg",
+     "categoria":{
+      "nombre":"Advanced Monofilament ",
+      "id":"cuerda",
+       "descripcion": " Esta línea es ideal para la pesca en agua dulce y salada. Su elasticidad y resistencia la hacen perfecta para diversas especies, incluyendo truchas, bass y lubinas. Es la opción más común entre los pescadores por su versatilidad y facilidad de uso."
+     }
+  },
+  {
+    "id": 5,
+    "precio": "$105.00",
+    "imagen": "./Img/carretes/carrete07.jpg",
+     "categoria":{
+      "nombre":"EAGLE CLAW BAIT CASTING",
+      "id":"carrete",
+      "descripcion": "Este carrete de baitcasting está diseñado para agua fresca, con un moderno cuerpo de grafito y un spool de aluminio. Su sistema de freno de carbono y freno magnético proporciona un control excepcional durante el lanzamiento, ideal para pescadores que buscan precisión."
+     }
+  }
+  ,
+  {
+    "id": 6,
+    "precio": "$229.67",
+    "imagen": "./Img/carretes/BANTAM_MGL.jpg",
+     "categoria":{
+      "nombre":"Spinning Profesional",
+      "id":"carretes",
+      "descripcion": "Este carrete es perfecto para lanzar señuelos ligeros, adaptándose tanto a la pesca en agua dulce como salada. Su diseño profesional asegura una experiencia de pesca fluida y eficiente, con un sistema de arrastre que permite controlar fácilmente las capturas."
+     }
+  },
+  {
+    "id": 7,
+    "precio": "$349.99",
+    "imagen": "./Img/carretes/carrete02.jpg",
+     "categoria":{
+      "nombre":"Baitcasting Avanzado ",
+      "id":"carrete",
+      "descripcion": "Con un sistema de freno magnético o centrífugo, este carrete está diseñado para proporcionar un control superior durante el lanzamiento. Ideal para pescadores experimentados que demandan un rendimiento excepcional en cada pesca."
+     }
+  },
+  {
+    "id": 8,
+    "precio": "$19.99",
+    "imagen": "./Img/cañas/nc73mh-1-1.jpg",
+     "categoria":{
+      "nombre":"Solora Spinning Rod",
+      "id":"caña",
+      "descripcion": " Especialmente diseñado para lanzar desde la orilla del mar, este modelo de caña es ligero y robusto, facilitando el manejo y la precisión en cada lanzamiento. Perfecto para aquellos que buscan una caña fiable para sus aventuras de pesca en el mar."
+     }
+  }
+]

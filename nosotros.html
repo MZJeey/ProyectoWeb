@@ -124,18 +124,131 @@
         </h2>
 
         <div class="row justify-content-between">
-          <!-- Columna 1: Imagen -->
-          <div class="col-lg-5 col-md-6 mb-4 d-flex justify-content-start">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-              Doloribus, libero. Corporis commodi maxime neque, eius itaque
-              dolores saepe dolorem consequatur reprehenderit iste beatae,
-              suscipit magnam eaque doloremque fugiat accusamus! Voluptatem!
-            </p>
+          <!-- Columna 1: Testimonios (Carrusel) -->
+          <div class="col-lg-6 col-md-7 mb-4">
+            <div
+              id="testimonialCarousel"
+              class="carousel slide"
+              data-bs-ride="carousel"
+            >
+              <div class="carousel-inner">
+                <!-- Testimonio 1 -->
+                <div class="carousel-item active">
+                  <div class="testimonial-card p-4 rounded shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="Img/cliente04.jpg"
+                        class="rounded-circle me-3 testimonial-img"
+                        alt="Cliente"
+                        style="width: 300px; height: 300px; object-fit: cover"
+                      />
+                      <div>
+                        <h5 class="mb-0">Carlos Rodríguez</h5>
+                        <div class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mb-0">
+                      "Los equipos de pesca son excelentes. Atrapé mi primer pez
+                      espada con la caña que compré aquí. ¡Totalmente
+                      recomendado!"
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Testimonio 2 -->
+                <div class="carousel-item">
+                  <div class="testimonial-card p-4 rounded shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="Img/cliente05.avif"
+                        class="rounded-circle me-3 testimonial-img"
+                        alt="Cliente"
+                        style="width: 300px; height: 300px; object-fit: cover"
+                      />
+                      <div>
+                        <h5 class="mb-0">Jorge Murillo</h5>
+                        <div class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mb-0">
+                      "El servicio postventa es increíble. Me ayudaron a elegir
+                      el equipo perfecto para mis necesidades. Volveré a
+                      comprar."
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Testimonio 3 -->
+                <div class="carousel-item">
+                  <div class="testimonial-card p-4 rounded shadow-sm">
+                    <div class="d-flex align-items-center mb-3">
+                      <img
+                        src="Img/cliente01.jpg"
+                        class="rounded-circle me-3 testimonial-img"
+                        alt="Cliente"
+                        style="width: 300px; height: 300px; object-fit: cover"
+                      />
+                      <div>
+                        <h5 class="mb-0">Javier López</h5>
+                        <div class="text-warning">
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                          <i class="bi bi-star-fill"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <p class="mb-0">
+                      "La calidad de los productos superó mis expectativas. El
+                      envío fue rápido y todo llegó en perfecto estado."
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Controles del carrusel (opcional) -->
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#testimonialCarousel"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Siguiente</span>
+              </button>
+            </div>
           </div>
 
-          <!-- Columna 2: Video -->
-          <div class="col-lg-5 col-md-6 mb-4 d-flex justify-content-end">
+          <!-- Columna 2: Video (se mantiene igual) -->
+          <div class="col-lg-5 col-md-5 mb-4 d-flex justify-content-end">
             <div class="video-container">
               <video
                 controls

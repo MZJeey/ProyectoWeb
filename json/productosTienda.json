@@ -1,410 +1,404 @@
 [
-    {
-      "id": 1,
-      "precio": "$1200.99",
-      "imagen": "./Img/cañas/caña01.jpg",
-       "categoria":{
-        "nombre": "Ugly Stik GX2 Spinning Rod",
-        "id":"cañas",
-        "descripcion":"Versátil y fácil de usar, ideal para pesca en agua dulce y salada."
-       }
-       
-    },
-    {
-      "id": 2,
-      "precio": "$699.99",
-      "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
-         "categoria":{
-          "nombre": "Swimbaits",
-        "id":"señuelos_anzuelos",
-        "descripcion":"Excelente para pescar depredadores grandes como lubinas, lucios y dorados"
-         }
-    },
-    {
-      "id": 3,
-      "precio":"$99.99",
-      "imagen": "./Img/carretes/carrete05.jpg",
-       "categoria":{
-        "nombre":"Fly Reel",
-        "id":"carretes",
-        "descripcion":"El Fly Reel es un carrete de pesca diseñado específicamente para la técnica de pesca con mosca."
-       }
-    },
-    {
-      "id": 4,
-      "precio": "$349.99",
-      "imagen": "./Img/cuerdas/cuerda02.jpg",
-       "categoria":{
-        "nombre":"Monofilament Line",
-        "id":"cuerdas",
-        "descripcion":"Ideal para pesca en agua dulce y salada. Es la cuerda más comúnmente utilizada para muchas especies, como truchas, bass, y lubinas"
-       }
-    },
-    {
-      "id": 5,
-      "precio": "$349.99",
-      "imagen": "./Img/carretes/carrete07.jpg",
-       "categoria":{
-        "nombre":"EAGLE CLAW EC2.5 BAIT CASTING ",
-        "id":"carretes",
-        "descripcion":"El Carrete EC2.5 Eagle Claw diseñado para agua fresca, un diseño moderno, cuerpo de grafito, spool de aluminio, freno de carbon y sistema de freno magnético"
-       }
+  {
+    "id": 1,
+    "precio": "$570.00",
+    "imagen": "./Img/cañas/caña01.jpg",
+    "categoria": {
+      "nombre": "Ugly Stik GX2 Spinning Rod",
+      "id": "cañas",
+      "descripcion": "Esta caña es conocida por su durabilidad y versatilidad. Fabricada con materiales de alta calidad, es ideal para la pesca tanto en agua dulce como salada. Su diseño ergonómico la hace fácil de manejar y perfecta para pescadores de todos los niveles. Ya sea que estés buscando truchas en un lago o intentando atrapar un pez de mar, la Ugly Stik GX2 es una elección confiable."
     }
-    ,
-    {
-      "id": 6,
-      "precio": "$349.99",
-      "imagen": "./Img/carretes/BANTAM_MGL.jpg",
-       "categoria":{
-        "nombre":" Carrete Spinning Profesional",
-        "id":"carretes",
-        "descripcion":"Ideal para lanzar señuelos ligeros y para pesca en agua dulce o salada"
-       }
-    },
-    {
-      "id": 7,
-      "precio": "$349.99",
-      "imagen": "./Img/carretes/carrete02.jpg",
-       "categoria":{
-        "nombre":"Carrete Baitcasting Avanzado",
-        "id":"carretes",
-        "descripcion":"Tiene un sistema de freno magnético o centrífugo para controlar el lanzamiento"
-       }
-    },
-    {
-      "id": 8,
-      "precio": "$349.99",
-      "imagen": "./Img/cañas/nc73mh-1-1.jpg",
-       "categoria":{
-        "nombre":"Solora 2-Piece Spinning Rod",
-        "id":"cañas",
-        "descripcion":" Especial para lanzar desde la orilla del mar"
-       }
-    },
-    {
-        "id": 9,
-        "precio": "$349.99",
-        "imagen": "./Img/cañas/caña02.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cañas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 10,
-        "precio": "$349.99",
-        "imagen": "./Img/cañas/caña03.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cañas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 11,
-        "precio": "$349.99",
-        "imagen": "./Img/carretes/carrete01.webp",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"carretes",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 12,
-        "precio": "$349.99",
-        "imagen": "./Img/cuerdas/cuerda01.webp",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cuerdas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      }
-    ,
-    {
-        "id": 13,
-        "precio": "$349.99",
-        "imagen": "./Img/carretes/carrete04.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"carretes",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 14,
-        "precio": "$349.99",
-        "imagen": "./Img/carretes/carrete06.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"carretes",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 15,
-        "precio": "$349.99",
-        "imagen": "./Img/cuerdas/cuerda03.webp",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cuerdas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 16,
-        "precio": "$349.99",
-        "imagen": "./Img/cuerdas/cuerda04.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cuerdas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 17,
-        "precio": "$349.99",
-        "imagen": "./Img/cuerdas/cuerda05.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod    ",
-          "id":"cuerdas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 18,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/anzuelo01.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 19,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/anzuelo02.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 20,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/anzuelo03.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 21,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/anzuelo04.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 22,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/anzuelo02.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 23,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/señuelo05.jpeg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-    
-      {
-        "id": 24,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/señuelo07.jpeg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 25,
-        "precio": "$349.99",
-        "imagen": "./Img/señuelos_anzuelos/señuelo10.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"señuelos_anzuelos",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 26,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio01.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 27,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio02.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 28,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio03.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      },
-      {
-        "id": 29,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio05.webp",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-      }
-       ,
-       {
-        "id": 30,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio06.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       }
-       ,
-       {
-        "id": 31,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio08.jpeg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 32,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio09.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 33,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio10.webp",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 34,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio11.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 35,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio12.webp",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 36,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio13.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 37,
-        "precio": "$349.99",
-        "imagen": "./Img/accesorios/accesorio14.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"accesorios",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 38,
-        "precio": "$349.99",
-        "imagen": "./Img/cañas/caña04.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cañas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 39,
-        "precio": "$349.99",
-        "imagen": "./Img/cañas/caña05.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cañas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       },
-       {
-        "id": 40,
-        "precio": "$349.99",
-        "imagen": "./Img/cañas/caña06.jpg",
-         "categoria":{
-          "nombre":"Solora 2-Piece Spinning Rod",
-          "id":"cañas",
-          "descripcion":" Especial para lanzar desde la orilla del mar"
-         }
-       }
-      
-  ]
+
+  },
+  {
+    "id": 2,
+    "precio": "$20.10",
+    "imagen": "./Img/señuelos_anzuelos/señuelo06.jpg",
+    "categoria": {
+      "nombre": "Swimbaits",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Estos señuelos son excelentes para atraer depredadores grandes como lubinas, lucios y dorados. Su diseño realista simula el movimiento de un pez herido, lo que provoca el instinto de caza de los peces. Perfectos para pescadores serios que buscan maximizar sus capturas."
+    }
+  },
+  {
+    "id": 3,
+    "precio": "$129.99",
+    "imagen": "./Img/carretes/carrete05.jpg",
+    "categoria": {
+      "nombre": "Fly Reel",
+      "id": "carretes",
+      "descripcion": " Diseñado específicamente para la técnica de pesca con mosca, este carrete ofrece un rendimiento excepcional y una acción suave. Su construcción ligera y robusta lo convierte en una herramienta indispensable para los entusiastas de la pesca con mosca."
+    }
+  },
+  {
+    "id": 4,
+    "precio": "$36.23",
+    "imagen": "./Img/cuerdas/cuerda02.jpg",
+    "categoria": {
+      "nombre": "Monofilament Line",
+      "id": "cuerdas",
+      "descripcion": " Esta línea es ideal para la pesca en agua dulce y salada. Su elasticidad y resistencia la hacen perfecta para diversas especies, incluyendo truchas, bass y lubinas. Es la opción más común entre los pescadores por su versatilidad y facilidad de uso."
+    }
+  },
+  {
+    "id": 5,
+    "precio": "$105.00",
+    "imagen": "./Img/carretes/carrete07.jpg",
+    "categoria": {
+      "nombre": "EAGLE CLAW EC2.5 BAIT CASTING ",
+      "id": "carretes",
+      "descripcion": "Este carrete de baitcasting está diseñado para agua fresca, con un moderno cuerpo de grafito y un spool de aluminio. Su sistema de freno de carbono y freno magnético proporciona un control excepcional durante el lanzamiento, ideal para pescadores que buscan precisión."
+    }
+  },
+  {
+    "id": 6,
+    "precio": "$229.67",
+    "imagen": "./Img/carretes/BANTAM_MGL.jpg",
+    "categoria": {
+      "nombre": " Carrete Spinning Profesional",
+      "id": "carretes",
+      "descripcion": "Este carrete es perfecto para lanzar señuelos ligeros, adaptándose tanto a la pesca en agua dulce como salada. Su diseño profesional asegura una experiencia de pesca fluida y eficiente, con un sistema de arrastre que permite controlar fácilmente las capturas."
+    }
+  },
+  {
+    "id": 7,
+    "precio": "$349.99",
+    "imagen": "./Img/carretes/carrete02.jpg",
+    "categoria": {
+      "nombre": "Carrete Baitcasting Avanzado",
+      "id": "carretes",
+      "descripcion": "Con un sistema de freno magnético o centrífugo, este carrete está diseñado para proporcionar un control superior durante el lanzamiento. Ideal para pescadores experimentados que demandan un rendimiento excepcional en cada pesca."
+    }
+  },
+  {
+    "id": 8,
+    "precio": "$349.99",
+    "imagen": "./Img/cañas/nc73mh-1-1.jpg",
+    "categoria": {
+      "nombre": "Solora 2-Piece Spinning Rod",
+      "id": "cañas",
+      "descripcion": " Especialmente diseñado para lanzar desde la orilla del mar, este modelo de caña es ligero y robusto, facilitando el manejo y la precisión en cada lanzamiento. Perfecto para aquellos que buscan una caña fiable para sus aventuras de pesca en el mar."
+    }
+  },
+  {
+    "id": 9,
+    "precio": "$19.99",
+    "imagen": "./Img/cañas/caña02.jpg",
+    "categoria": {
+      "nombre": "Solora 2-Piece Spinning Rod",
+      "id": "cañas",
+      "descripcion": "Similar al modelo anterior, esta caña es ideal para principiantes. Su diseño permite un manejo fácil y eficiente, perfecta para quienes se inician en la pesca desde la orilla del mar."
+    }
+  },
+  {
+    "id": 10,
+    "precio": "$64.99",
+    "imagen": "./Img/cañas/caña03.jpg",
+    "categoria": {
+      "nombre": "Caña OceanStrike XT",
+      "id": "cañas",
+      "descripcion": "Diseñada para la pesca en el mar, esta caña ofrece una excelente resistencia y durabilidad. Su diseño optimizado permite realizar lanzamientos precisos, adecuada para pescadores que buscan capturas grandes."
+    }
+  },
+  {
+    "id": 11,
+    "precio": "$289.95",
+    "imagen": "./Img/carretes/carrete01.webp",
+    "categoria": {
+      "nombre": "Carrete DeepReel Pro",
+      "id": "carretes",
+      "descripcion": "Este carrete está diseñado para la pesca en aguas profundas, ofreciendo un rendimiento excepcional en cada lanzamiento. Su construcción robusta asegura largas jornadas de pesca sin comprometer la calidad."
+    }
+  },
+  {
+    "id": 12,
+    "precio": "$74.99",
+    "imagen": "./Img/cuerdas/cuerda01.webp",
+    "categoria": {
+      "nombre": "Cuerda WaveLine 300",
+      "id": "cuerdas",
+      "descripcion": " Ideal para pesca en el mar, esta cuerda combina resistencia y flexibilidad, permitiendo un mejor control en cada lanzamiento. Su diseño asegura una larga durabilidad incluso bajo condiciones exigentes."
+    }
+  },
+  {
+    "id": 13,
+    "precio": "$219.00",
+    "imagen": "./Img/carretes/carrete04.jpg",
+    "categoria": {
+      "nombre": "Carrete UltraSpin Max",
+      "id": "carretes",
+      "descripcion": "Este carrete es perfecto para pescadores serios que buscan calidad y rendimiento. Su diseño robusto y ligero lo hace ideal para largas jornadas de pesca, asegurando comodidad y eficacia."
+    }
+  },
+  {
+    "id": 14,
+    "precio": "$315.50",
+    "imagen": "./Img/carretes/carrete06.jpg",
+    "categoria": {
+      "nombre": "Carrete TitanGear V2",
+      "id": "carretes",
+      "descripcion": " Especial para lanzar desde la orilla del mar"
+    }
+  },
+  {
+    "id": 15,
+    "precio": "$68.90",
+    "imagen": "./Img/cuerdas/cuerda03.webp",
+    "categoria": {
+      "nombre": "Cuerda OceanFlex Pro",
+      "id": "cuerdas",
+      "descripcion": "Con un diseño moderno y tecnología avanzada, este carrete es perfecto para pescadores que buscan precisión y control. Su sistema de freno avanzado garantiza un rendimiento óptimo en cualquier situación."
+    }
+  },
+  {
+    "id": 16,
+    "precio": "$59.75",
+    "imagen": "./Img/cuerdas/cuerda04.jpg",
+    "categoria": {
+      "nombre": "Cuerda TidalForce X",
+      "id": "cuerdas",
+      "descripcion": " Esta cuerda es ideal para la pesca en el mar, ofreciendo una combinación perfecta de resistencia y flexibilidad. Su diseño especial la hace resistente a la abrasión, ideal para condiciones difíciles."
+    }
+  },
+  {
+    "id": 17,
+    "precio": "$79.99",
+    "imagen": "./Img/cuerdas/cuerda05.jpg",
+    "categoria": {
+      "nombre": "Cuerda AquaLine 400",
+      "id": "cuerdas",
+      "descripcion": "Diseñada para la pesca en el mar, esta cuerda ofrece un rendimiento excepcional y durabilidad. Perfecta para pescadores que buscan una línea confiable que soporte las exigencias del agua salada."
+    }
+  },
+  {
+    "id": 18,
+    "precio": "$15.99",
+    "imagen": "./Img/señuelos_anzuelos/anzuelo01.jpg",
+    "categoria": {
+      "nombre": "Set Anzuelos DeepCatch",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Este set incluye anzuelos diseñados para maximizar tus posibilidades de captura. Perfectos para la pesca en el mar, su diseño asegura que las capturas se mantengan firmemente sujetas."
+    }
+  },
+  {
+    "id": 19,
+    "precio": "$18.75",
+    "imagen": "./Img/señuelos_anzuelos/anzuelo02.jpg",
+    "categoria": {
+      "nombre": "Anzuelos TurboBite",
+      "id": "señuelos_anzuelos",
+      "descripcion": " Estos anzuelos están diseñados para ofrecer un agarre excepcional, ideales para pescar en aguas saladas. Su diseño asegura que cada captura sea segura y efectiva."
+    }
+  },
+  {
+    "id": 20,
+    "precio": "$12.45",
+    "imagen": "./Img/señuelos_anzuelos/anzuelo03.jpg",
+    "categoria": {
+      "nombre": "Anzuelos SharpFin Steel",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Con un diseño afilado y resistente, estos anzuelos son perfectos para la pesca en el mar. Su durabilidad asegura que puedas confiar en ellos en cada lanzamiento."
+    }
+  },
+  {
+    "id": 21,
+    "precio": "$9.99",
+    "imagen": "./Img/señuelos_anzuelos/anzuelo04.jpg",
+    "categoria": {
+      "nombre": "Anzuelos MiniHook Flash",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Estos anzuelos más pequeños son ideales para la pesca de especies menores. Su diseño permite un manejo fácil y eficaz, perfecto para pescadores que buscan variedad."
+    }
+  },
+  {
+    "id": 22,
+    "precio": "$14.20",
+    "imagen": "./Img/señuelos_anzuelos/anzuelo05.jpg",
+    "categoria": {
+      "nombre": "Anzuelos StrikePoint 10X",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Diseñados para maximizar la efectividad, estos anzuelos son ideales para la pesca en el mar. Su construcción asegura que cada captura sea sólida y segura."
+    }
+  },
+  {
+    "id": 23,
+    "precio": "$19.99",
+    "imagen": "./Img/señuelos_anzuelos/señuelo01.jpg",
+    "categoria": {
+      "nombre": "Señuelo GlowFish Hunter",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Este señuelo brilla en la oscuridad, lo que lo hace ideal para la pesca nocturna. Su diseño innovador atrae a los peces depredadores, aumentando tus posibilidades de captura."
+    }
+  },
+  {
+    "id": 24,
+    "precio": "$21.75",
+    "imagen": "./Img/señuelos_anzuelos/señuelo02.webp",
+    "categoria": {
+      "nombre": "Señuelo NeonBait",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Con colores vibrantes, este señuelo es perfecto para atraer a los peces en aguas oscuras. Su diseño realista asegura que se asemeje a un pez herido, provocando la caza."
+    }
+  },
+  {
+    "id": 25,
+    "precio": "$24.50",
+    "imagen": "./Img/señuelos_anzuelos/señuelo03.jpg",
+    "categoria": {
+      "nombre": "Señuelo StormRider",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Este señuelo está diseñado para ser efectivo en diversas condiciones. Su construcción robusta y diseño aerodinámico permiten lanzamientos precisos y efectivos."
+    }
+  },
+  {
+    "id": 26,
+    "precio": "$17.30",
+    "imagen": "./Img/señuelos_anzuelos/señuelo04.jpg",
+    "categoria": {
+      "nombre": "Señuelo FlashDart",
+      "id": "señuelos_anzuelos",
+      "descripcion": "Con un diseño que imita a un pez herido, este señuelo es ideal para atraer a los depredadores. Su efectividad en el agua lo hace un favorito entre los pescadores."
+    }
+  },
+  {
+    "id": 27,
+    "precio": "$22.00",
+    "imagen": "./Img/señuelos_anzuelos/señuelo05.jpeg",
+    "categoria": {
+      "nombre": "Señuelo DeepVibe",
+      "id": "señuelos_anzuelos",
+      "descripcion": " Este señuelo vibra al ser recuperado, imitando a un pez vivo. Su diseño es perfecto para atraer a los depredadores en el mar, aumentando tus posibilidades de captura."
+    }
+  },
+  {
+    "id": 28,
+    "precio": "$69.99",
+    "imagen": "./Img/cañas/caña01.jpg",
+    "categoria": {
+      "nombre": "Caña ThunderCast Pro",
+      "id": "cañas",
+      "descripcion": "Esta caña es perfecta para pescadores que buscan un equilibrio entre calidad y precio. Su diseño optimizado permite lanzamientos precisos y efectivos."
+    }
+  },
+  {
+    "id": 29,
+    "precio": "$82.45",
+    "imagen": "./Img/cañas/caña02.jpg",
+    "categoria": {
+      "nombre": "Caña AquaForce 200",
+      "id": "cañas",
+      "descripcion": " Especialmente diseñada para la pesca en el mar, esta caña combina resistencia y ligereza, facilitando el manejo y la precisión en cada lanzamiento."
+    }
+  },
+  {
+    "id": 30,
+    "precio": "$54.99",
+    "imagen": "./Img/cañas/caña04.jpg",
+    "categoria": {
+      "nombre": "Caña JetStream XT",
+      "id": "cañas",
+      "descripcion": " Esta caña es ideal para pescadores que buscan rendimiento y durabilidad. Su diseño permite un manejo fácil y efectivo, adecuada para diversas condiciones de pesca."
+    }
+  },
+  {
+    "id": 31,
+    "precio": "$93.25",
+    "imagen": "./Img/cañas/caña05.jpg",
+    "categoria": {
+      "nombre": "Caña WaveCatcher Elite",
+      "id": "cañas",
+      "descripcion": "Diseñada para la pesca en el mar, esta caña ofrece una excelente resistencia y durabilidad. Perfecta para pescadores que buscan una caña confiable y eficaz."
+    }
+  },
+  {
+    "id": 32,
+    "precio": "$299.00",
+    "imagen": "./Img/carretes/carrete02.jpg",
+    "categoria": {
+      "nombre": "Carrete StormTorque 5000",
+      "id": "carretes",
+      "descripcion": " Este carrete está diseñado para ofrecer un rendimiento excepcional en condiciones difíciles. Su construcción robusta asegura que pueda soportar el uso intensivo en el mar."
+    }
+  },
+  {
+    "id": 33,
+    "precio": "$265.40",
+    "imagen": "./Img/carretes/carrete03.jpg",
+    "categoria": {
+      "nombre": "Carrete AquaShift Pro",
+      "id": "carretes",
+      "descripcion": "Con un diseño avanzado, este carrete es ideal para pescadores que buscan precisión y control. Su sistema de arrastre garantiza un rendimiento óptimo."
+    }
+  },
+  {
+    "id": 34,
+    "precio": "$279.99",
+    "imagen": "./Img/carretes/carrete05.jpg",
+    "categoria": {
+      "nombre": "Carrete JetLine RX",
+      "id": "carretes",
+      "descripcion": "Este carrete es perfecto para pescadores que buscan calidad y durabilidad. Su diseño optimizado asegura un rendimiento excepcional en cada lanzamiento."
+    }
+  },
+  {
+    "id": 35,
+    "precio": "$305.20",
+    "imagen": "./Img/carretes/carrete07.jpg",
+    "categoria": {
+      "nombre": "Carrete ProTide Elite",
+      "id": "carretes",
+      "descripcion": "Diseñado para la pesca en el mar, este carrete ofrece un rendimiento superior. Su tecnología avanzada asegura que cada captura se maneje con facilidad."
+    }
+  },
+  {
+    "id": 36,
+    "precio": "$329.50",
+    "imagen": "./Img/carretes/carrete08.jpg",
+    "categoria": {
+      "nombre": "Carrete AquaBlast Vortex",
+      "id": "carretes",
+      "descripcion": "Este carrete es ideal para pescadores serios que buscan un producto de alta calidad. Su diseño robusto y ligero facilita el manejo y la eficiencia en cada pesca."
+    }
+  },
+  {
+    "id": 37,
+    "precio": "$62.00",
+    "imagen": "./Img/cuerdas/cuerda02.jpg",
+    "categoria": {
+      "nombre": "Cuerda SeaTension X",
+      "id": "cuerdas",
+      "descripcion": "Esta cuerda es perfecta para la pesca en el mar, ofreciendo resistencia y flexibilidad. Su diseño asegura que puedas confiar en ella en cada lanzamiento."
+    }
+  },
+  {
+    "id": 38,
+    "precio": "$71.80",
+    "imagen": "./Img/cuerdas/cuerda06.jpg",
+    "categoria": {
+      "nombre": "Cuerda BlueLine XT",
+      "id": "cuerdas",
+      "descripcion": "Ideal para la pesca en diversas condiciones, esta cuerda combina durabilidad y flexibilidad, perfecta para pescadores que buscan un producto confiable."
+    }
+  },
+  {
+    "id": 39,
+    "precio": "$83.95",
+    "imagen": "./Img/cuerdas/cuerda08.jpg",
+    "categoria": {
+      "nombre": "Cuerda HydroTuff 600",
+      "id": "cuerdas",
+      "descripcion": " Esta cuerda está diseñada para resistir las exigencias del agua salada, ofreciendo un rendimiento excepcional. Ideal para pescadores que buscan calidad y durabilidad."
+    }
+  },
+  {
+    "id": 40,
+    "precio": "$77.49",
+    "imagen": "./Img/cuerdas/cuerda07.jpg",
+    "categoria": {
+      "nombre": "Cuerda TitanWave",
+      "id": "cuerdas",
+      "descripcion": " Con un diseño robusto y resistente, esta cuerda es ideal para la pesca en el mar. Su calidad asegura que puedas confiar en ella en cada aventura de pesca."
+    }
+  }
+]
   
