@@ -28,7 +28,6 @@ loginForm.addEventListener("submit", (e) => {
     text: `Bienvenido de nuevo ${usuarioExistente.name}`,
     confirmButtonText: "Aceptar",
   }).then(() => {
-    // 🔥 Guardar el usuario logueado
     localStorage.setItem("usuarioLogueado", JSON.stringify(usuarioExistente));
 
     // Redirigir si quieres
