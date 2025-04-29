@@ -1,5 +1,5 @@
-// Inicialización de EmailJS (asegúrate de que esté antes de tu código)
-emailjs.init("G5aiXIx2Aw1fqfmBi"); // Tu Public Key ya está correcta
+// Inicialización de EmailJS
+emailjs.init("G5aiXIx2Aw1fqfmBi");
 
 const stepMenuOne = document.querySelector(".formbold-step-menu1");
 const stepMenuTwo = document.querySelector(".formbold-step-menu2");
