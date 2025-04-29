@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   header.innerHTML = `
   <nav class="navbar   navbar-expand-lg"  id="navInferior"  >
       <div class="contenedor-principal container-fluid">
-        <a class="navbar-brand marca" href="#"><img  class="logo-nav" src="Img/istiompax-indica.webp" alt=""></a>
+        <a class="navbar-brand marca" href="#"><img  class="logo-nav" src="Img/IconoGolfish.jpg" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
