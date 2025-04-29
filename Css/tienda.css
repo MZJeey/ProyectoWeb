@@ -281,3 +281,20 @@
     transition: all 0.3s ease-in-out;
   }
 }
+
+.pagar .btn-success {
+  background-color: #28a745 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 1px;
+}
