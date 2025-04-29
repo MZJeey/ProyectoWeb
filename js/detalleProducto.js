@@ -172,7 +172,7 @@ function mostrarVistaPreviaCarrito(carrito) {
     cancelButtonText: "Seguir comprando",
     showDenyButton: true,
     denyButtonText: "Vaciar carrito",
-    width: "700px",
+    width: "800px",
   }).then((result) => {
     if (result.isConfirmed) {
       window.location.href = "carrito.html";
