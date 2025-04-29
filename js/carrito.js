@@ -72,10 +72,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // Cambiar tipo de envío
+  // Event listeners
   shippingSelect.addEventListener("change", updateCart);
 
-  // Cambiar cantidad de productos
   cartItems.addEventListener("change", function (e) {
     if (e.target.classList.contains("quantity-input")) {
       const index = e.target.dataset.index;
@@ -89,7 +88,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Eliminar producto del carrito
   cartItems.addEventListener("click", function (e) {
     if (e.target.closest(".btn-danger")) {
       const index = e.target.closest(".btn-danger").dataset.index;
@@ -97,13 +95,12 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   });
 
-  // Pagar
   payButton.addEventListener("click", function (e) {
     e.preventDefault();
 
+    // Validaciones
     const usuarioLogueado = JSON.parse(localStorage.getItem("usuarioLogueado"));
 
-    // Validar que el carrito no esté vacío
     if (cart.length === 0) {
       Swal.fire({
         title: "Carrito vacío",
@@ -116,10 +113,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!usuarioLogueado || !usuarioLogueado.email) {
       Swal.fire({
         title: "Inicio de sesión requerido",
-        html: `
-          <p>Para completar tu compra necesitas iniciar sesión.</p>
-          <p>¿Deseas iniciar sesión o registrarte ahora?</p>
-        `,
+        html: `<p>Para completar tu compra necesitas iniciar sesión.</p>
+               <p>¿Deseas iniciar sesión o registrarte ahora?</p>`,
         icon: "info",
         showCancelButton: true,
         confirmButtonText: "Iniciar sesión",
@@ -128,18 +123,16 @@ document.addEventListener("DOMContentLoaded", function () {
         cancelButtonColor: "#28a745",
       }).then((result) => {
         if (result.isConfirmed) {
-          // Guardar la URL actual para redirigir después del login
           localStorage.setItem("redirectAfterLogin", window.location.href);
-          window.location.href = "registro.html"; // Página de login
+          window.location.href = "registro.html";
         } else if (result.dismiss === Swal.DismissReason.cancel) {
           localStorage.setItem("redirectAfterLogin", window.location.href);
-          window.location.href = "registroCuenta.html"; // Página de registro
+          window.location.href = "registroCuenta.html";
         }
       });
       return;
     }
 
-    // Validar número de tarjeta
     const cardNumber = document.getElementById("inputNumero").value.trim();
     if (!cardNumber || cardNumber.replace(/\s/g, "").length < 16) {
       Swal.fire({
@@ -150,25 +143,94 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    // Pago exitoso
+    // Procesar pago
     Swal.fire({
-      title: "¡Pago exitoso!",
-      text: "Tu pedido ha sido procesado",
-      icon: "success",
-    }).then(() => {
-      // Limpiar carrito y formulario
-      localStorage.removeItem("carrito");
-      cart = [];
-      updateCart();
-
-      document.getElementById("inputNumero").value = "";
-      document.getElementById("inputNombre").value = "";
-      document.getElementById("selectMes").selectedIndex = 0;
-      document.getElementById("selectYear").selectedIndex = 0;
-      document.getElementById("inputCCV").value = "";
+      title: "Procesando pago...",
+      text: "Por favor espera un momento",
+      icon: "info",
+      showConfirmButton: false,
+      allowOutsideClick: false,
     });
+
+    // Simular procesamiento de pago
+    setTimeout(() => {
+      generarFactura();
+    }, 1500);
   });
 
-  // Inicializar carrito al cargar la página
+  function generarFactura() {
+    // Preparar datos de factura
+    const facturaData = {
+      numeroFactura: "FACT-" + Date.now().toString().slice(-8),
+      clienteNombre:
+        document.getElementById("inputNombre").value.trim() ||
+        "Cliente no registrado",
+      fecha: new Date().toLocaleDateString("es-ES", {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        hour: "2-digit",
+        minute: "2-digit",
+      }),
+      tipoEnvio:
+        shippingSelect.value === "tienda"
+          ? "Recogida en tienda"
+          : "Envío a domicilio",
+      productos: [],
+      total: 0,
+    };
+
+    // Calcular total y agregar productos
+    facturaData.total = cart.reduce((total, item) => {
+      const price = parseFloat(item.precio.replace(/[^0-9.-]+/g, ""));
+      const shippingCost = shippingSelect.value === "postal" ? 5 : 0;
+      const quantity = item.quantity || 1;
+      const subtotal = price * quantity;
+      const totalItem = subtotal + shippingCost;
+
+      facturaData.productos.push({
+        nombre: item.categoria.nombre,
+        precio: price.toFixed(2),
+        cantidad: quantity,
+        subtotal: subtotal.toFixed(2),
+        envio: shippingCost.toFixed(2),
+        total: totalItem.toFixed(2),
+        imagen: item.imagen,
+      });
+
+      return total + totalItem;
+    }, 0);
+
+    // Formatear valores monetarios
+    facturaData.total = facturaData.total.toFixed(2);
+
+    // Guardar factura y limpiar carrito
+    localStorage.setItem("facturaData", JSON.stringify(facturaData));
+    localStorage.removeItem("carrito");
+
+    // Limpiar formulario
+    [
+      "inputNumero",
+      "inputNombre",
+      "selectMes",
+      "selectYear",
+      "inputCCV",
+    ].forEach((id) => {
+      document.getElementById(id).value = "";
+    });
+
+    // Mostrar confirmación y redirigir
+    Swal.fire({
+      title: "¡Pago exitoso!",
+      text: "Serás redirigido a tu factura",
+      icon: "success",
+      timer: 2000,
+      showConfirmButton: false,
+    }).then(() => {
+      window.location.href = "factura.html";
+    });
+  }
+
+  // Inicializar carrito
   updateCart();
 });
