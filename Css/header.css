@@ -637,3 +637,46 @@ p {
 .carousel-caption p {
   color: white;
 }
+.col-lg-4 {
+  text-align: center;
+}
+/* Estilos para los enlaces en la columna .col-lg-4 */
+.col-lg-4 a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.3s ease;
+  opacity: 0.75;
+}
+
+/* Efecto hover para los enlaces */
+.col-lg-4 a:hover {
+  color: #4ecdc4 !important; /* Color turquesa al hacer hover */
+  opacity: 1;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.col-lg-4 a[href^="mailto:"] {
+  color: #f8a5c2 !important;
+}
+
+.col-lg-4 a[href^="mailto:"]:hover {
+  color: #ff6b6b !important;
+}
+
+.col-lg-4 a i {
+  margin-right: 8px;
+  transition: all 0.3s ease;
+}
+
+.col-lg-4 a:hover i {
+  transform: scale(1.1);
+}
+
+.imagen-pequena {
+  display: block;
+  margin: 0 auto;
+  max-width: 30%;
+  height: auto;
+}
