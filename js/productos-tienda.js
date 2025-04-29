@@ -1,10 +1,10 @@
-let productosTienda = []; // Array global para almacenar los productos
+let productosTienda = [];
 
-// Cache de elementos DOM
 const DOM = {
   contenedor: document.getElementById("contenedor-tienda"),
-  buscador: document.querySelector(".buscador"),
-  botonBusqueda: document.querySelector(".btn-outline-success"),
+  buscador: document.querySelector("#busquedaProductos"),
+  botonBusqueda: document.querySelector("button[type='submit']"),
+
   header: document.getElementById("header"),
 };
 
@@ -47,16 +47,32 @@ function ajustarHeader() {
 }
 
 function buscarProductos(event) {
-  if (event) event.preventDefault();
+  event.preventDefault();
 
-  const valorBusqueda = DOM.buscador.value.toLowerCase();
-  const productosFiltrados = productosTienda.filter(
-    (producto) =>
-      producto.categoria.nombre.toLowerCase().includes(valorBusqueda) ||
-      producto.categoria.id.toLowerCase().includes(valorBusqueda) ||
-      producto.precio.toString().includes(valorBusqueda)
-  );
+  // Obtener y normalizar el valor de búsqueda
+  const valorBusqueda = DOM.buscador.value.toLowerCase().trim();
 
+  // Si el campo está vacío, mostrar todos los productos
+  if (!valorBusqueda) {
+    mostrarProductos(productosTienda);
+    return;
+  }
+
+  // Filtrar productos
+  const productosFiltrados = productosTienda.filter((producto) => {
+    // Buscar en múltiples campos
+    const camposABuscar = [
+      producto.categoria.nombre.toLowerCase(),
+      producto.categoria.id.toLowerCase(),
+      producto.precio.toString(),
+      producto.descripcion?.toLowerCase() || "",
+      producto.marca?.toLowerCase() || "",
+    ];
+
+    return camposABuscar.some((campo) => campo.includes(valorBusqueda));
+  });
+
+  // Mostrar resultados
   mostrarProductos(productosFiltrados);
 }
 
